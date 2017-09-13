@@ -1,0 +1,386 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		99B7A4FBD50C49C764EAE430 /* Pods_Codility.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA7055BFBABD8E670693460E /* Pods_Codility.framework */; };
+		CA609B181F69C4720090E4CA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA609B171F69C4720090E4CA /* AppDelegate.swift */; };
+		CA609B1A1F69C4720090E4CA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA609B191F69C4720090E4CA /* ViewController.swift */; };
+		CA609B1D1F69C4720090E4CA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CA609B1B1F69C4720090E4CA /* Main.storyboard */; };
+		CA609B1F1F69C4720090E4CA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CA609B1E1F69C4720090E4CA /* Assets.xcassets */; };
+		CA609B221F69C4720090E4CA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CA609B201F69C4720090E4CA /* LaunchScreen.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		62B1564A6428AFA95E1FCE9D /* Pods-Codility.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Codility.release.xcconfig"; path = "Pods/Target Support Files/Pods-Codility/Pods-Codility.release.xcconfig"; sourceTree = "<group>"; };
+		BA7055BFBABD8E670693460E /* Pods_Codility.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Codility.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CA609B141F69C4720090E4CA /* Codility.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Codility.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CA609B171F69C4720090E4CA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		CA609B191F69C4720090E4CA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		CA609B1C1F69C4720090E4CA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CA609B1E1F69C4720090E4CA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CA609B211F69C4720090E4CA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		CA609B231F69C4730090E4CA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D996D0B3D7001B75191BAA45 /* Pods-Codility.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Codility.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Codility/Pods-Codility.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CA609B111F69C4720090E4CA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				99B7A4FBD50C49C764EAE430 /* Pods_Codility.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		00F1A7470F688B2900DDCE1C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BA7055BFBABD8E670693460E /* Pods_Codility.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		977F842DA1C271A1B245C640 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D996D0B3D7001B75191BAA45 /* Pods-Codility.debug.xcconfig */,
+				62B1564A6428AFA95E1FCE9D /* Pods-Codility.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		CA609B0B1F69C4720090E4CA = {
+			isa = PBXGroup;
+			children = (
+				CA609B161F69C4720090E4CA /* Codility */,
+				CA609B151F69C4720090E4CA /* Products */,
+				977F842DA1C271A1B245C640 /* Pods */,
+				00F1A7470F688B2900DDCE1C /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		CA609B151F69C4720090E4CA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CA609B141F69C4720090E4CA /* Codility.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CA609B161F69C4720090E4CA /* Codility */ = {
+			isa = PBXGroup;
+			children = (
+				CA609B171F69C4720090E4CA /* AppDelegate.swift */,
+				CA609B191F69C4720090E4CA /* ViewController.swift */,
+				CA609B1B1F69C4720090E4CA /* Main.storyboard */,
+				CA609B1E1F69C4720090E4CA /* Assets.xcassets */,
+				CA609B201F69C4720090E4CA /* LaunchScreen.storyboard */,
+				CA609B231F69C4730090E4CA /* Info.plist */,
+			);
+			path = Codility;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CA609B131F69C4720090E4CA /* Codility */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CA609B261F69C4730090E4CA /* Build configuration list for PBXNativeTarget "Codility" */;
+			buildPhases = (
+				0B34FABA55BB33FD8041D6D9 /* [CP] Check Pods Manifest.lock */,
+				CA609B101F69C4720090E4CA /* Sources */,
+				CA609B111F69C4720090E4CA /* Frameworks */,
+				CA609B121F69C4720090E4CA /* Resources */,
+				BE3ADC0CF84A51B54FDD20CC /* [CP] Embed Pods Frameworks */,
+				D581329FFB1A0D506D29F5EB /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Codility;
+			productName = Codility;
+			productReference = CA609B141F69C4720090E4CA /* Codility.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CA609B0C1F69C4720090E4CA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = "Кирилл Володин";
+				TargetAttributes = {
+					CA609B131F69C4720090E4CA = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = BZ5C8942NC;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = CA609B0F1F69C4720090E4CA /* Build configuration list for PBXProject "Codility" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CA609B0B1F69C4720090E4CA;
+			productRefGroup = CA609B151F69C4720090E4CA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CA609B131F69C4720090E4CA /* Codility */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CA609B121F69C4720090E4CA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CA609B221F69C4720090E4CA /* LaunchScreen.storyboard in Resources */,
+				CA609B1F1F69C4720090E4CA /* Assets.xcassets in Resources */,
+				CA609B1D1F69C4720090E4CA /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0B34FABA55BB33FD8041D6D9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		BE3ADC0CF84A51B54FDD20CC /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Codility/Pods-Codility-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D581329FFB1A0D506D29F5EB /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Codility/Pods-Codility-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CA609B101F69C4720090E4CA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CA609B1A1F69C4720090E4CA /* ViewController.swift in Sources */,
+				CA609B181F69C4720090E4CA /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		CA609B1B1F69C4720090E4CA /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CA609B1C1F69C4720090E4CA /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		CA609B201F69C4720090E4CA /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CA609B211F69C4720090E4CA /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CA609B241F69C4730090E4CA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		CA609B251F69C4730090E4CA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CA609B271F69C4730090E4CA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D996D0B3D7001B75191BAA45 /* Pods-Codility.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = BZ5C8942NC;
+				INFOPLIST_FILE = Codility/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Volodin-Enterprise.Codility";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		CA609B281F69C4730090E4CA /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 62B1564A6428AFA95E1FCE9D /* Pods-Codility.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = BZ5C8942NC;
+				INFOPLIST_FILE = Codility/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Volodin-Enterprise.Codility";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CA609B0F1F69C4720090E4CA /* Build configuration list for PBXProject "Codility" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CA609B241F69C4730090E4CA /* Debug */,
+				CA609B251F69C4730090E4CA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CA609B261F69C4730090E4CA /* Build configuration list for PBXNativeTarget "Codility" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CA609B271F69C4730090E4CA /* Debug */,
+				CA609B281F69C4730090E4CA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CA609B0C1F69C4720090E4CA /* Project object */;
+}
