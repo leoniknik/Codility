@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		99B7A4FBD50C49C764EAE430 /* Pods_Codility.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA7055BFBABD8E670693460E /* Pods_Codility.framework */; };
+		CA3DD2A01F69C95700203881 /* Alex.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CA3DD29E1F69C95700203881 /* Alex.storyboard */; };
 		CA609B181F69C4720090E4CA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA609B171F69C4720090E4CA /* AppDelegate.swift */; };
 		CA609B1A1F69C4720090E4CA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA609B191F69C4720090E4CA /* ViewController.swift */; };
 		CA609B1D1F69C4720090E4CA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CA609B1B1F69C4720090E4CA /* Main.storyboard */; };
@@ -18,6 +19,7 @@
 /* Begin PBXFileReference section */
 		62B1564A6428AFA95E1FCE9D /* Pods-Codility.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Codility.release.xcconfig"; path = "Pods/Target Support Files/Pods-Codility/Pods-Codility.release.xcconfig"; sourceTree = "<group>"; };
 		BA7055BFBABD8E670693460E /* Pods_Codility.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Codility.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CA3DD29F1F69C95700203881 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Alex.storyboard; sourceTree = "<group>"; };
 		CA609B141F69C4720090E4CA /* Codility.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Codility.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CA609B171F69C4720090E4CA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CA609B191F69C4720090E4CA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -81,6 +83,7 @@
 				CA609B171F69C4720090E4CA /* AppDelegate.swift */,
 				CA609B191F69C4720090E4CA /* ViewController.swift */,
 				CA609B1B1F69C4720090E4CA /* Main.storyboard */,
+				CA3DD29E1F69C95700203881 /* Alex.storyboard */,
 				CA609B1E1F69C4720090E4CA /* Assets.xcassets */,
 				CA609B201F69C4720090E4CA /* LaunchScreen.storyboard */,
 				CA609B231F69C4730090E4CA /* Info.plist */,
@@ -151,6 +154,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CA3DD2A01F69C95700203881 /* Alex.storyboard in Resources */,
 				CA609B221F69C4720090E4CA /* LaunchScreen.storyboard in Resources */,
 				CA609B1F1F69C4720090E4CA /* Assets.xcassets in Resources */,
 				CA609B1D1F69C4720090E4CA /* Main.storyboard in Resources */,
@@ -220,6 +224,14 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
+		CA3DD29E1F69C95700203881 /* Alex.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CA3DD29F1F69C95700203881 /* Base */,
+			);
+			name = Alex.storyboard;
+			sourceTree = "<group>";
+		};
 		CA609B1B1F69C4720090E4CA /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -379,6 +391,7 @@
 				CA609B281F69C4730090E4CA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
