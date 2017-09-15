@@ -14,5 +14,6 @@ class OBURLRouter {
     
     static let getCreditCardsInfoURL = "\(baseURL)/CreditCards/info"
     static let getCreditCardsCallbackURL = "\(baseURL)/CreditCards/callback"
+    static let getCreditInfoURL = "\(baseURL)/Credits/info"
     
 }

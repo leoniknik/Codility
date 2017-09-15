@@ -21,6 +21,9 @@
 		CAB5C9701F6C769900A93564 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAB5C96F1F6C769900A93564 /* Card.swift */; };
 		CAB5C9721F6C800600A93564 /* Notification+OBNotificationName.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAB5C9711F6C800600A93564 /* Notification+OBNotificationName.swift */; };
 		CAB5C9751F6C81AD00A93564 /* OBCreditCardInfoRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAB5C9741F6C81AD00A93564 /* OBCreditCardInfoRequest.swift */; };
+		CAB5C9771F6C88BF00A93564 /* OBCreditInfoRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAB5C9761F6C88BF00A93564 /* OBCreditInfoRequest.swift */; };
+		CAB5C9791F6C88D500A93564 /* OBCreditInfoResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAB5C9781F6C88D500A93564 /* OBCreditInfoResponse.swift */; };
+		CAB5C97B1F6C8C3100A93564 /* Credit.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAB5C97A1F6C8C3100A93564 /* Credit.swift */; };
 		CAB7CBCC1F6A9AE600917348 /* UIImage+OBImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAB7CBCB1F6A9AE600917348 /* UIImage+OBImage.swift */; };
 		CAB7CBCE1F6AA62900917348 /* OBBackBarButtonItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAB7CBCD1F6AA62900917348 /* OBBackBarButtonItem.swift */; };
 		CAB7CBD01F6AA9DD00917348 /* OBHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAB7CBCF1F6AA9DD00917348 /* OBHomeViewController.swift */; };
@@ -44,6 +47,9 @@
 		CAB5C96F1F6C769900A93564 /* Card.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
 		CAB5C9711F6C800600A93564 /* Notification+OBNotificationName.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Notification+OBNotificationName.swift"; sourceTree = "<group>"; };
 		CAB5C9741F6C81AD00A93564 /* OBCreditCardInfoRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OBCreditCardInfoRequest.swift; sourceTree = "<group>"; };
+		CAB5C9761F6C88BF00A93564 /* OBCreditInfoRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OBCreditInfoRequest.swift; sourceTree = "<group>"; };
+		CAB5C9781F6C88D500A93564 /* OBCreditInfoResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OBCreditInfoResponse.swift; sourceTree = "<group>"; };
+		CAB5C97A1F6C8C3100A93564 /* Credit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Credit.swift; sourceTree = "<group>"; };
 		CAB7CBCB1F6A9AE600917348 /* UIImage+OBImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+OBImage.swift"; sourceTree = "<group>"; };
 		CAB7CBCD1F6AA62900917348 /* OBBackBarButtonItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OBBackBarButtonItem.swift; sourceTree = "<group>"; };
 		CAB7CBCF1F6AA9DD00917348 /* OBHomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OBHomeViewController.swift; sourceTree = "<group>"; };
@@ -133,6 +139,7 @@
 			isa = PBXGroup;
 			children = (
 				CAB5C96F1F6C769900A93564 /* Card.swift */,
+				CAB5C97A1F6C8C3100A93564 /* Credit.swift */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -197,6 +204,7 @@
 			isa = PBXGroup;
 			children = (
 				CAB5C96D1F6C721700A93564 /* OBCreditCardInfoResponse.swift */,
+				CAB5C9781F6C88D500A93564 /* OBCreditInfoResponse.swift */,
 			);
 			name = Responses;
 			sourceTree = "<group>";
@@ -205,6 +213,7 @@
 			isa = PBXGroup;
 			children = (
 				CAB5C9741F6C81AD00A93564 /* OBCreditCardInfoRequest.swift */,
+				CAB5C9761F6C88BF00A93564 /* OBCreditInfoRequest.swift */,
 			);
 			name = Requests;
 			sourceTree = "<group>";
@@ -338,11 +347,14 @@
 				CAB5C96A1F6C6E3800A93564 /* OBURLRouter.swift in Sources */,
 				CAB7CBCC1F6A9AE600917348 /* UIImage+OBImage.swift in Sources */,
 				CAB5C9681F6C6AEB00A93564 /* OBAPIManager.swift in Sources */,
+				CAB5C9771F6C88BF00A93564 /* OBCreditInfoRequest.swift in Sources */,
 				CAB7CBD01F6AA9DD00917348 /* OBHomeViewController.swift in Sources */,
 				CAB5C96E1F6C721700A93564 /* OBCreditCardInfoResponse.swift in Sources */,
 				CA916E4F1F6A79BD008F79F5 /* UIColor+OBColor.swift in Sources */,
 				CAB5C9701F6C769900A93564 /* Card.swift in Sources */,
+				CAB5C97B1F6C8C3100A93564 /* Credit.swift in Sources */,
 				CAB7CBCE1F6AA62900917348 /* OBBackBarButtonItem.swift in Sources */,
+				CAB5C9791F6C88D500A93564 /* OBCreditInfoResponse.swift in Sources */,
 				CAB5C9721F6C800600A93564 /* Notification+OBNotificationName.swift in Sources */,
 				CA609B181F69C4720090E4CA /* AppDelegate.swift in Sources */,
 				CAB5C9751F6C81AD00A93564 /* OBCreditCardInfoRequest.swift in Sources */,

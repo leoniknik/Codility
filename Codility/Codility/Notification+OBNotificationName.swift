@@ -10,4 +10,5 @@ import Foundation
 
 extension Notification.Name {
     static let creditCardsInfoCallback = Notification.Name("creditCardsInfoCallback")
+    static let creditInfoCallback = Notification.Name("creditInfoCallback")
 }

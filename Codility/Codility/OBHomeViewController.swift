@@ -19,26 +19,33 @@ class OBHomeViewController: UIViewController {
         //
         let json: JSON = [
             "RqUID": "123e4567-e89b-12d3-a456-426655440000",
-            "Cards": [
-                "Card": [
-                [
-                "CardName": "Кредитная",
-                "CardType": "credit",
-                "CardPaymentSystem": "visa",
-                "CardDescription": "Кредитная карта",
-                "CardURL": "http://open.ru"
-                ],
-                [
-                "CardName": "Дебетовая",
-                "CardType": "debit",
-                "CardPaymentSystem": "mir",
-                "CardDescription": "Дебетовая карта",
-                "CardURL": "http://open.ru"
-                ]
-                ]
+            "Credits": [
+            [
+            "CreditName": "Наличными",
+            "CreditMinSum": "50000",
+            "CreditMaxSum": "500000",
+            "CreditMinTerm": "3",
+            "CreditMaxTerm": "36",
+            "Rates": [
+            [
+            "credit_min_term": 6,
+            "credit_term_rate": 14
+            ],
+            [
+            "credit_min_term": 12,
+            "credit_term_rate": 15
+            ],
+            [
+            "credit_min_term": 24,
+            "credit_term_rate": 16
+            ]
+            ],
+            "CreditUrl": "https://open.ru",
+            "CreditDescription": "Кредит наличными, сдесь и сейчас!"
+            ]
             ]
         ]
-//        let response = OBCreditCardInfoResponse(json)
+        let response = OBCreditInfoResponse(json: json)
     }
 
     @IBAction func goBack(_ sender: OBBackBarButtonItem) {
