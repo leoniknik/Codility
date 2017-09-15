@@ -7,5 +7,7 @@ target 'Codility' do
 
   # Pods for Codility
   pod 'RealmSwift'
-
+  pod 'Alamofire'
+  pod 'SwiftyJSON'
+  
 end

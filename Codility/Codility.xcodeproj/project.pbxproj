@@ -8,25 +8,45 @@
 
 /* Begin PBXBuildFile section */
 		99B7A4FBD50C49C764EAE430 /* Pods_Codility.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA7055BFBABD8E670693460E /* Pods_Codility.framework */; };
-		CA3DD2A01F69C95700203881 /* Alex.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CA3DD29E1F69C95700203881 /* Alex.storyboard */; };
+		CA0455F51F6A5D6B007BE429 /* Alex.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CA0455F31F6A5D6B007BE429 /* Alex.storyboard */; };
 		CA609B181F69C4720090E4CA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA609B171F69C4720090E4CA /* AppDelegate.swift */; };
-		CA609B1A1F69C4720090E4CA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA609B191F69C4720090E4CA /* ViewController.swift */; };
 		CA609B1D1F69C4720090E4CA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CA609B1B1F69C4720090E4CA /* Main.storyboard */; };
 		CA609B1F1F69C4720090E4CA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CA609B1E1F69C4720090E4CA /* Assets.xcassets */; };
 		CA609B221F69C4720090E4CA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CA609B201F69C4720090E4CA /* LaunchScreen.storyboard */; };
+		CA916E4F1F6A79BD008F79F5 /* UIColor+OBColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA916E4E1F6A79BD008F79F5 /* UIColor+OBColor.swift */; };
+		CA916E511F6A7BD1008F79F5 /* OBNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA916E501F6A7BD1008F79F5 /* OBNavigationController.swift */; };
+		CAB5C9681F6C6AEB00A93564 /* OBAPIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAB5C9671F6C6AEB00A93564 /* OBAPIManager.swift */; };
+		CAB5C96A1F6C6E3800A93564 /* OBURLRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAB5C9691F6C6E3800A93564 /* OBURLRouter.swift */; };
+		CAB5C96E1F6C721700A93564 /* OBCreditCardInfoResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAB5C96D1F6C721700A93564 /* OBCreditCardInfoResponse.swift */; };
+		CAB5C9701F6C769900A93564 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAB5C96F1F6C769900A93564 /* Card.swift */; };
+		CAB5C9721F6C800600A93564 /* Notification+OBNotificationName.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAB5C9711F6C800600A93564 /* Notification+OBNotificationName.swift */; };
+		CAB5C9751F6C81AD00A93564 /* OBCreditCardInfoRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAB5C9741F6C81AD00A93564 /* OBCreditCardInfoRequest.swift */; };
+		CAB7CBCC1F6A9AE600917348 /* UIImage+OBImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAB7CBCB1F6A9AE600917348 /* UIImage+OBImage.swift */; };
+		CAB7CBCE1F6AA62900917348 /* OBBackBarButtonItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAB7CBCD1F6AA62900917348 /* OBBackBarButtonItem.swift */; };
+		CAB7CBD01F6AA9DD00917348 /* OBHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAB7CBCF1F6AA9DD00917348 /* OBHomeViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		62B1564A6428AFA95E1FCE9D /* Pods-Codility.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Codility.release.xcconfig"; path = "Pods/Target Support Files/Pods-Codility/Pods-Codility.release.xcconfig"; sourceTree = "<group>"; };
 		BA7055BFBABD8E670693460E /* Pods_Codility.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Codility.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		CA3DD29F1F69C95700203881 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Alex.storyboard; sourceTree = "<group>"; };
+		CA0455F41F6A5D6B007BE429 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Alex.storyboard; sourceTree = "<group>"; };
 		CA609B141F69C4720090E4CA /* Codility.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Codility.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CA609B171F69C4720090E4CA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		CA609B191F69C4720090E4CA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		CA609B1C1F69C4720090E4CA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CA609B1E1F69C4720090E4CA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CA609B211F69C4720090E4CA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CA609B231F69C4730090E4CA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CA916E4E1F6A79BD008F79F5 /* UIColor+OBColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+OBColor.swift"; sourceTree = "<group>"; };
+		CA916E501F6A7BD1008F79F5 /* OBNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OBNavigationController.swift; sourceTree = "<group>"; };
+		CAB5C9671F6C6AEB00A93564 /* OBAPIManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OBAPIManager.swift; sourceTree = "<group>"; };
+		CAB5C9691F6C6E3800A93564 /* OBURLRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OBURLRouter.swift; sourceTree = "<group>"; };
+		CAB5C96D1F6C721700A93564 /* OBCreditCardInfoResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OBCreditCardInfoResponse.swift; sourceTree = "<group>"; };
+		CAB5C96F1F6C769900A93564 /* Card.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
+		CAB5C9711F6C800600A93564 /* Notification+OBNotificationName.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Notification+OBNotificationName.swift"; sourceTree = "<group>"; };
+		CAB5C9741F6C81AD00A93564 /* OBCreditCardInfoRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OBCreditCardInfoRequest.swift; sourceTree = "<group>"; };
+		CAB7CBCB1F6A9AE600917348 /* UIImage+OBImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+OBImage.swift"; sourceTree = "<group>"; };
+		CAB7CBCD1F6AA62900917348 /* OBBackBarButtonItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OBBackBarButtonItem.swift; sourceTree = "<group>"; };
+		CAB7CBCF1F6AA9DD00917348 /* OBHomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OBHomeViewController.swift; sourceTree = "<group>"; };
 		D996D0B3D7001B75191BAA45 /* Pods-Codility.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Codility.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Codility/Pods-Codility.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -80,15 +100,113 @@
 		CA609B161F69C4720090E4CA /* Codility */ = {
 			isa = PBXGroup;
 			children = (
-				CA609B171F69C4720090E4CA /* AppDelegate.swift */,
-				CA609B191F69C4720090E4CA /* ViewController.swift */,
-				CA609B1B1F69C4720090E4CA /* Main.storyboard */,
-				CA3DD29E1F69C95700203881 /* Alex.storyboard */,
-				CA609B1E1F69C4720090E4CA /* Assets.xcassets */,
-				CA609B201F69C4720090E4CA /* LaunchScreen.storyboard */,
-				CA609B231F69C4730090E4CA /* Info.plist */,
+				CA916E461F6A75AA008F79F5 /* Views */,
+				CA916E471F6A75B6008F79F5 /* Controllers */,
+				CA916E481F6A75BC008F79F5 /* Models */,
+				CA916E4B1F6A75D7008F79F5 /* Helpers */,
+				CA916E491F6A75C1008F79F5 /* Extensions */,
+				CA916E4A1F6A75CD008F79F5 /* Supporting files */,
 			);
 			path = Codility;
+			sourceTree = "<group>";
+		};
+		CA916E461F6A75AA008F79F5 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				CA916E4D1F6A7602008F79F5 /* Storyboards */,
+				CA916E4C1F6A75FD008F79F5 /* Cells */,
+				CA916E501F6A7BD1008F79F5 /* OBNavigationController.swift */,
+				CAB7CBCD1F6AA62900917348 /* OBBackBarButtonItem.swift */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		CA916E471F6A75B6008F79F5 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				CAB7CBCF1F6AA9DD00917348 /* OBHomeViewController.swift */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		CA916E481F6A75BC008F79F5 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				CAB5C96F1F6C769900A93564 /* Card.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		CA916E491F6A75C1008F79F5 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				CA916E4E1F6A79BD008F79F5 /* UIColor+OBColor.swift */,
+				CAB7CBCB1F6A9AE600917348 /* UIImage+OBImage.swift */,
+				CAB5C9711F6C800600A93564 /* Notification+OBNotificationName.swift */,
+			);
+			name = Extensions;
+			sourceTree = "<group>";
+		};
+		CA916E4A1F6A75CD008F79F5 /* Supporting files */ = {
+			isa = PBXGroup;
+			children = (
+				CA609B171F69C4720090E4CA /* AppDelegate.swift */,
+				CA609B1E1F69C4720090E4CA /* Assets.xcassets */,
+				CA609B231F69C4730090E4CA /* Info.plist */,
+			);
+			name = "Supporting files";
+			sourceTree = "<group>";
+		};
+		CA916E4B1F6A75D7008F79F5 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				CAB5C96B1F6C71E200A93564 /* API */,
+			);
+			name = Helpers;
+			sourceTree = "<group>";
+		};
+		CA916E4C1F6A75FD008F79F5 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Cells;
+			sourceTree = "<group>";
+		};
+		CA916E4D1F6A7602008F79F5 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				CA609B201F69C4720090E4CA /* LaunchScreen.storyboard */,
+				CA609B1B1F69C4720090E4CA /* Main.storyboard */,
+				CA0455F31F6A5D6B007BE429 /* Alex.storyboard */,
+			);
+			name = Storyboards;
+			sourceTree = "<group>";
+		};
+		CAB5C96B1F6C71E200A93564 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				CAB5C9671F6C6AEB00A93564 /* OBAPIManager.swift */,
+				CAB5C9691F6C6E3800A93564 /* OBURLRouter.swift */,
+				CAB5C9731F6C813500A93564 /* Requests */,
+				CAB5C96C1F6C71EF00A93564 /* Responses */,
+			);
+			name = API;
+			sourceTree = "<group>";
+		};
+		CAB5C96C1F6C71EF00A93564 /* Responses */ = {
+			isa = PBXGroup;
+			children = (
+				CAB5C96D1F6C721700A93564 /* OBCreditCardInfoResponse.swift */,
+			);
+			name = Responses;
+			sourceTree = "<group>";
+		};
+		CAB5C9731F6C813500A93564 /* Requests */ = {
+			isa = PBXGroup;
+			children = (
+				CAB5C9741F6C81AD00A93564 /* OBCreditCardInfoRequest.swift */,
+			);
+			name = Requests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -154,7 +272,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CA3DD2A01F69C95700203881 /* Alex.storyboard in Resources */,
+				CA0455F51F6A5D6B007BE429 /* Alex.storyboard in Resources */,
 				CA609B221F69C4720090E4CA /* LaunchScreen.storyboard in Resources */,
 				CA609B1F1F69C4720090E4CA /* Assets.xcassets in Resources */,
 				CA609B1D1F69C4720090E4CA /* Main.storyboard in Resources */,
@@ -216,18 +334,28 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CA609B1A1F69C4720090E4CA /* ViewController.swift in Sources */,
+				CA916E511F6A7BD1008F79F5 /* OBNavigationController.swift in Sources */,
+				CAB5C96A1F6C6E3800A93564 /* OBURLRouter.swift in Sources */,
+				CAB7CBCC1F6A9AE600917348 /* UIImage+OBImage.swift in Sources */,
+				CAB5C9681F6C6AEB00A93564 /* OBAPIManager.swift in Sources */,
+				CAB7CBD01F6AA9DD00917348 /* OBHomeViewController.swift in Sources */,
+				CAB5C96E1F6C721700A93564 /* OBCreditCardInfoResponse.swift in Sources */,
+				CA916E4F1F6A79BD008F79F5 /* UIColor+OBColor.swift in Sources */,
+				CAB5C9701F6C769900A93564 /* Card.swift in Sources */,
+				CAB7CBCE1F6AA62900917348 /* OBBackBarButtonItem.swift in Sources */,
+				CAB5C9721F6C800600A93564 /* Notification+OBNotificationName.swift in Sources */,
 				CA609B181F69C4720090E4CA /* AppDelegate.swift in Sources */,
+				CAB5C9751F6C81AD00A93564 /* OBCreditCardInfoRequest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		CA3DD29E1F69C95700203881 /* Alex.storyboard */ = {
+		CA0455F31F6A5D6B007BE429 /* Alex.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				CA3DD29F1F69C95700203881 /* Base */,
+				CA0455F41F6A5D6B007BE429 /* Base */,
 			);
 			name = Alex.storyboard;
 			sourceTree = "<group>";
