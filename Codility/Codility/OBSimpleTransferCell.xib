@@ -29,7 +29,7 @@
                         <nil key="highlightedColor"/>
                     </label>
                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="+7(XXX)-XXX-XX-XX" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2P5-2b-g9O">
-                        <rect key="frame" x="8" y="31" width="247" height="30"/>
+                        <rect key="frame" x="23" y="31" width="232" height="30"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="30" id="7Vh-eS-T94"/>
                         </constraints>
@@ -49,7 +49,7 @@
                 <constraints>
                     <constraint firstAttribute="bottomMargin" secondItem="fqt-XI-l6e" secondAttribute="bottom" constant="7.5" id="1sZ-7i-cTF"/>
                     <constraint firstItem="fqt-XI-l6e" firstAttribute="leading" secondItem="2P5-2b-g9O" secondAttribute="trailing" constant="12" id="6vR-gQ-hSI"/>
-                    <constraint firstItem="2P5-2b-g9O" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="FXV-jl-9aR"/>
+                    <constraint firstItem="2P5-2b-g9O" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="15" id="FXV-jl-9aR"/>
                     <constraint firstAttribute="trailingMargin" secondItem="fqt-XI-l6e" secondAttribute="trailing" constant="15" id="Fcq-Z3-mSQ"/>
                     <constraint firstAttribute="trailingMargin" secondItem="mzB-ke-Gk9" secondAttribute="trailing" id="VhB-cm-2U7"/>
                     <constraint firstAttribute="bottomMargin" secondItem="2P5-2b-g9O" secondAttribute="bottom" constant="7.5" id="XEe-Bu-OnC"/>

@@ -10,6 +10,11 @@ import UIKit
 
 class OBTransferConfirmCell: UITableViewCell {
 
+    @IBOutlet weak var sumTextField: UITextField!
+    @IBOutlet weak var createLinkButton: UIButton!
+    @IBOutlet weak var confirmTransferButton: UIButton!
+    @IBOutlet weak var createQRCodeButton: UIButton!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
