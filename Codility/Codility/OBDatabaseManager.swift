@@ -11,9 +11,9 @@ import RealmSwift
 
 class OBDatabaseManager {
     
-    private static var realm = try! Realm()
+    var realm = try! Realm()
     
-    class func saveCards(response: OBMyCardsResponse) {
+    func saveCards(response: OBMyCardsResponse) {
         
         for card in response.cards {
             save(object: card)
@@ -21,9 +21,9 @@ class OBDatabaseManager {
         
     }
     
-    class func getCards() -> Results<OBMyCard> {
+    func getCards() -> Results<OBMyCard> {
         
-        return realm.objects(OBMyCard.self)
+        return self.realm.objects(OBMyCard.self)
         
     }
     
@@ -160,9 +160,9 @@ class OBDatabaseManager {
 //        
 //    }
     
-    private class func save(object: Object) {
+    private func save(object: Object) {
         
-        try! realm.write {
+        try! self.realm.write {
             realm.add(object, update: true)
         }
         

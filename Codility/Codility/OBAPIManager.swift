@@ -94,7 +94,7 @@ class OBAPIManager {
     private class func myCardsOnSuccess(json: JSON) -> Void {
         print(json)
         let response = OBMyCardsResponse(json: json)
-        OBDatabaseManager.saveCards(response: response)
+        OBDatabaseManager().saveCards(response: response)
 //        for card in response.cards {
 //            let myInforequest = OBMyCardInfoRequest()
 //        }

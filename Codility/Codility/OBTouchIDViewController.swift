@@ -13,16 +13,18 @@ class OBTouchIDViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        if(true){
-            navigateToAuthenticatedViewController()
-        }
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
     }
     
     @IBAction func loginButtonClicked(_ sender: UIButton) {
+    
         
         // 1. Create a authentication context
         let authenticationContext = LAContext()
-        var error:NSError?
+        var error: NSError?
         
         // 2. Check if the device has a fingerprint sensor
         // If not, show the user an alert view and bail out!
@@ -91,8 +93,9 @@ class OBTouchIDViewController: UIViewController {
     
     func navigateToAuthenticatedViewController(){
         //showAlertWithTitle("ok", message: "sucsess autentification")
-        let storyboard = UIStoryboard(name: "Main", bundle: nil)
-        let controller = storyboard.instantiateInitialViewController()
-        self.present(controller!, animated: true, completion: nil)
+        let storyBoard : UIStoryboard = UIStoryboard(name: "Main", bundle:nil)
+        
+        let nextViewController = storyBoard.instantiateInitialViewController()
+        self.present(nextViewController!, animated:true, completion:nil)
     }
 }

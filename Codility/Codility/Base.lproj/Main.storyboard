@@ -12,7 +12,7 @@
         <!--Открытие-->
         <scene sceneID="t4r-Ed-gKJ">
             <objects>
-                <viewController id="cGU-og-qWN" customClass="OBHomeViewController" customModule="Codility" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="OBHomeViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="cGU-og-qWN" customClass="OBHomeViewController" customModule="Codility" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="W9p-uD-uaX"/>
                         <viewControllerLayoutGuide type="bottom" id="8Z0-73-rj4"/>
