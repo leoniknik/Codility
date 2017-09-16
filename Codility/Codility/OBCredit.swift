@@ -8,7 +8,7 @@
 
 import Foundation
 
-class Credit {
+class OBCredit {
     
     var name: String = "" // Название кредита
     var minSum: String = "" // Минимальная сумма по кредиту

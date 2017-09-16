@@ -19,4 +19,7 @@ class OBURLRouter {
     
     static let getDepositsInfoURL = "\(baseURL)/getdepositinfo/1.0.0/Deposits/info"
     
+    //MyCards/1.0.0
+    static let getMyCardsURL = "\(baseURL)/MyCards/1.0.0/MyCardsInfo/cardlist"
+    
 }

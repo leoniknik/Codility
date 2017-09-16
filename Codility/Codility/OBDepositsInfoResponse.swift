@@ -57,14 +57,14 @@ class OBDepositsInfoResponse {
 //    }
     
     var rqUID: String?
-    var deposits: [Deposit] = []
+    var deposits: [OBDeposit] = []
     var json: JSON!
     
     init(json: JSON) {
         self.json = json
         self.rqUID = json["RqUID"].string
         for item in json["Deposits"]["Deposit"].arrayValue {
-            let deposit = Deposit()
+            let deposit = OBDeposit()
             deposit.name = item["DepositName"].string ?? ""
             deposit.minSum = item["DepositMinSum"].string ?? ""
             deposit.minTerm = item["DepositMinTermRate"].string ?? ""

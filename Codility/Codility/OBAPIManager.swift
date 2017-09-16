@@ -28,7 +28,7 @@ class OBAPIManager {
         
     }
 
-    class func creditCardsInfoOnSuccess(json: JSON) -> Void {
+    private class func creditCardsInfoOnSuccess(json: JSON) -> Void {
         print(json)
         let response = OBCreditCardInfoResponse(json: json)
         NotificationCenter.default.post(name: .creditCardsInfoCallback, object: nil, userInfo: ["data": response])
@@ -51,7 +51,7 @@ class OBAPIManager {
         
     }
     
-    class func creditsInfoOnSuccess(json: JSON) -> Void {
+    private class func creditsInfoOnSuccess(json: JSON) -> Void {
         print(json)
         let response = OBCreditsInfoResponse(json: json)
         NotificationCenter.default.post(name: .creditsInfoCallback, object: nil, userInfo: ["data": response])
@@ -74,10 +74,27 @@ class OBAPIManager {
         
     }
     
-    class func depositsInfoOnSuccess(json: JSON) -> Void {
+    private class func depositsInfoOnSuccess(json: JSON) -> Void {
         print(json)
         let response = OBDepositsInfoResponse(json: json)
         NotificationCenter.default.post(name: .depositsInfoCallback, object: nil, userInfo: ["data": response])
+    }
+    
+    
+    class func myCardsRequest() -> Void {
+        
+        let parameters: Parameters = [
+            :
+        ]
+        
+        self.request(URL: OBURLRouter.getMyCardsURL, method: .get, parameters: parameters, onSuccess: myCardsOnSuccess, onError: defaultOnError)
+        
+    }
+    
+    private class func myCardsOnSuccess(json: JSON) -> Void {
+        print(json)
+        let response = OBMyCardsResponse(json: json)
+        NotificationCenter.default.post(name: .myCardsCallback, object: nil, userInfo: ["data": response])
     }
     
 

@@ -8,7 +8,7 @@
 
 import Foundation
 
-class Deposit {
+class OBDeposit {
     
     var name: String = ""
     var minSum: String = ""

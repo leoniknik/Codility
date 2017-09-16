@@ -12,14 +12,14 @@ import SwiftyJSON
 class OBCreditsInfoResponse {
         
     var rqUID: String?
-    var credits: [Credit] = []
+    var credits: [OBCredit] = []
     var json: JSON!
 
     init(json: JSON) {
         self.json = json
         self.rqUID = json["RqUID"].string
         for item in json["Credits"].arrayValue {
-            let credit = Credit()
+            let credit = OBCredit()
             credit.name = item["CreditName"].string!
             credit.minSum = item["CreditMinSum"].string!
             credit.maxSum = item["CreditMaxSum"].string!

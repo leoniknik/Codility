@@ -18,15 +18,17 @@
 		CAB5C9681F6C6AEB00A93564 /* OBAPIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAB5C9671F6C6AEB00A93564 /* OBAPIManager.swift */; };
 		CAB5C96A1F6C6E3800A93564 /* OBURLRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAB5C9691F6C6E3800A93564 /* OBURLRouter.swift */; };
 		CAB5C96E1F6C721700A93564 /* OBCreditCardInfoResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAB5C96D1F6C721700A93564 /* OBCreditCardInfoResponse.swift */; };
-		CAB5C9701F6C769900A93564 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAB5C96F1F6C769900A93564 /* Card.swift */; };
+		CAB5C9701F6C769900A93564 /* OBCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAB5C96F1F6C769900A93564 /* OBCard.swift */; };
 		CAB5C9721F6C800600A93564 /* Notification+OBNotificationName.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAB5C9711F6C800600A93564 /* Notification+OBNotificationName.swift */; };
 		CAB5C9751F6C81AD00A93564 /* OBCreditCardInfoRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAB5C9741F6C81AD00A93564 /* OBCreditCardInfoRequest.swift */; };
 		CAB5C9771F6C88BF00A93564 /* OBCreditsInfoRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAB5C9761F6C88BF00A93564 /* OBCreditsInfoRequest.swift */; };
 		CAB5C9791F6C88D500A93564 /* OBCreditsInfoResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAB5C9781F6C88D500A93564 /* OBCreditsInfoResponse.swift */; };
-		CAB5C97B1F6C8C3100A93564 /* Credit.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAB5C97A1F6C8C3100A93564 /* Credit.swift */; };
+		CAB5C97B1F6C8C3100A93564 /* OBCredit.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAB5C97A1F6C8C3100A93564 /* OBCredit.swift */; };
 		CAB5C97D1F6C9C7700A93564 /* OBDepositsInfoRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAB5C97C1F6C9C7700A93564 /* OBDepositsInfoRequest.swift */; };
 		CAB5C97F1F6C9C8C00A93564 /* OBDepositsInfoResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAB5C97E1F6C9C8C00A93564 /* OBDepositsInfoResponse.swift */; };
-		CAB5C9811F6C9D5B00A93564 /* Deposit.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAB5C9801F6C9D5B00A93564 /* Deposit.swift */; };
+		CAB5C9811F6C9D5B00A93564 /* OBDeposit.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAB5C9801F6C9D5B00A93564 /* OBDeposit.swift */; };
+		CAB5C9831F6D114500A93564 /* OBMyCardsResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAB5C9821F6D114500A93564 /* OBMyCardsResponse.swift */; };
+		CAB5C9851F6D120600A93564 /* OBMyCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAB5C9841F6D120600A93564 /* OBMyCard.swift */; };
 		CAB7CBCC1F6A9AE600917348 /* UIImage+OBImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAB7CBCB1F6A9AE600917348 /* UIImage+OBImage.swift */; };
 		CAB7CBCE1F6AA62900917348 /* OBBackBarButtonItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAB7CBCD1F6AA62900917348 /* OBBackBarButtonItem.swift */; };
 		CAB7CBD01F6AA9DD00917348 /* OBHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAB7CBCF1F6AA9DD00917348 /* OBHomeViewController.swift */; };
@@ -47,15 +49,17 @@
 		CAB5C9671F6C6AEB00A93564 /* OBAPIManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OBAPIManager.swift; sourceTree = "<group>"; };
 		CAB5C9691F6C6E3800A93564 /* OBURLRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OBURLRouter.swift; sourceTree = "<group>"; };
 		CAB5C96D1F6C721700A93564 /* OBCreditCardInfoResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OBCreditCardInfoResponse.swift; sourceTree = "<group>"; };
-		CAB5C96F1F6C769900A93564 /* Card.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
+		CAB5C96F1F6C769900A93564 /* OBCard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OBCard.swift; sourceTree = "<group>"; };
 		CAB5C9711F6C800600A93564 /* Notification+OBNotificationName.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Notification+OBNotificationName.swift"; sourceTree = "<group>"; };
 		CAB5C9741F6C81AD00A93564 /* OBCreditCardInfoRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OBCreditCardInfoRequest.swift; sourceTree = "<group>"; };
 		CAB5C9761F6C88BF00A93564 /* OBCreditsInfoRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OBCreditsInfoRequest.swift; sourceTree = "<group>"; };
 		CAB5C9781F6C88D500A93564 /* OBCreditsInfoResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OBCreditsInfoResponse.swift; sourceTree = "<group>"; };
-		CAB5C97A1F6C8C3100A93564 /* Credit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Credit.swift; sourceTree = "<group>"; };
+		CAB5C97A1F6C8C3100A93564 /* OBCredit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OBCredit.swift; sourceTree = "<group>"; };
 		CAB5C97C1F6C9C7700A93564 /* OBDepositsInfoRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OBDepositsInfoRequest.swift; sourceTree = "<group>"; };
 		CAB5C97E1F6C9C8C00A93564 /* OBDepositsInfoResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OBDepositsInfoResponse.swift; sourceTree = "<group>"; };
-		CAB5C9801F6C9D5B00A93564 /* Deposit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Deposit.swift; sourceTree = "<group>"; };
+		CAB5C9801F6C9D5B00A93564 /* OBDeposit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OBDeposit.swift; sourceTree = "<group>"; };
+		CAB5C9821F6D114500A93564 /* OBMyCardsResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OBMyCardsResponse.swift; sourceTree = "<group>"; };
+		CAB5C9841F6D120600A93564 /* OBMyCard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OBMyCard.swift; sourceTree = "<group>"; };
 		CAB7CBCB1F6A9AE600917348 /* UIImage+OBImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+OBImage.swift"; sourceTree = "<group>"; };
 		CAB7CBCD1F6AA62900917348 /* OBBackBarButtonItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OBBackBarButtonItem.swift; sourceTree = "<group>"; };
 		CAB7CBCF1F6AA9DD00917348 /* OBHomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OBHomeViewController.swift; sourceTree = "<group>"; };
@@ -144,9 +148,10 @@
 		CA916E481F6A75BC008F79F5 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				CAB5C96F1F6C769900A93564 /* Card.swift */,
-				CAB5C97A1F6C8C3100A93564 /* Credit.swift */,
-				CAB5C9801F6C9D5B00A93564 /* Deposit.swift */,
+				CAB5C9861F6D123C00A93564 /* RealmObject */,
+				CAB5C96F1F6C769900A93564 /* OBCard.swift */,
+				CAB5C97A1F6C8C3100A93564 /* OBCredit.swift */,
+				CAB5C9801F6C9D5B00A93564 /* OBDeposit.swift */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -213,6 +218,7 @@
 				CAB5C96D1F6C721700A93564 /* OBCreditCardInfoResponse.swift */,
 				CAB5C9781F6C88D500A93564 /* OBCreditsInfoResponse.swift */,
 				CAB5C97E1F6C9C8C00A93564 /* OBDepositsInfoResponse.swift */,
+				CAB5C9821F6D114500A93564 /* OBMyCardsResponse.swift */,
 			);
 			name = Responses;
 			sourceTree = "<group>";
@@ -225,6 +231,14 @@
 				CAB5C97C1F6C9C7700A93564 /* OBDepositsInfoRequest.swift */,
 			);
 			name = Requests;
+			sourceTree = "<group>";
+		};
+		CAB5C9861F6D123C00A93564 /* RealmObject */ = {
+			isa = PBXGroup;
+			children = (
+				CAB5C9841F6D120600A93564 /* OBMyCard.swift */,
+			);
+			name = RealmObject;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -355,16 +369,18 @@
 				CA916E511F6A7BD1008F79F5 /* OBNavigationController.swift in Sources */,
 				CAB5C96A1F6C6E3800A93564 /* OBURLRouter.swift in Sources */,
 				CAB7CBCC1F6A9AE600917348 /* UIImage+OBImage.swift in Sources */,
+				CAB5C9851F6D120600A93564 /* OBMyCard.swift in Sources */,
 				CAB5C9681F6C6AEB00A93564 /* OBAPIManager.swift in Sources */,
 				CAB5C9771F6C88BF00A93564 /* OBCreditsInfoRequest.swift in Sources */,
 				CAB7CBD01F6AA9DD00917348 /* OBHomeViewController.swift in Sources */,
 				CAB5C96E1F6C721700A93564 /* OBCreditCardInfoResponse.swift in Sources */,
 				CA916E4F1F6A79BD008F79F5 /* UIColor+OBColor.swift in Sources */,
-				CAB5C9701F6C769900A93564 /* Card.swift in Sources */,
-				CAB5C97B1F6C8C3100A93564 /* Credit.swift in Sources */,
+				CAB5C9701F6C769900A93564 /* OBCard.swift in Sources */,
+				CAB5C9831F6D114500A93564 /* OBMyCardsResponse.swift in Sources */,
+				CAB5C97B1F6C8C3100A93564 /* OBCredit.swift in Sources */,
 				CAB7CBCE1F6AA62900917348 /* OBBackBarButtonItem.swift in Sources */,
 				CAB5C97D1F6C9C7700A93564 /* OBDepositsInfoRequest.swift in Sources */,
-				CAB5C9811F6C9D5B00A93564 /* Deposit.swift in Sources */,
+				CAB5C9811F6C9D5B00A93564 /* OBDeposit.swift in Sources */,
 				CAB5C9791F6C88D500A93564 /* OBCreditsInfoResponse.swift in Sources */,
 				CAB5C97F1F6C9C8C00A93564 /* OBDepositsInfoResponse.swift in Sources */,
 				CAB5C9721F6C800600A93564 /* Notification+OBNotificationName.swift in Sources */,
