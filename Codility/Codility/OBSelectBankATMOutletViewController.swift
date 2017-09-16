@@ -58,16 +58,20 @@ class OBSelectBankATMOutletViewController: UIViewController,UITableViewDataSourc
             cell.adress.text = "Адрес: " + OutletDataSource[indexPath.row].adress!
             cell.timetable.text = "Время работы: " + OutletDataSource[indexPath.row].timetable!
             cell.distance.text = "Расстояние: " + "\(OutletDataSource[indexPath.row].distance!)"
-            
+            cell.workloadIcon.layer.cornerRadius = 10
+            cell.workloadIcon.clipsToBounds = true
             var workloadText = "Загруженность: "
             switch OutletDataSource[indexPath.row].workload! {
             case 0:
                 workloadText+="низкая"
+                cell.workloadIcon.backgroundColor = UIColor.green
                 break
             case 1:
+                cell.workloadIcon.backgroundColor = UIColor.yellow
                 workloadText+="средняя"
                 break
             case 2:
+                cell.workloadIcon.backgroundColor = UIColor.red
                 workloadText+="высокая"
             default: break
             }
