@@ -9,11 +9,14 @@
 //клава
 
 import UIKit
+import ContactsUI
+import EPContactsPicker
 
-class OBTransferViewController: UIViewController {
+class OBTransferViewController: UIViewController, EPPickerDelegate {
 
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var backButton: OBBackBarButtonItem!
+    var contact = ""
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -46,6 +49,34 @@ class OBTransferViewController: UIViewController {
     
     @IBAction func goBack(_ sender: OBBackBarButtonItem) {
         self.navigationController?.popViewController(animated: true)
+    }
+    
+    func chooseContact() {
+        var value = SubtitleCellValue.phoneNumber
+        if OBTransferType.transferType == .emailTransfer {
+            value = SubtitleCellValue.email
+        }
+        let contactPickerScene = EPContactsPicker(delegate: self, multiSelection:false, subtitleCellType: value)
+        let navigationController = UINavigationController(rootViewController: contactPickerScene)
+        self.present(navigationController, animated: true, completion: nil)
+    }
+    
+    func epContactPicker(_: EPContactsPicker, didCancel error : NSError) {
+        print("error choosing contact")
+    }
+    
+    func epContactPicker(_: EPContactsPicker, didSelectContact contact : EPContact) {
+        if OBTransferType.transferType == .phoneTransfer {
+            if !contact.phoneNumbers.isEmpty {
+                self.contact = contact.phoneNumbers[0].phoneNumber
+            }
+        }
+        else {
+            if !contact.emails.isEmpty {
+                self.contact = contact.emails[0].email
+            }
+        }
+        tableView.reloadData()
     }
     
 }
@@ -96,7 +127,9 @@ extension OBTransferViewController: UITableViewDataSource {
             else if indexPath.row == 1 {
                 let cell = tableView.dequeueReusableCell(withIdentifier: "OBSimpleTransferCell", for: indexPath) as! OBSimpleTransferCell
                 cell.button.setImage(UIImage.OBImage.phoneHome, for: .normal)
+                cell.button.addTarget(self, action: #selector(chooseContact), for: .touchUpInside)
                 cell.titleLabel.text = "Куда перевести"
+                cell.textField.text = contact
                 return cell
             } else {
                 let cell = tableView.dequeueReusableCell(withIdentifier: "OBTransferConfirmCell", for: indexPath) as! OBTransferConfirmCell
@@ -120,8 +153,10 @@ extension OBTransferViewController: UITableViewDataSource {
             else if indexPath.row == 1 {
                 let cell = tableView.dequeueReusableCell(withIdentifier: "OBSimpleTransferCell", for: indexPath) as! OBSimpleTransferCell
                 cell.button.setImage(UIImage.OBImage.emailHome, for: .normal)
+                cell.button.addTarget(self, action: #selector(chooseContact), for: .touchUpInside)
                 cell.titleLabel.text = "Куда перевести"
                 cell.textField.placeholder = "Введите e-mail"
+                cell.textField.text = contact
                 return cell
             } else {
                 let cell = tableView.dequeueReusableCell(withIdentifier: "OBTransferConfirmCell", for: indexPath) as! OBTransferConfirmCell

@@ -10,5 +10,6 @@ target 'Codility' do
   pod 'Alamofire'
   pod 'SwiftyJSON'
   pod 'MFCard'
+  pod 'EPContactsPicker'
   
 end
