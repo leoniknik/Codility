@@ -97,6 +97,58 @@ class OBAPIManager {
         NotificationCenter.default.post(name: .myCardsCallback, object: nil, userInfo: ["data": response])
     }
     
+    
+    class func myCardInfoRequest(request: OBMyCardInfoRequest) -> Void {
+        
+        let parameters: Parameters = [
+            "CardId": request.id
+        ]
+        
+        self.request(URL: OBURLRouter.getMyCardInfoURL, method: .post, parameters: parameters, onSuccess: myCardInfoOnSuccess, onError: defaultOnError)
+        
+    }
+    
+    private class func myCardInfoOnSuccess(json: JSON) -> Void {
+        print(json)
+        let response = OBMyCardInfoResponse(json: json)
+        NotificationCenter.default.post(name: .myCardInfoCallback, object: nil, userInfo: ["data": response])
+    }
+    
+    //balance
+    class func myCardBalanceRequest(request: OBMyCardBalanceRequest) -> Void {
+        
+        let parameters: Parameters = [
+            "CardId": request.id
+        ]
+        
+        self.request(URL: OBURLRouter.getMyCardBalanceURL, method: .post, parameters: parameters, onSuccess: myCardBalanceOnSuccess, onError: defaultOnError)
+        
+    }
+    
+    private class func myCardBalanceOnSuccess(json: JSON) -> Void {
+        print(json)
+        let response = OBMyCardBalanceResponse(json: json)
+        NotificationCenter.default.post(name: .myCardBalanceCallback, object: nil, userInfo: ["data": response])
+    }
+    
+    
+    //history
+    class func myCardHistoryRequest(request: OBMyCardHistoryRequest) -> Void {
+        
+        let parameters: Parameters = [
+            "CardId": request.id
+        ]
+        
+        self.request(URL: OBURLRouter.getMyCardHistoryURL, method: .post, parameters: parameters, onSuccess: myCardHistoryOnSuccess, onError: defaultOnError)
+        
+    }
+    
+    private class func myCardHistoryOnSuccess(json: JSON) -> Void {
+        print(json)
+        let response = OBMyCardHistoryResponse(json: json)
+        NotificationCenter.default.post(name: .myCardHistoryCallback, object: nil, userInfo: ["data": response])
+    }
+    
 
     private class func defaultOnSuccess(json: JSON) -> Void{
         print(json)
