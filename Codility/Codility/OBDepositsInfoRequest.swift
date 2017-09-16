@@ -1,5 +1,5 @@
 //
-//  OBCreditInfoRequest.swift
+//  OBDepositssInfoRequest.swift
 //  Codility
 //
 //  Created by Кирилл Володин on 16.09.17.
@@ -7,15 +7,16 @@
 //
 
 import Foundation
+import SwiftyJSON
 
-class OBCreditInfoRequest {
+class OBDepositsInfoRequest {
     
     var rqUID: String = ""
-    var creditName: String = ""
+    var depositName: String = ""
     
-    init(rqUID: String, creditName: String?) {
+    init(rqUID: String, depositName: String?) {
         self.rqUID = rqUID
-        self.creditName = creditName ?? ""
+        self.depositName = depositName ?? ""
     }
     
 }

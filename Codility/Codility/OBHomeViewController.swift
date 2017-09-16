@@ -18,34 +18,53 @@ class OBHomeViewController: UIViewController {
 //        OBAPIManager.getCreditCardsInfoRequest()
         //
         let json: JSON = [
-            "RqUID": "123e4567-e89b-12d3-a456-426655440000",
-            "Credits": [
-            [
-            "CreditName": "Наличными",
-            "CreditMinSum": "50000",
-            "CreditMaxSum": "500000",
-            "CreditMinTerm": "3",
-            "CreditMaxTerm": "36",
-            "Rates": [
-            [
-            "credit_min_term": 6,
-            "credit_term_rate": 14
-            ],
-            [
-            "credit_min_term": 12,
-            "credit_term_rate": 15
-            ],
-            [
-            "credit_min_term": 24,
-            "credit_term_rate": 16
-            ]
-            ],
-            "CreditUrl": "https://open.ru",
-            "CreditDescription": "Кредит наличными, сдесь и сейчас!"
-            ]
-            ]
+                "RqUID": "123e4567-e89b-12d3-a456-426655440000",
+                "Deposits": [
+                "Deposit": [
+                [
+                "DepositName": "Доходный",
+                "DepositMinSum": "10000",
+                "DepositMinTermRate": "6",
+                "DepositMaxTermRate": "60",
+                "Rates": [
+                [
+                "Rate": [
+                [
+                "DepositSum": "20000",
+                "DepositTermRate": "16"
+                ],
+                [
+                "DepositSum": "15000",
+                "DepositTermRate": "15"
+                ]
+                ]
+                ]
+                ]
+                ],
+                [
+                "DepositName": "Выгодный",
+                "DepositMinSum": "100000",
+                "DepositMinTermRate": "12",
+                "DepositMaxTermRate": "120",
+                "DepositCapitalisation": "12",
+                "Rates": [
+                [
+                "Rate": [
+                [
+                "DepositSum": "100000",
+                "DepositTermRate": "15"
+                ]
+                ]
+                ]
+                ]
+                ]
+                ]
+                ]
         ]
-        let response = OBCreditInfoResponse(json: json)
+        
+        let request = OBCreditCardInfoRequest(rqUID: "123e4567-e89b-12d3-a456-426655440000", cardName: "")
+        
+        OBAPIManager.creditCardsInfoRequest(request: request)
     }
 
     @IBAction func goBack(_ sender: OBBackBarButtonItem) {

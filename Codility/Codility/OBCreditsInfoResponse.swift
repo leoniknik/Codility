@@ -9,7 +9,7 @@
 import Foundation
 import SwiftyJSON
 
-class OBCreditInfoResponse {
+class OBCreditsInfoResponse {
         
     var rqUID: String?
     var credits: [Credit] = []
