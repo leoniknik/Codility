@@ -13,7 +13,7 @@ class OBHomeViewController: UIViewController {
 
     @IBOutlet weak var tableView: UITableView!
     
-    let sections = ["Мои карты"]
+    let headers = ["Мои карты"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -32,17 +32,20 @@ class OBHomeViewController: UIViewController {
     // MARK: Transfers
     
     func selfTransfersPressed() {
-        
+        self.performSegue(withIdentifier: OBSegueRouter.toTransfer, sender: nil)
+        OBTransferType.transferType = .selfTransfer
     }
     
     
-    func numberTransferPressed() {
-        
+    func phoneTransferPressed() {
+        self.performSegue(withIdentifier: OBSegueRouter.toTransfer, sender: nil)
+        OBTransferType.transferType = .phoneTransfer
     }
     
     
     func organisationTransferPressed() {
-        
+        self.performSegue(withIdentifier: OBSegueRouter.toTransfer, sender: nil)
+        OBTransferType.transferType = .organisationTransfer
     }
     
     
@@ -65,12 +68,14 @@ extension OBHomeViewController: UITableViewDataSource {
         
         if indexPath.row == 0 {
             let cell = tableView.dequeueReusableCell(withIdentifier: "OBSectionHeaderCell", for: indexPath) as! OBSectionHeaderCell
-            cell.titleLabel.text = self.sections[0]
+            cell.titleLabel.text = self.headers[0]
             return cell
         }
         if indexPath.row == 4 {
             let cell = tableView.dequeueReusableCell(withIdentifier: "OBHomeTransferCell", for: indexPath) as! OBHomeTransferCell
-            
+            cell.selfTransferButton.addTarget(self, action:#selector(selfTransfersPressed), for: .touchUpInside)
+            cell.phoneTransferButton.addTarget(self, action:#selector(phoneTransferPressed), for: .touchUpInside)
+            cell.organisationTransferButton.addTarget(self, action:#selector(organisationTransferPressed), for: .touchUpInside)
             return cell
         }
         else {

@@ -9,102 +9,6 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Роутер-->
-        <scene sceneID="tne-QT-ifu">
-            <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Codility" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
-                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="64" width="375" height="603"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="j99-I2-weh">
-                                <rect key="frame" x="16" y="553" width="343" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="К Саше"/>
-                                <connections>
-                                    <segue destination="6UU-Kp-u0r" kind="show" id="cKq-I4-UNV"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="01O-fl-fac">
-                                <rect key="frame" x="16" y="20" width="343" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="QR коды"/>
-                                <connections>
-                                    <segue destination="eYe-7i-Tct" kind="show" id="D0a-nM-kYM"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2de-fZ-jJ2">
-                                <rect key="frame" x="16" y="58" width="343" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Платеж по email "/>
-                                <connections>
-                                    <segue destination="U2t-2p-yt3" kind="show" id="QmQ-hz-4NT"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UVt-Ky-yXZ">
-                                <rect key="frame" x="16" y="96" width="343" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Голосовой поиск"/>
-                                <connections>
-                                    <segue destination="B4i-cW-IaJ" kind="show" id="xP8-Np-mM0"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="36M-Az-Ezj">
-                                <rect key="frame" x="16" y="134" width="343" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Запись в электронную очередь "/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aw1-cB-sR6">
-                                <rect key="frame" x="16" y="172" width="343" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Подключение карт чужих банков "/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Db-dV-Tbq">
-                                <rect key="frame" x="16" y="210" width="343" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Квесты"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bnc-gg-INF">
-                                <rect key="frame" x="16" y="248" width="343" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Отключение оповещений "/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EQN-4H-9ab">
-                                <rect key="frame" x="16" y="286" width="343" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Напоминание о платежах "/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eYr-YO-dTd">
-                                <rect key="frame" x="16" y="324" width="343" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Предложения в ленту "/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tdc-61-g9Z">
-                                <rect key="frame" x="16" y="362" width="343" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Поиск реквизитов по ИНН"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lIS-VC-LMe">
-                                <rect key="frame" x="16" y="451" width="343" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="К приложению"/>
-                                <connections>
-                                    <segue destination="cGU-og-qWN" kind="show" id="tfU-Ss-Bjw"/>
-                                </connections>
-                            </button>
-                        </subviews>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                    </view>
-                    <navigationItem key="navigationItem" title="Роутер" id="fLV-dy-1RD"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1192.8" y="172.26386806596702"/>
-        </scene>
         <!--Открытие-->
         <scene sceneID="t4r-Ed-gKJ">
             <objects>
@@ -130,74 +34,57 @@
                             <constraint firstItem="mXs-BS-cNm" firstAttribute="top" secondItem="W9p-uD-uaX" secondAttribute="bottom" id="wKs-Yu-zQV"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Открытие" id="fSU-6h-fKe">
-                        <barButtonItem key="leftBarButtonItem" title="Item" id="F9y-ds-OnE" customClass="OBBackBarButtonItem" customModule="Codility" customModuleProvider="target">
-                            <connections>
-                                <action selector="goBack:" destination="cGU-og-qWN" id="NC3-CX-dtt"/>
-                            </connections>
-                        </barButtonItem>
-                    </navigationItem>
+                    <navigationItem key="navigationItem" title="Открытие" id="fSU-6h-fKe"/>
                     <connections>
                         <outlet property="tableView" destination="mXs-BS-cNm" id="HEW-RL-3x8"/>
+                        <segue destination="CnV-GC-eNx" kind="show" identifier="toTransfer" id="LVk-P9-nZh"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DpA-KF-kYs" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1192.8" y="-1001.649175412294"/>
+            <point key="canvasLocation" x="1193" y="-1163"/>
         </scene>
-        <!--QR коды-->
-        <scene sceneID="1cu-kH-bj7">
+        <!--Платежи и переводы-->
+        <scene sceneID="TRL-cK-unQ">
             <objects>
-                <viewController title="QR коды" id="eYe-7i-Tct" sceneMemberID="viewController">
+                <viewController id="CnV-GC-eNx" customClass="OBTransferViewController" customModule="Codility" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="BmQ-04-05S"/>
-                        <viewControllerLayoutGuide type="bottom" id="2iX-v4-LlF"/>
+                        <viewControllerLayoutGuide type="top" id="OLI-AQ-DQo"/>
+                        <viewControllerLayoutGuide type="bottom" id="qtp-YQ-FkV"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="Z2q-lq-OPR">
+                    <view key="view" contentMode="scaleToFill" id="lw4-8u-9d1">
                         <rect key="frame" x="0.0" y="64" width="375" height="603"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="gGS-W7-Oen">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="qtp-YQ-FkV" firstAttribute="top" secondItem="gGS-W7-Oen" secondAttribute="bottom" id="4PW-nP-d9m"/>
+                            <constraint firstItem="gGS-W7-Oen" firstAttribute="top" secondItem="OLI-AQ-DQo" secondAttribute="bottom" id="JJ2-PY-UOo"/>
+                            <constraint firstAttribute="trailing" secondItem="gGS-W7-Oen" secondAttribute="trailing" id="Q37-N2-b8v"/>
+                            <constraint firstItem="gGS-W7-Oen" firstAttribute="leading" secondItem="lw4-8u-9d1" secondAttribute="leading" id="kau-jB-yXq"/>
+                        </constraints>
                     </view>
+                    <navigationItem key="navigationItem" title="Платежи и переводы" id="EAb-bB-24O">
+                        <barButtonItem key="leftBarButtonItem" title="Item" id="4BO-va-Xtb" customClass="OBBackBarButtonItem" customModule="Codility" customModuleProvider="target">
+                            <connections>
+                                <action selector="goBack:" destination="CnV-GC-eNx" id="UdL-Ol-stH"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="backButton" destination="4BO-va-Xtb" id="l7f-Hg-AvV"/>
+                        <outlet property="navigationItem" destination="EAb-bB-24O" id="Deu-cw-flU"/>
+                        <outlet property="tableView" destination="gGS-W7-Oen" id="Vuo-he-36l"/>
+                    </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="aLH-w8-Vb7" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vjq-38-Fd3" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2158" y="-323"/>
-        </scene>
-        <!--Платеж по email-->
-        <scene sceneID="YX5-QQ-aCX">
-            <objects>
-                <viewController title="Платеж по email" id="U2t-2p-yt3" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="NCL-Ux-iXL"/>
-                        <viewControllerLayoutGuide type="bottom" id="pGU-pc-jgB"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="xIb-BA-zwU">
-                        <rect key="frame" x="0.0" y="64" width="375" height="603"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="8hM-sv-66a" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2158" y="383"/>
-        </scene>
-        <!--Голосовой поиск-->
-        <scene sceneID="Vh7-9V-PiU">
-            <objects>
-                <viewController title="Голосовой поиск" id="B4i-cW-IaJ" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="tGa-DB-HXj"/>
-                        <viewControllerLayoutGuide type="bottom" id="iK4-Gw-iSV"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="79x-0P-O8N">
-                        <rect key="frame" x="0.0" y="64" width="375" height="603"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="tRH-M4-3gF" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2158" y="1106"/>
+            <point key="canvasLocation" x="2150" y="-1164"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="eay-xJ-9jU">
@@ -212,20 +99,12 @@
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="kns-gA-kkG"/>
+                        <segue destination="cGU-og-qWN" kind="relationship" relationship="rootViewController" id="MtI-qe-Uwf"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="umH-gL-78i" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="253.59999999999999" y="172.26386806596702"/>
-        </scene>
-        <!--Alex-->
-        <scene sceneID="aP4-XI-YVp">
-            <objects>
-                <viewControllerPlaceholder storyboardName="Alex" id="6UU-Kp-u0r" sceneMemberID="viewController"/>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="t4h-Yx-2my" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="663" y="927"/>
+            <point key="canvasLocation" x="217" y="-1164"/>
         </scene>
     </scenes>
 </document>
