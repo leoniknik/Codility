@@ -12,25 +12,25 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="OBHomeTransferCell" rowHeight="148" id="KGk-i7-Jjw" customClass="OBHomeTransferCell" customModule="Codility" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="320" height="148"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="OBHomeTransferCell" rowHeight="137" id="KGk-i7-Jjw" customClass="OBHomeTransferCell" customModule="Codility" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="137"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
-                <rect key="frame" x="0.0" y="0.0" width="320" height="147.5"/>
+                <rect key="frame" x="0.0" y="0.0" width="320" height="136.5"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="По номеру телефона" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OVY-FA-hMA">
-                        <rect key="frame" x="126" y="93" width="77" height="37"/>
+                        <rect key="frame" x="91" y="93" width="77" height="37"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="37" id="8oj-BD-eRY"/>
                             <constraint firstAttribute="width" constant="77" id="GPh-nH-XHf"/>
                         </constraints>
-                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="9"/>
                         <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <stackView opaque="NO" contentMode="scaleToFill" spacing="35" translatesAutoresizingMaskIntoConstraints="NO" id="f6c-JM-puf">
-                        <rect key="frame" x="54" y="40" width="220" height="50"/>
+                    <stackView opaque="NO" contentMode="scaleToFill" spacing="26" translatesAutoresizingMaskIntoConstraints="NO" id="f6c-JM-puf">
+                        <rect key="frame" x="25" y="40" width="278" height="50"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CGq-P8-xQs">
                                 <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
@@ -40,18 +40,25 @@
                                 <state key="normal" title="Button" image="peopleHome"/>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Paf-qY-Jxx">
-                                <rect key="frame" x="85" y="0.0" width="50" height="50"/>
+                                <rect key="frame" x="76" y="0.0" width="50" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="50" id="lkh-dR-LZU"/>
                                 </constraints>
                                 <state key="normal" title="Button" image="phoneHome"/>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e1u-YS-Ou2">
-                                <rect key="frame" x="170" y="0.0" width="50" height="50"/>
+                                <rect key="frame" x="152" y="0.0" width="50" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="50" id="zpE-Hj-h1l"/>
                                 </constraints>
-                                <state key="normal" title="Button" image="accountHome"/>
+                                <state key="normal" title="Button" image="bankHome"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9q4-vH-w1x">
+                                <rect key="frame" x="228" y="0.0" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="5mz-0d-aU5"/>
+                                </constraints>
+                                <state key="normal" title="Button" image="emailHome"/>
                             </button>
                         </subviews>
                         <constraints>
@@ -59,13 +66,24 @@
                         </constraints>
                     </stackView>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="На счет организации" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lcX-go-cIn">
-                        <rect key="frame" x="206" y="93" width="85" height="37"/>
+                        <rect key="frame" x="161" y="93" width="85" height="37"/>
                         <constraints>
                             <constraint firstAttribute="width" constant="85" id="3fV-6T-hr5"/>
                             <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="85" id="Gb3-D7-4sD"/>
                             <constraint firstAttribute="height" constant="37" id="dCj-bl-IeY"/>
                         </constraints>
-                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="9"/>
+                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="по электронной почте" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AXV-fa-pTj">
+                        <rect key="frame" x="235" y="93" width="85" height="37"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="37" id="6ho-cG-X1m"/>
+                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="85" id="Qo6-kF-4On"/>
+                            <constraint firstAttribute="width" constant="85" id="Zfg-l7-wn1"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="9"/>
                         <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                         <nil key="highlightedColor"/>
                     </label>
@@ -76,42 +94,46 @@
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Между своими счетами" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XPL-Ga-GvT">
-                        <rect key="frame" x="33" y="94" width="90" height="34"/>
+                        <rect key="frame" x="13" y="94" width="76" height="34"/>
                         <constraints>
-                            <constraint firstAttribute="width" constant="90" id="O2d-UP-92q"/>
+                            <constraint firstAttribute="width" constant="76" id="O2d-UP-92q"/>
                         </constraints>
-                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="9"/>
                         <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                         <nil key="highlightedColor"/>
                     </label>
                 </subviews>
                 <constraints>
-                    <constraint firstAttribute="bottomMargin" secondItem="OVY-FA-hMA" secondAttribute="bottom" constant="9.5" id="6hQ-lY-eFn"/>
+                    <constraint firstItem="AXV-fa-pTj" firstAttribute="leading" secondItem="lcX-go-cIn" secondAttribute="trailing" constant="-11" id="4tD-wn-wya"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="OVY-FA-hMA" secondAttribute="bottom" constant="-1.5" id="6hQ-lY-eFn"/>
                     <constraint firstItem="OkP-GI-1dc" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="CDc-rN-0IH"/>
                     <constraint firstItem="f6c-JM-puf" firstAttribute="top" secondItem="OkP-GI-1dc" secondAttribute="bottom" constant="11" id="CE5-K3-aVZ"/>
+                    <constraint firstAttribute="bottom" secondItem="AXV-fa-pTj" secondAttribute="bottom" constant="6.5" id="Dv8-3G-PrS"/>
                     <constraint firstItem="f6c-JM-puf" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="32" id="Hbe-O5-YPv"/>
-                    <constraint firstItem="OVY-FA-hMA" firstAttribute="leading" secondItem="XPL-Ga-GvT" secondAttribute="trailing" constant="3" id="KFO-hr-NZJ"/>
+                    <constraint firstItem="OVY-FA-hMA" firstAttribute="leading" secondItem="XPL-Ga-GvT" secondAttribute="trailing" constant="2" id="KFO-hr-NZJ"/>
                     <constraint firstAttribute="trailing" secondItem="OkP-GI-1dc" secondAttribute="trailing" id="QkK-L3-fA8"/>
                     <constraint firstItem="OkP-GI-1dc" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="Xh3-ZT-epF"/>
-                    <constraint firstItem="OVY-FA-hMA" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" constant="4.5" id="Yjl-4Y-nHT"/>
+                    <constraint firstItem="OVY-FA-hMA" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" constant="-30.5" id="Yjl-4Y-nHT"/>
                     <constraint firstItem="f6c-JM-puf" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" constant="4" id="YkM-yf-Wr8"/>
-                    <constraint firstAttribute="bottomMargin" secondItem="XPL-Ga-GvT" secondAttribute="bottom" constant="11.5" id="dU9-Ad-l7G"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="XPL-Ga-GvT" secondAttribute="bottom" constant="0.5" id="dU9-Ad-l7G"/>
                     <constraint firstItem="XPL-Ga-GvT" firstAttribute="top" secondItem="f6c-JM-puf" secondAttribute="bottom" constant="4" id="ieE-Rb-p20"/>
                     <constraint firstItem="lcX-go-cIn" firstAttribute="top" secondItem="f6c-JM-puf" secondAttribute="bottom" constant="3" id="lMe-c4-XYt"/>
-                    <constraint firstItem="lcX-go-cIn" firstAttribute="leading" secondItem="OVY-FA-hMA" secondAttribute="trailing" constant="3" id="zKh-5L-lFg"/>
+                    <constraint firstItem="lcX-go-cIn" firstAttribute="leading" secondItem="OVY-FA-hMA" secondAttribute="trailing" constant="-7" id="zKh-5L-lFg"/>
                 </constraints>
             </tableViewCellContentView>
             <connections>
+                <outlet property="emailTransferButton" destination="9q4-vH-w1x" id="CkC-aQ-ebE"/>
                 <outlet property="organisationTransferButton" destination="e1u-YS-Ou2" id="HZy-e5-wYN"/>
                 <outlet property="phoneTransferButton" destination="Paf-qY-Jxx" id="xjl-Wf-7sA"/>
                 <outlet property="selfTransferButton" destination="CGq-P8-xQs" id="UDk-8l-Mrg"/>
             </connections>
-            <point key="canvasLocation" x="-105" y="-43"/>
+            <point key="canvasLocation" x="-105" y="-48.5"/>
         </tableViewCell>
     </objects>
     <resources>
-        <image name="accountHome" width="48" height="52"/>
-        <image name="peopleHome" width="65" height="52"/>
-        <image name="phoneHome" width="53" height="43"/>
+        <image name="bankHome" width="48" height="52"/>
+        <image name="emailHome" width="49" height="52"/>
+        <image name="peopleHome" width="49" height="52"/>
+        <image name="phoneHome" width="44" height="47"/>
     </resources>
 </document>

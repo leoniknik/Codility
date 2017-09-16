@@ -6,6 +6,8 @@
 //  Copyright © 2017 Кирилл Володин. All rights reserved.
 //
 
+//клава
+
 import UIKit
 
 class OBTransferViewController: UIViewController {
@@ -22,11 +24,13 @@ class OBTransferViewController: UIViewController {
     func setupHeader() {
         switch OBTransferType.transferType {
         case .selfTransfer:
-            self.navigationItem.title = "Перевод между своими счетами"
+            self.navigationItem.title = "Между своими счетами"
         case .phoneTransfer:
-            self.navigationItem.title = "Перевод по номеру телефона"
+            self.navigationItem.title = "По номеру телефона"
         case .organisationTransfer:
             self.navigationItem.title = "Перевод на счет"
+        case .emailTransfer:
+            self.navigationItem.title = "Перевод по E-mail"
         }
     }
     
@@ -64,9 +68,6 @@ extension OBTransferViewController: UITableViewDataSource {
             return cell
         } else {
             let cell = tableView.dequeueReusableCell(withIdentifier: "OBTransferConfirmCell", for: indexPath) as! OBTransferConfirmCell
-//            cell.selfTransferButton.addTarget(self, action:#selector(selfTransfersPressed), for: .touchUpInside)
-//            cell.phoneTransferButton.addTarget(self, action:#selector(phoneTransferPressed), for: .touchUpInside)
-//            cell.organisationTransferButton.addTarget(self, action:#selector(organisationTransferPressed), for: .touchUpInside)
             return cell
         }
     }
@@ -76,20 +77,56 @@ extension OBTransferViewController: UITableViewDataSource {
 
 extension OBTransferViewController: UITableViewDelegate {
     
-//    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-//        tableView.deselectRow(at: indexPath, animated: true)
-//    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: true)
+    }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        if indexPath.row == 0 {
-            return 77
-        }
-        else if indexPath.row == 1 {
-            return 246
-        } else {
-            return 148
-        }
         
+        switch OBTransferType.transferType {
+        case .selfTransfer:
+            if indexPath.row == 0 {
+                return 77
+            }
+            else if indexPath.row == 1 {
+                return 246
+            } else {
+                return 148
+            }
+        case .phoneTransfer:
+            if indexPath.row == 0 {
+                return 77
+            }
+            else if indexPath.row == 1 {
+                return 246
+            } else {
+                return 148
+            }
+        case .organisationTransfer:
+            if indexPath.row == 0 {
+                return 77
+            }
+            else if indexPath.row == 1 {
+                return 246
+            } else {
+                return 148
+            }
+        case .emailTransfer:
+            if indexPath.row == 0 {
+                return 77
+            }
+            else if indexPath.row == 1 {
+                return 246
+            } else {
+                return 148
+            }
+        }
+    }
+    
+    
+    func tableView(_ tableView: UITableView, shouldHighlightRowAt indexPath: IndexPath) -> Bool {
+        return false
     }
     
 }

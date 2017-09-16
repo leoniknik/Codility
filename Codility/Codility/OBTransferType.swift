@@ -16,6 +16,7 @@ struct OBTransferType {
         case selfTransfer
         case phoneTransfer
         case organisationTransfer
+        case emailTransfer
     }
     
 }

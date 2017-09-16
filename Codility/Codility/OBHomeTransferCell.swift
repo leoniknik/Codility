@@ -16,6 +16,9 @@ class OBHomeTransferCell: UITableViewCell {
     
     @IBOutlet weak var organisationTransferButton: UIButton!
     
+    
+    @IBOutlet weak var emailTransferButton: UIButton!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

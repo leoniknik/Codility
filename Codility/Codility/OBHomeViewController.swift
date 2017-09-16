@@ -51,11 +51,9 @@ class OBHomeViewController: UIViewController {
         OBTransferType.transferType = .organisationTransfer
     }
     
-    
-    // MARK: IBActions
-    
-    @IBAction func goBack(_ sender: OBBackBarButtonItem) {
-        self.navigationController?.popViewController(animated: true)
+    func emailTransferPressed() {
+        self.performSegue(withIdentifier: OBSegueRouter.toTransfer, sender: nil)
+        OBTransferType.transferType = .emailTransfer
     }
     
 }
@@ -79,6 +77,7 @@ extension OBHomeViewController: UITableViewDataSource {
             cell.selfTransferButton.addTarget(self, action:#selector(selfTransfersPressed), for: .touchUpInside)
             cell.phoneTransferButton.addTarget(self, action:#selector(phoneTransferPressed), for: .touchUpInside)
             cell.organisationTransferButton.addTarget(self, action:#selector(organisationTransferPressed), for: .touchUpInside)
+            cell.emailTransferButton.addTarget(self, action:#selector(emailTransferPressed), for: .touchUpInside)
             return cell
         }
         else {
@@ -117,12 +116,22 @@ extension OBHomeViewController: UITableViewDelegate {
         tableView.deselectRow(at: indexPath, animated: true)
     }
     
+    func tableView(_ tableView: UITableView, shouldHighlightRowAt indexPath: IndexPath) -> Bool {
+        if indexPath.row == 0 {
+            return false
+        }
+        if indexPath.row == cards.count + 1 {
+            return false
+        }
+        return true
+    }
+    
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         if indexPath.row == 0 {
             return 40
         }
         if indexPath.row == cards.count + 1 {
-            return 148
+            return 137
         }
         return 60
     }
