@@ -14,6 +14,18 @@ extension UIImage {
         
         static let backward = UIImage(named: "ic_backward")
         
+        static let mir = UIImage(named: "mir")
+        
+        static let masterCard = UIImage(named: "masterCard")
+        
+        static let visa = UIImage(named: "visa")
+        
+        static let people = UIImage(named: "people")
+        
+        static let bank = UIImage(named: "bank")
+        
+        static let phone = UIImage(named: "phone")
+        
     }
     
 }

@@ -11,18 +11,43 @@ import SwiftyJSON
 
 class OBHomeViewController: UIViewController {
 
+    @IBOutlet weak var tableView: UITableView!
+    
+    let sections = ["Мои карты"]
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        
-//        let request = OBCreditCardInfoRequest(rqUID: "123e4567-e89b-12d3-a456-426655440000", cardName: nil)
-//        
-//        OBAPIManager.creditCardsInfoRequest(request: request)
-        
-        OBAPIManager.myCardsRequest()
+        setupTableView()
+    }
+    
+    func setupTableView() {
+        self.tableView.delegate = self
+        self.tableView.dataSource = self
+        self.tableView.tableFooterView = UIView()
+        self.tableView.register(UINib(nibName: "OBCardCell", bundle: nil), forCellReuseIdentifier: "OBCardCell")
+        self.tableView.register(UINib(nibName: "OBSectionHeaderCell", bundle: nil), forCellReuseIdentifier: "OBSectionHeaderCell")
+        self.tableView.register(UINib(nibName: "OBHomeTransferCell", bundle: nil), forCellReuseIdentifier: "OBHomeTransferCell")
+    }
+    
+    // MARK: Transfers
+    
+    func selfTransfersPressed() {
         
     }
-
+    
+    
+    func numberTransferPressed() {
+        
+    }
+    
+    
+    func organisationTransferPressed() {
+        
+    }
+    
+    
+    // MARK: IBActions
+    
     @IBAction func goBack(_ sender: OBBackBarButtonItem) {
         self.navigationController?.popViewController(animated: true)
     }
@@ -30,47 +55,49 @@ class OBHomeViewController: UIViewController {
 }
 
 
-//let json: JSON = [
-//    "RqUID": "123e4567-e89b-12d3-a456-426655440000",
-//    "Deposits": [
-//        "Deposit": [
-//            [
-//                "DepositName": "Доходный",
-//                "DepositMinSum": "10000",
-//                "DepositMinTermRate": "6",
-//                "DepositMaxTermRate": "60",
-//                "Rates": [
-//                    [
-//                        "Rate": [
-//                            [
-//                                "DepositSum": "20000",
-//                                "DepositTermRate": "16"
-//                            ],
-//                            [
-//                                "DepositSum": "15000",
-//                                "DepositTermRate": "15"
-//                            ]
-//                        ]
-//                    ]
-//                ]
-//            ],
-//            [
-//                "DepositName": "Выгодный",
-//                "DepositMinSum": "100000",
-//                "DepositMinTermRate": "12",
-//                "DepositMaxTermRate": "120",
-//                "DepositCapitalisation": "12",
-//                "Rates": [
-//                    [
-//                        "Rate": [
-//                            [
-//                                "DepositSum": "100000",
-//                                "DepositTermRate": "15"
-//                            ]
-//                        ]
-//                    ]
-//                ]
-//            ]
-//        ]
-//    ]
-//]
+extension OBHomeViewController: UITableViewDataSource {
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 5 // заглушка
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        
+        if indexPath.row == 0 {
+            let cell = tableView.dequeueReusableCell(withIdentifier: "OBSectionHeaderCell", for: indexPath) as! OBSectionHeaderCell
+            cell.titleLabel.text = self.sections[0]
+            return cell
+        }
+        if indexPath.row == 4 {
+            let cell = tableView.dequeueReusableCell(withIdentifier: "OBHomeTransferCell", for: indexPath) as! OBHomeTransferCell
+            
+            return cell
+        }
+        else {
+            let cell = tableView.dequeueReusableCell(withIdentifier: "OBCardCell", for: indexPath) as! OBCardCell
+            cell.icon.image = UIImage.OBImage.visa
+            return cell
+        }
+        
+    }
+    
+
+}
+
+extension OBHomeViewController: UITableViewDelegate {
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: true)
+    }
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        if indexPath.row == 0 {
+            return 40
+        }
+        if indexPath.row == 4 {
+            return 124
+        }
+        return 60
+    }
+    
+}

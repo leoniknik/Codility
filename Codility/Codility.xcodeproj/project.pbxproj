@@ -35,6 +35,12 @@
 		CAB5C98E1F6D226F00A93564 /* OBMyCardBalanceResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAB5C98D1F6D226F00A93564 /* OBMyCardBalanceResponse.swift */; };
 		CAB5C9901F6D2B3400A93564 /* OBMyCardHistoryRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAB5C98F1F6D2B3400A93564 /* OBMyCardHistoryRequest.swift */; };
 		CAB5C9921F6D2BAA00A93564 /* OBMyCardHistoryResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAB5C9911F6D2BAA00A93564 /* OBMyCardHistoryResponse.swift */; };
+		CAB5C9951F6D363A00A93564 /* OBSectionHeaderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAB5C9931F6D363A00A93564 /* OBSectionHeaderCell.swift */; };
+		CAB5C9961F6D363A00A93564 /* OBSectionHeaderCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CAB5C9941F6D363A00A93564 /* OBSectionHeaderCell.xib */; };
+		CAB5C9991F6D373800A93564 /* OBCardCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAB5C9971F6D373800A93564 /* OBCardCell.swift */; };
+		CAB5C99A1F6D373800A93564 /* OBCardCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CAB5C9981F6D373800A93564 /* OBCardCell.xib */; };
+		CAB5C9A01F6D4E9A00A93564 /* OBHomeTransferCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAB5C99E1F6D4E9A00A93564 /* OBHomeTransferCell.swift */; };
+		CAB5C9A11F6D4E9A00A93564 /* OBHomeTransferCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CAB5C99F1F6D4E9A00A93564 /* OBHomeTransferCell.xib */; };
 		CAB7CBCC1F6A9AE600917348 /* UIImage+OBImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAB7CBCB1F6A9AE600917348 /* UIImage+OBImage.swift */; };
 		CAB7CBCE1F6AA62900917348 /* OBBackBarButtonItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAB7CBCD1F6AA62900917348 /* OBBackBarButtonItem.swift */; };
 		CAB7CBD01F6AA9DD00917348 /* OBHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAB7CBCF1F6AA9DD00917348 /* OBHomeViewController.swift */; };
@@ -72,6 +78,12 @@
 		CAB5C98D1F6D226F00A93564 /* OBMyCardBalanceResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OBMyCardBalanceResponse.swift; sourceTree = "<group>"; };
 		CAB5C98F1F6D2B3400A93564 /* OBMyCardHistoryRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OBMyCardHistoryRequest.swift; sourceTree = "<group>"; };
 		CAB5C9911F6D2BAA00A93564 /* OBMyCardHistoryResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OBMyCardHistoryResponse.swift; sourceTree = "<group>"; };
+		CAB5C9931F6D363A00A93564 /* OBSectionHeaderCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OBSectionHeaderCell.swift; sourceTree = "<group>"; };
+		CAB5C9941F6D363A00A93564 /* OBSectionHeaderCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OBSectionHeaderCell.xib; sourceTree = "<group>"; };
+		CAB5C9971F6D373800A93564 /* OBCardCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OBCardCell.swift; sourceTree = "<group>"; };
+		CAB5C9981F6D373800A93564 /* OBCardCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OBCardCell.xib; sourceTree = "<group>"; };
+		CAB5C99E1F6D4E9A00A93564 /* OBHomeTransferCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OBHomeTransferCell.swift; sourceTree = "<group>"; };
+		CAB5C99F1F6D4E9A00A93564 /* OBHomeTransferCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OBHomeTransferCell.xib; sourceTree = "<group>"; };
 		CAB7CBCB1F6A9AE600917348 /* UIImage+OBImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+OBImage.swift"; sourceTree = "<group>"; };
 		CAB7CBCD1F6AA62900917348 /* OBBackBarButtonItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OBBackBarButtonItem.swift; sourceTree = "<group>"; };
 		CAB7CBCF1F6AA9DD00917348 /* OBHomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OBHomeViewController.swift; sourceTree = "<group>"; };
@@ -199,6 +211,12 @@
 		CA916E4C1F6A75FD008F79F5 /* Cells */ = {
 			isa = PBXGroup;
 			children = (
+				CAB5C9931F6D363A00A93564 /* OBSectionHeaderCell.swift */,
+				CAB5C9941F6D363A00A93564 /* OBSectionHeaderCell.xib */,
+				CAB5C9971F6D373800A93564 /* OBCardCell.swift */,
+				CAB5C9981F6D373800A93564 /* OBCardCell.xib */,
+				CAB5C99E1F6D4E9A00A93564 /* OBHomeTransferCell.swift */,
+				CAB5C99F1F6D4E9A00A93564 /* OBHomeTransferCell.xib */,
 			);
 			name = Cells;
 			sourceTree = "<group>";
@@ -326,6 +344,9 @@
 				CA609B221F69C4720090E4CA /* LaunchScreen.storyboard in Resources */,
 				CA609B1F1F69C4720090E4CA /* Assets.xcassets in Resources */,
 				CA609B1D1F69C4720090E4CA /* Main.storyboard in Resources */,
+				CAB5C9A11F6D4E9A00A93564 /* OBHomeTransferCell.xib in Resources */,
+				CAB5C99A1F6D373800A93564 /* OBCardCell.xib in Resources */,
+				CAB5C9961F6D363A00A93564 /* OBSectionHeaderCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -386,6 +407,7 @@
 			files = (
 				CA916E511F6A7BD1008F79F5 /* OBNavigationController.swift in Sources */,
 				CAB5C9901F6D2B3400A93564 /* OBMyCardHistoryRequest.swift in Sources */,
+				CAB5C9991F6D373800A93564 /* OBCardCell.swift in Sources */,
 				CAB5C96A1F6C6E3800A93564 /* OBURLRouter.swift in Sources */,
 				CAB7CBCC1F6A9AE600917348 /* UIImage+OBImage.swift in Sources */,
 				CAB5C9851F6D120600A93564 /* OBMyCard.swift in Sources */,
@@ -397,6 +419,7 @@
 				CAB5C9701F6C769900A93564 /* OBCard.swift in Sources */,
 				CAB5C9831F6D114500A93564 /* OBMyCardsResponse.swift in Sources */,
 				CAB5C97B1F6C8C3100A93564 /* OBCredit.swift in Sources */,
+				CAB5C9951F6D363A00A93564 /* OBSectionHeaderCell.swift in Sources */,
 				CAB7CBCE1F6AA62900917348 /* OBBackBarButtonItem.swift in Sources */,
 				CAB5C97D1F6C9C7700A93564 /* OBDepositsInfoRequest.swift in Sources */,
 				CAB5C98E1F6D226F00A93564 /* OBMyCardBalanceResponse.swift in Sources */,
@@ -409,6 +432,7 @@
 				CAB5C9921F6D2BAA00A93564 /* OBMyCardHistoryResponse.swift in Sources */,
 				CAB5C9721F6C800600A93564 /* Notification+OBNotificationName.swift in Sources */,
 				CA609B181F69C4720090E4CA /* AppDelegate.swift in Sources */,
+				CAB5C9A01F6D4E9A00A93564 /* OBHomeTransferCell.swift in Sources */,
 				CAB5C9751F6C81AD00A93564 /* OBCreditCardInfoRequest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
