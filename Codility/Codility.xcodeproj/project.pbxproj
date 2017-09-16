@@ -49,6 +49,7 @@
 		CAB5C9B21F6D710100A93564 /* OBAccountTransferCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CAB5C9B01F6D710100A93564 /* OBAccountTransferCell.xib */; };
 		CAB5C9B51F6D713800A93564 /* OBTransferConfirmCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAB5C9B31F6D713800A93564 /* OBTransferConfirmCell.swift */; };
 		CAB5C9B61F6D713800A93564 /* OBTransferConfirmCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CAB5C9B41F6D713800A93564 /* OBTransferConfirmCell.xib */; };
+		CAB5C9B81F6D8AF900A93564 /* OBDatabaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAB5C9B71F6D8AF900A93564 /* OBDatabaseManager.swift */; };
 		CAB7CBCC1F6A9AE600917348 /* UIImage+OBImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAB7CBCB1F6A9AE600917348 /* UIImage+OBImage.swift */; };
 		CAB7CBCE1F6AA62900917348 /* OBBackBarButtonItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAB7CBCD1F6AA62900917348 /* OBBackBarButtonItem.swift */; };
 		CAB7CBD01F6AA9DD00917348 /* OBHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAB7CBCF1F6AA9DD00917348 /* OBHomeViewController.swift */; };
@@ -100,6 +101,7 @@
 		CAB5C9B01F6D710100A93564 /* OBAccountTransferCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OBAccountTransferCell.xib; sourceTree = "<group>"; };
 		CAB5C9B31F6D713800A93564 /* OBTransferConfirmCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OBTransferConfirmCell.swift; sourceTree = "<group>"; };
 		CAB5C9B41F6D713800A93564 /* OBTransferConfirmCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OBTransferConfirmCell.xib; sourceTree = "<group>"; };
+		CAB5C9B71F6D8AF900A93564 /* OBDatabaseManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OBDatabaseManager.swift; sourceTree = "<group>"; };
 		CAB7CBCB1F6A9AE600917348 /* UIImage+OBImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+OBImage.swift"; sourceTree = "<group>"; };
 		CAB7CBCD1F6AA62900917348 /* OBBackBarButtonItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OBBackBarButtonItem.swift; sourceTree = "<group>"; };
 		CAB7CBCF1F6AA9DD00917348 /* OBHomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OBHomeViewController.swift; sourceTree = "<group>"; };
@@ -223,6 +225,7 @@
 				CAB5C96B1F6C71E200A93564 /* API */,
 				CAB5C9A21F6D64BE00A93564 /* OBSegueRouter.swift */,
 				CAB5C9A41F6D659300A93564 /* OBTransferType.swift */,
+				CAB5C9B71F6D8AF900A93564 /* OBDatabaseManager.swift */,
 			);
 			name = Helpers;
 			sourceTree = "<group>";
@@ -450,6 +453,7 @@
 				CA916E511F6A7BD1008F79F5 /* OBNavigationController.swift in Sources */,
 				CAB5C9B11F6D710100A93564 /* OBAccountTransferCell.swift in Sources */,
 				CAB5C9901F6D2B3400A93564 /* OBMyCardHistoryRequest.swift in Sources */,
+				CAB5C9B81F6D8AF900A93564 /* OBDatabaseManager.swift in Sources */,
 				CAB5C9991F6D373800A93564 /* OBCardCell.swift in Sources */,
 				CAB5C96A1F6C6E3800A93564 /* OBURLRouter.swift in Sources */,
 				CAB7CBCC1F6A9AE600917348 /* UIImage+OBImage.swift in Sources */,
