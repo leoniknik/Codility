@@ -21,35 +21,29 @@ class OBTouchIDViewController: UIViewController {
     
     @IBAction func loginButtonClicked(_ sender: UIButton) {
     
-        
-        // 1. Create a authentication context
         let authenticationContext = LAContext()
         var error: NSError?
         
-        // 2. Check if the device has a fingerprint sensor
-        // If not, show the user an alert view and bail out!
         guard authenticationContext.canEvaluatePolicy(.deviceOwnerAuthenticationWithBiometrics, error: &error) else {
             
             showAlertViewIfNoBiometricSensorHasBeenDetected()
             return
             
         }
-        
-        // 3. Check the fingerprint
+
         authenticationContext.evaluatePolicy(
             .deviceOwnerAuthenticationWithBiometrics,
             localizedReason: "Авторизуйтесь!",
             reply: { [unowned self] (success, error) -> Void in
                 
                 if( success ) {
-                    
-                    // Fingerprint recognized
-                    // Go to view controller
-                    self.navigateToAuthenticatedViewController()
+
+                    DispatchQueue.main.async {
+                        self.navigateToAuthenticatedViewController()
+                    }
                     
                 }else {
                     
-                    // Check if there is an error
                     if let error = error {
                         self.showAlertViewAfterEvaluatingPolicyWithMessage(error.localizedDescription)
                     }
