@@ -5,6 +5,7 @@
 //  Created by Aleksander Evtuhov on 16/09/2017.
 //  Copyright © 2017 Aleksander Evtuhov. All rights reserved.
 //
+//
 
 import Foundation
 class BankATM{
