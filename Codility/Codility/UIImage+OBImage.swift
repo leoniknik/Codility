@@ -39,6 +39,11 @@ extension UIImage {
         
         static let phone = UIImage(named: "phone")!
         
+        static let peopleHome = UIImage(named: "peopleHome")!
+        static let bankHome = UIImage(named: "bankHome")!
+        static let phoneHome = UIImage(named: "phoneHome")!
+        static let emailHome = UIImage(named: "emailHome")!
+        
     }
     
 }

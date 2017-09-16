@@ -66,6 +66,6 @@
         </tableViewCell>
     </objects>
     <resources>
-        <image name="phoneHome" width="53" height="43"/>
+        <image name="phoneHome" width="44" height="47"/>
     </resources>
 </document>

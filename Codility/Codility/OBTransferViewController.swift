@@ -54,22 +54,81 @@ class OBTransferViewController: UIViewController {
 extension OBTransferViewController: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 3 // заглушка
+        switch OBTransferType.transferType {
+        case .selfTransfer:
+            return 3
+        case .phoneTransfer:
+            return 3
+        case .organisationTransfer:
+            return 2
+        case .emailTransfer:
+            return 3
+        }
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-        if indexPath.row == 0 {
-            let cell = tableView.dequeueReusableCell(withIdentifier: "OBSimpleTransferCell", for: indexPath) as! OBSimpleTransferCell
-            return cell
+        switch OBTransferType.transferType {
+        case .selfTransfer:
+            if indexPath.row == 0 {
+                let cell = tableView.dequeueReusableCell(withIdentifier: "OBSimpleTransferCell", for: indexPath) as! OBSimpleTransferCell
+                cell.button.setImage(UIImage.OBImage.peopleHome, for: .normal)
+                cell.textField.placeholder = "Введите номер карты"
+                return cell
+            }
+            else if indexPath.row == 1 {
+                let cell = tableView.dequeueReusableCell(withIdentifier: "OBSimpleTransferCell", for: indexPath) as! OBSimpleTransferCell
+                cell.button.setImage(UIImage.OBImage.peopleHome, for: .normal)
+                cell.titleLabel.text = "Куда перевести"
+                cell.textField.placeholder = "Введите номер карты"
+                return cell
+            } else {
+                let cell = tableView.dequeueReusableCell(withIdentifier: "OBTransferConfirmCell", for: indexPath) as! OBTransferConfirmCell
+                return cell
+            }
+        case .phoneTransfer:
+            if indexPath.row == 0 {
+                let cell = tableView.dequeueReusableCell(withIdentifier: "OBSimpleTransferCell", for: indexPath) as! OBSimpleTransferCell
+                cell.button.setImage(UIImage.OBImage.peopleHome, for: .normal)
+                cell.textField.placeholder = "Введите номер карты"
+                return cell
+            }
+            else if indexPath.row == 1 {
+                let cell = tableView.dequeueReusableCell(withIdentifier: "OBSimpleTransferCell", for: indexPath) as! OBSimpleTransferCell
+                cell.button.setImage(UIImage.OBImage.phoneHome, for: .normal)
+                cell.titleLabel.text = "Куда перевести"
+                return cell
+            } else {
+                let cell = tableView.dequeueReusableCell(withIdentifier: "OBTransferConfirmCell", for: indexPath) as! OBTransferConfirmCell
+                return cell
+            }
+        case .organisationTransfer:
+            if indexPath.row == 0 {
+                let cell = tableView.dequeueReusableCell(withIdentifier: "OBAccountTransferCell", for: indexPath) as! OBAccountTransferCell
+                return cell
+            } else {
+                let cell = tableView.dequeueReusableCell(withIdentifier: "OBTransferConfirmCell", for: indexPath) as! OBTransferConfirmCell
+                return cell
+            }
+        case .emailTransfer:
+            if indexPath.row == 0 {
+                let cell = tableView.dequeueReusableCell(withIdentifier: "OBSimpleTransferCell", for: indexPath) as! OBSimpleTransferCell
+                cell.button.setImage(UIImage.OBImage.peopleHome, for: .normal)
+                cell.textField.placeholder = "Введите номер карты"
+                return cell
+            }
+            else if indexPath.row == 1 {
+                let cell = tableView.dequeueReusableCell(withIdentifier: "OBSimpleTransferCell", for: indexPath) as! OBSimpleTransferCell
+                cell.button.setImage(UIImage.OBImage.emailHome, for: .normal)
+                cell.titleLabel.text = "Куда перевести"
+                cell.textField.placeholder = "Введите e-mail"
+                return cell
+            } else {
+                let cell = tableView.dequeueReusableCell(withIdentifier: "OBTransferConfirmCell", for: indexPath) as! OBTransferConfirmCell
+                return cell
+            }
         }
-        else if indexPath.row == 1 {
-            let cell = tableView.dequeueReusableCell(withIdentifier: "OBAccountTransferCell", for: indexPath) as! OBAccountTransferCell
-            return cell
-        } else {
-            let cell = tableView.dequeueReusableCell(withIdentifier: "OBTransferConfirmCell", for: indexPath) as! OBTransferConfirmCell
-            return cell
-        }
+
     }
     
     
@@ -84,13 +143,18 @@ extension OBTransferViewController: UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         
+        return getHeightForCurrentTransferType(indexPath)
+        
+    }
+    
+    func getHeightForCurrentTransferType(_ indexPath: IndexPath) -> CGFloat {
         switch OBTransferType.transferType {
         case .selfTransfer:
             if indexPath.row == 0 {
                 return 77
             }
             else if indexPath.row == 1 {
-                return 246
+                return 77
             } else {
                 return 148
             }
@@ -99,15 +163,12 @@ extension OBTransferViewController: UITableViewDelegate {
                 return 77
             }
             else if indexPath.row == 1 {
-                return 246
+                return 77
             } else {
                 return 148
             }
         case .organisationTransfer:
             if indexPath.row == 0 {
-                return 77
-            }
-            else if indexPath.row == 1 {
                 return 246
             } else {
                 return 148
@@ -117,13 +178,12 @@ extension OBTransferViewController: UITableViewDelegate {
                 return 77
             }
             else if indexPath.row == 1 {
-                return 246
+                return 77
             } else {
                 return 148
             }
         }
     }
-    
     
     func tableView(_ tableView: UITableView, shouldHighlightRowAt indexPath: IndexPath) -> Bool {
         return false
