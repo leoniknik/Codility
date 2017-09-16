@@ -9,5 +9,6 @@ target 'Codility' do
   pod 'RealmSwift'
   pod 'Alamofire'
   pod 'SwiftyJSON'
+  pod 'MFCard'
   
 end

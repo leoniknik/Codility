@@ -8,7 +8,7 @@
 
 import Foundation
 
-class Card {
+class OBCard {
     var name: String = "" //Название карты
     var type: String = "" //Тип карты = ['debit', 'credit'],
     var paymentSystem: String = "" //Тип платежной системы = ['visa', 'mastercard', 'mir'],

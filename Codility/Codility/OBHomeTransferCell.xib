@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="OBHomeTransferCell" rowHeight="124" id="KGk-i7-Jjw" customClass="OBHomeTransferCell" customModule="Codility" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="124"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="123.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="По номеру телефона" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OVY-FA-hMA">
+                        <rect key="frame" x="126" y="81" width="77" height="37"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="37" id="8oj-BD-eRY"/>
+                            <constraint firstAttribute="width" constant="77" id="GPh-nH-XHf"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <stackView opaque="NO" contentMode="scaleToFill" spacing="35" translatesAutoresizingMaskIntoConstraints="NO" id="f6c-JM-puf">
+                        <rect key="frame" x="54" y="31" width="220" height="50"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CGq-P8-xQs">
+                                <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="BJk-jP-gal"/>
+                                </constraints>
+                                <state key="normal" title="Button" image="peopleHome"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Paf-qY-Jxx">
+                                <rect key="frame" x="85" y="0.0" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="lkh-dR-LZU"/>
+                                </constraints>
+                                <state key="normal" title="Button" image="phoneHome"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e1u-YS-Ou2">
+                                <rect key="frame" x="170" y="0.0" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="zpE-Hj-h1l"/>
+                                </constraints>
+                                <state key="normal" title="Button" image="accountHome"/>
+                            </button>
+                        </subviews>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="50" id="ApA-pS-GEp"/>
+                        </constraints>
+                    </stackView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="На счет организации" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lcX-go-cIn">
+                        <rect key="frame" x="206" y="81" width="85" height="37"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="85" id="3fV-6T-hr5"/>
+                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="85" id="Gb3-D7-4sD"/>
+                            <constraint firstAttribute="height" constant="37" id="dCj-bl-IeY"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="  Платежи и переводы" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OkP-GI-1dc">
+                        <rect key="frame" x="0.0" y="2" width="320" height="21"/>
+                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Между своими счетами" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XPL-Ga-GvT">
+                        <rect key="frame" x="32" y="81" width="90" height="37"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="90" id="O2d-UP-92q"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottomMargin" secondItem="OVY-FA-hMA" secondAttribute="bottom" constant="-2.5" id="6hQ-lY-eFn"/>
+                    <constraint firstItem="OkP-GI-1dc" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="2" id="CDc-rN-0IH"/>
+                    <constraint firstItem="f6c-JM-puf" firstAttribute="top" secondItem="OkP-GI-1dc" secondAttribute="bottom" constant="8" id="CE5-K3-aVZ"/>
+                    <constraint firstItem="f6c-JM-puf" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="23" id="Hbe-O5-YPv"/>
+                    <constraint firstItem="OVY-FA-hMA" firstAttribute="leading" secondItem="XPL-Ga-GvT" secondAttribute="trailing" constant="4" id="KFO-hr-NZJ"/>
+                    <constraint firstAttribute="trailing" secondItem="OkP-GI-1dc" secondAttribute="trailing" id="QkK-L3-fA8"/>
+                    <constraint firstItem="OkP-GI-1dc" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="Xh3-ZT-epF"/>
+                    <constraint firstItem="OVY-FA-hMA" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" constant="4.5" id="Yjl-4Y-nHT"/>
+                    <constraint firstItem="f6c-JM-puf" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" constant="4" id="YkM-yf-Wr8"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="XPL-Ga-GvT" secondAttribute="bottom" constant="-2.5" id="dU9-Ad-l7G"/>
+                    <constraint firstItem="XPL-Ga-GvT" firstAttribute="top" secondItem="f6c-JM-puf" secondAttribute="bottom" id="ieE-Rb-p20"/>
+                    <constraint firstItem="lcX-go-cIn" firstAttribute="top" secondItem="f6c-JM-puf" secondAttribute="bottom" id="lMe-c4-XYt"/>
+                    <constraint firstItem="lcX-go-cIn" firstAttribute="leading" secondItem="OVY-FA-hMA" secondAttribute="trailing" constant="3" id="zKh-5L-lFg"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="organisationTransferButton" destination="e1u-YS-Ou2" id="HZy-e5-wYN"/>
+                <outlet property="phoneTransferButton" destination="Paf-qY-Jxx" id="xjl-Wf-7sA"/>
+                <outlet property="selfTransferButton" destination="CGq-P8-xQs" id="UDk-8l-Mrg"/>
+            </connections>
+            <point key="canvasLocation" x="-105" y="-31"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="accountHome" width="48" height="52"/>
+        <image name="peopleHome" width="65" height="52"/>
+        <image name="phoneHome" width="53" height="43"/>
+    </resources>
+</document>
