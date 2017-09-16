@@ -16,12 +16,12 @@ class OBMyCardsResponse {
     
     init(json: JSON) {
         self.json = json
-        for item in json["Cards"].arrayValue {
+        for item in json["Cards"]["Card"].arrayValue {
             let card = OBMyCard()
             card.name = item["CardName"].string!
             card.type = item["CardType"].string!
             card.paymentSystem = item["CardPaymentSystem"].string!
-            card.id = item["CardId"].int!
+            card.id = Int(item["CardId"].string!) ?? 0
             cards.append(card)
         }
     }

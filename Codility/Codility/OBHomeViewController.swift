@@ -7,13 +7,16 @@
 //
 
 import UIKit
-import SwiftyJSON
+import RealmSwift
+
 
 class OBHomeViewController: UIViewController {
 
     @IBOutlet weak var tableView: UITableView!
     
     let headers = ["Мои карты"]
+    
+    var cards: Results<OBMyCard> = OBDatabaseManager.getCards()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -61,7 +64,7 @@ class OBHomeViewController: UIViewController {
 extension OBHomeViewController: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 5 // заглушка
+        return cards.count + 2
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -71,7 +74,7 @@ extension OBHomeViewController: UITableViewDataSource {
             cell.titleLabel.text = self.headers[0]
             return cell
         }
-        if indexPath.row == 4 {
+        if indexPath.row == cards.count + 1 {
             let cell = tableView.dequeueReusableCell(withIdentifier: "OBHomeTransferCell", for: indexPath) as! OBHomeTransferCell
             cell.selfTransferButton.addTarget(self, action:#selector(selfTransfersPressed), for: .touchUpInside)
             cell.phoneTransferButton.addTarget(self, action:#selector(phoneTransferPressed), for: .touchUpInside)
@@ -80,7 +83,26 @@ extension OBHomeViewController: UITableViewDataSource {
         }
         else {
             let cell = tableView.dequeueReusableCell(withIdentifier: "OBCardCell", for: indexPath) as! OBCardCell
-            cell.icon.image = UIImage.OBImage.visa
+            
+            let paymentSystem = cards[indexPath.row - 1].paymentSystem
+            cell.icon.image = UIImage.OBImage.getCardImageForType(type: paymentSystem)
+            
+            if indexPath.row % 2 == 0 {
+                cell.cardNumber.text = "**** 5879"
+            }
+            else {
+                cell.cardNumber.text = "**** 7704"
+            }
+            
+            let type = cards[indexPath.row - 1].type
+            
+            if type == "credit" {
+                cell.cardType.text = "Кредитная"
+            }
+            if type == "debit" {
+                cell.cardType.text = "Дебетовая"
+            }
+            
             return cell
         }
         
@@ -99,7 +121,7 @@ extension OBHomeViewController: UITableViewDelegate {
         if indexPath.row == 0 {
             return 40
         }
-        if indexPath.row == 4 {
+        if indexPath.row == cards.count + 1 {
             return 148
         }
         return 60

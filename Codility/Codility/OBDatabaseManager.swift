@@ -13,6 +13,20 @@ class OBDatabaseManager {
     
     private static var realm = try! Realm()
     
+    class func saveCards(response: OBMyCardsResponse) {
+        
+        for card in response.cards {
+            save(object: card)
+        }
+        
+    }
+    
+    class func getCards() -> Results<OBMyCard> {
+        
+        return realm.objects(OBMyCard.self)
+        
+    }
+    
 //    class func setFlagOn(song: ThreadSafeReference<Song>) {
 //        
 //        let realm = try! Realm()

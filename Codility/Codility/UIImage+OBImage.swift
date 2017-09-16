@@ -12,19 +12,32 @@ extension UIImage {
     
     struct OBImage {
         
-        static let backward = UIImage(named: "ic_backward")
+        static func getCardImageForType(type: String) -> UIImage {
+            switch type {
+            case "mir":
+                return mir
+            case "visa":
+                return visa
+            case "masterCard":
+                return masterCard
+            default:
+                return UIImage()
+            }
+        }
         
-        static let mir = UIImage(named: "mir")
+        static let backward = UIImage(named: "ic_backward")!
         
-        static let masterCard = UIImage(named: "masterCard")
+        static let mir = UIImage(named: "mir")!
         
-        static let visa = UIImage(named: "visa")
+        static let masterCard = UIImage(named: "masterCard")!
         
-        static let people = UIImage(named: "people")
+        static let visa = UIImage(named: "visa")!
         
-        static let bank = UIImage(named: "bank")
+        static let people = UIImage(named: "people")!
         
-        static let phone = UIImage(named: "phone")
+        static let bank = UIImage(named: "bank")!
+        
+        static let phone = UIImage(named: "phone")!
         
     }
     
