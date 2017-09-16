@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="Fcf-NF-N8X">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -9,7 +13,7 @@
         <!--Choose Service View Controller-->
         <scene sceneID="fzj-vx-P8K">
             <objects>
-                <viewController id="1bi-Jg-cmc" customClass="OBChooseServiceViewController" customModule="OpenBank" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="1bi-Jg-cmc" customClass="OBChooseServiceViewController" customModule="Codility" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="gnW-eE-5qb"/>
                         <viewControllerLayoutGuide type="bottom" id="B3Q-zu-o0M"/>
@@ -22,7 +26,7 @@
                                 <rect key="frame" x="0.0" y="124" width="375" height="543"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ServiceCell" rowHeight="74" id="J7X-Ik-Van" customClass="ServiceCell" customModule="OpenBank" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ServiceCell" rowHeight="74" id="J7X-Ik-Van" customClass="ServiceCell" customModule="Codility" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="375" height="74"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="J7X-Ik-Van" id="Qn7-zS-EnV">
@@ -86,20 +90,20 @@
         <!--Select BankATM Outlet View Controller-->
         <scene sceneID="gUS-ll-k7q">
             <objects>
-                <viewController id="Fcf-NF-N8X" customClass="OBSelectBankATMOutletViewController" customModule="OpenBank" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="Fcf-NF-N8X" customClass="OBSelectBankATMOutletViewController" customModule="Codility" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="dZt-2O-hzD"/>
                         <viewControllerLayoutGuide type="bottom" id="kt7-D8-046"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="1uH-AY-SzV">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="98" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="4dq-UY-2Uv">
                                 <rect key="frame" x="16" y="72" width="343" height="595"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ATMCell" rowHeight="98" id="8ou-gi-CvR" customClass="BankATMCell" customModule="OpenBank" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ATMCell" rowHeight="98" id="8ou-gi-CvR" customClass="BankATMCell" customModule="Codility" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="343" height="98"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="8ou-gi-CvR" id="9DV-vk-L7z">
@@ -135,7 +139,7 @@
                                             <outlet property="timetable" destination="uBG-Fg-StP" id="tD4-83-nYz"/>
                                         </connections>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="OutletCell" rowHeight="125" id="P84-Km-lo2" customClass="BankOutletCell" customModule="OpenBank" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="OutletCell" rowHeight="125" id="P84-Km-lo2" customClass="BankOutletCell" customModule="Codility" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="126" width="343" height="125"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="P84-Km-lo2" id="98r-Ah-tXN">
@@ -197,7 +201,6 @@
                         </constraints>
                     </view>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4_7.fullscreen"/>
                     <connections>
                         <outlet property="tableView" destination="4dq-UY-2Uv" id="RvD-vE-7Rh"/>
                         <segue destination="1bi-Jg-cmc" kind="show" identifier="toChooseService" id="0c6-w7-IUk"/>
@@ -210,7 +213,7 @@
         <!--Ordered Service View Controller-->
         <scene sceneID="Yiu-Wc-dGI">
             <objects>
-                <viewController id="c9z-JD-7TT" customClass="OBOrderedServiceViewController" customModule="OpenBank" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="c9z-JD-7TT" customClass="OBOrderedServiceViewController" customModule="Codility" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="UIz-q1-iHb"/>
                         <viewControllerLayoutGuide type="bottom" id="yJI-7f-GsI"/>
