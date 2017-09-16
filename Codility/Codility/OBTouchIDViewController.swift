@@ -25,7 +25,6 @@ class OBTouchIDViewController: UIViewController {
         var error: NSError?
         
         guard authenticationContext.canEvaluatePolicy(.deviceOwnerAuthenticationWithBiometrics, error: &error) else {
-            
             showAlertViewIfNoBiometricSensorHasBeenDetected()
             return
             
@@ -33,23 +32,15 @@ class OBTouchIDViewController: UIViewController {
 
         authenticationContext.evaluatePolicy(
             .deviceOwnerAuthenticationWithBiometrics,
-            localizedReason: "Авторизуйтесь!",
+            localizedReason: "Авторизуйтесь",
             reply: { [unowned self] (success, error) -> Void in
-                
-                if( success ) {
-
+                if(success) {
                     DispatchQueue.main.async {
                         self.navigateToAuthenticatedViewController()
                     }
-                    
                 }else {
                     
-                    if let error = error {
-                        self.showAlertViewAfterEvaluatingPolicyWithMessage(error.localizedDescription)
-                    }
-                    
                 }
-                
         })
         
     }
@@ -62,18 +53,11 @@ class OBTouchIDViewController: UIViewController {
     }
     
     
-    func showAlertViewAfterEvaluatingPolicyWithMessage( _ message:String ){
-        
-        showAlertWithTitle("Error", message: message)
-        
-    }
-    
-    
     func showAlertWithTitle( _ title:String, message:String ) {
         
         let alertVC = UIAlertController(title: title, message: message, preferredStyle: .alert)
         
-        let okAction = UIAlertAction(title: "Ok", style: .default, handler: nil)
+        let okAction = UIAlertAction(title: "Хорошо", style: .default, handler: nil)
         alertVC.addAction(okAction)
         
         DispatchQueue.main.async { () -> Void in

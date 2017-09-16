@@ -11,5 +11,6 @@ target 'Codility' do
   pod 'SwiftyJSON'
   pod 'MFCard'
   pod 'EPContactsPicker'
+  pod 'RNCryptor', '~> 5.0'
   
 end

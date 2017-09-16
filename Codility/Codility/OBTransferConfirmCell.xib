@@ -31,15 +31,15 @@
                             <constraint firstAttribute="width" constant="60" id="Ci3-YZ-XZg"/>
                             <constraint firstAttribute="height" constant="60" id="LnL-8U-riU"/>
                         </constraints>
-                        <state key="normal" image="phoneHome"/>
+                        <state key="normal" backgroundImage="ic_link"/>
                     </button>
                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zc3-TS-O5y">
                         <rect key="frame" x="50.5" y="72" width="60" height="60"/>
-                        <state key="normal" image="phoneHome"/>
+                        <state key="normal" backgroundImage="ic_qr"/>
                     </button>
                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qjv-RF-YkD">
                         <rect key="frame" x="130.5" y="72" width="60" height="60"/>
-                        <state key="normal" image="phoneHome"/>
+                        <state key="normal" backgroundImage="ic_done_green"/>
                     </button>
                 </subviews>
                 <constraints>
@@ -69,6 +69,8 @@
         </tableViewCell>
     </objects>
     <resources>
-        <image name="phoneHome" width="44" height="47"/>
+        <image name="ic_done_green" width="30" height="30"/>
+        <image name="ic_link" width="30" height="30"/>
+        <image name="ic_qr" width="30" height="30"/>
     </resources>
 </document>
