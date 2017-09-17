@@ -140,8 +140,11 @@ class OBAPIManager {
     class func myCardHistoryRequest(request: OBMyCardHistoryRequest) -> Void {
         
         let parameters: Parameters = [
-            "CardId": request.id
+            "CardId": "44"
         ]
+        
+//        var headers = Alamofire.SessionManager.defaultHTTPHeaders
+//        headers["User-Agent"] = "iPhone"
         
         self.request(URL: OBURLRouter.getMyCardHistoryURL, method: .post, parameters: parameters, onSuccess: myCardHistoryOnSuccess, onError: defaultOnError)
         
@@ -155,27 +158,43 @@ class OBAPIManager {
     
     //invoicing
     
-    class func myCardHistoryRequest(request: OBCreateInvoiceRequest) -> Void {
+    class func createInvoiceRequest(request: OBCreateInvoiceRequest) -> Void {
         
         let parameters: Parameters = [
             
-            "RqUID": request.rqUID,
+//            "RqUID": "123e4567-e89b-12d3-a456-426655440000",
+//            
+//            "InvoiceCreateNumber": 123456789,
+//            "InvoiceCreateDate": "01.01.2017",
+//            "InvoiceCreateSum": request.invoiceCreateSum,
+//            
+//            "InvoiceCreatePayerINN": request.invoiceCreatePayerINN,
+//            "InvoiceCreatePayerAcc": request.invoiceCreatePayerAcc,
+//            "InvoiceCreatePayerBIK": request.invoiceCreatePayerBIK,
+//            "InvoiceCreatePayerCorrAcc": request.invoiceCreatePayerCorrAcc,
+//            "InvoiceCreatePayerBankname": request.invoiceCreatePayerBankname,
+//            
+//            "InvoiceCreatePayeeINN": request.invoiceCreatePayeeINN,
+//            "InvoiceCreatePayeeAcc": request.invoiceCreatePayeeAcc,
+//            "InvoiceCreatePayeeBIK": request.invoiceCreatePayeeBIK,
+//            "InvoiceCreatePayeeCorrAcc": request.invoiceCreatePayeeCorrAcc,
+//            "InvoiceCreatePayeeBankname": request.invoiceCreatePayeeBankname
             
-            "InvoiceCreateNumber": request.invoiceCreateNumber,
-            "InvoiceCreateDate": request.invoiceCreateDate,
-            "InvoiceCreateSum": request.invoiceCreateSum,
+                "RqUID": "123e4567-e89b-12d3-a456-426655440000",
+                "InvoiceCreateNumber": "123456789",
+                "InvoiceCreateDate": "01.01.2017",
+                "InvoiceCreateSum": "1000.00",
+                "InvoiceCreatePayerINN": "500100732259",
+                "InvoiceCreatePayerAcc": "40702810438290000000",
+                "InvoiceCreatePayerBIK": "044525985",
+                "InvoiceCreatePayerCorrAcc": "30101810300000000985",
+                "InvoiceCreatePayerBankname": "ПАО Банк «ФК Открытие»",
+                "InvoiceCreatePayeeINN": "500100732260",
+                "InvoiceCreatePayeeAcc": "40702810138170000000",
+                "InvoiceCreatePayeeBIK": "044525985",
+                "InvoiceCreatePayeeCorrAcc": "30101810300000000985",
+                "InvoiceCreatePayeeBankname": "ПАО Банк «ФК Открытие»"
             
-            "InvoiceCreatePayerINN": request.invoiceCreatePayerINN,
-            "InvoiceCreatePayerAcc": request.invoiceCreatePayerAcc,
-            "InvoiceCreatePayerBIK": request.invoiceCreatePayerBIK,
-            "InvoiceCreatePayerCorrAcc": request.invoiceCreatePayerCorrAcc,
-            "InvoiceCreatePayerBankname": request.invoiceCreatePayerBankname,
-            
-            "InvoiceCreatePayeeINN": request.invoiceCreatePayeeINN,
-            "InvoiceCreatePayeeAcc": request.invoiceCreatePayeeAcc,
-            "InvoiceCreatePayeeBIK": request.invoiceCreatePayeeBIK,
-            "InvoiceCreatePayeeCorrAcc": request.invoiceCreatePayeeCorrAcc,
-            "InvoiceCreatePayeeBankname": request.invoiceCreatePayeeBankname
             
         ]
         
@@ -197,8 +216,23 @@ class OBAPIManager {
         print(error)
     }
     
+//    https://wikimedia.org/api/rest_v1/media/math/check
+    
+    class func wiki() -> Void {
+        
+        let parameters: Parameters = [
+            
+            "q": "qwerty"
+            
+        ]
+        
+        self.request(URL: "https://wikimedia.org/api/rest_v1/media/math/check", method: .post, parameters: parameters, onSuccess: defaultOnSuccess, onError: defaultOnError)
+        
+    }
+
+    
     private class func request(URL: String, method: HTTPMethod, parameters: Parameters, onSuccess: @escaping (JSON) -> Void , onError: @escaping (Any) -> Void) -> Void {
-        Alamofire.request(URL, method: method, parameters: parameters ).validate().responseJSON { response in
+        Alamofire.request(URL, method: method, parameters: parameters).validate().responseJSON { response in
             switch response.result {
             case .success(let value):
                 let json = JSON(value)

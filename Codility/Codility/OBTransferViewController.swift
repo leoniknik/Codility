@@ -275,14 +275,17 @@ extension OBTransferViewController: UITableViewDataSource {
                 cell.createQRCodeButton.isHidden = true
                 cell.sumTextField.text = accountDictionary["sumTextFieled"]
                 cell.sumTextField.isEnabled = false
-                cell.createLinkButton.addTarget(self, action: #selector(createLink), for: .touchUpInside)
-                cell.createQRCodeButton.addTarget(self, action: #selector(createQRCode), for: .touchUpInside)
+                cell.confirmTransferButton.addTarget(self, action: #selector(confirmTransfer), for:.touchUpInside)
                 return cell
             }
         }
-
     }
     
+    
+    func confirmTransfer() {
+        let request = OBCreateInvoiceRequest(rqUID: "", invoiceCreateSum: accountDictionary["sumTextFieled"]!, invoiceCreatePayeeINN: accountDictionary["INNTextFieled"]!, invoiceCreatePayeeAcc: accountDictionary["accountTextFieled"]!, invoiceCreatePayeeBIK: accountDictionary["BIKtextFieled"]!, invoiceCreatePayeeCorrAcc: accountDictionary["corpAccountTextFieled"]!, invoiceCreatePayeeBankname: "Открытие")
+        OBAPIManager.createInvoiceRequest(request: request)
+    }
     
 }
 
