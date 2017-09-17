@@ -252,59 +252,60 @@
                         <rect key="frame" x="0.0" y="64" width="375" height="603"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="m1r-aA-TUl">
-                                <rect key="frame" x="67" y="151.5" width="240" height="300"/>
-                                <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="о29" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dHz-sC-ZIQ">
-                                        <rect key="frame" x="0.0" y="60" width="240" height="84"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="70"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ваш номер" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SiV-sg-huT">
-                                        <rect key="frame" x="70.5" y="31" width="99" height="21"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="99" id="YGH-X3-uH3"/>
-                                        </constraints>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Заказ карты" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bof-Zp-HrX">
-                                        <rect key="frame" x="0.0" y="145" width="240" height="21"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Перед вами 29 человек" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZBo-rI-WN2">
-                                        <rect key="frame" x="0.0" y="170" width="240" height="21"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                </subviews>
-                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="chek" translatesAutoresizingMaskIntoConstraints="NO" id="MB6-pj-57J">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="о29" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dHz-sC-ZIQ">
+                                <rect key="frame" x="107.5" y="214" width="160" height="84"/>
                                 <constraints>
-                                    <constraint firstItem="SiV-sg-huT" firstAttribute="top" secondItem="m1r-aA-TUl" secondAttribute="top" constant="31" id="1OI-kU-BvZ"/>
-                                    <constraint firstItem="dHz-sC-ZIQ" firstAttribute="top" secondItem="SiV-sg-huT" secondAttribute="bottom" constant="8" id="8Hh-Q3-Qr0"/>
-                                    <constraint firstItem="bof-Zp-HrX" firstAttribute="width" secondItem="m1r-aA-TUl" secondAttribute="width" id="EDt-mZ-5NL"/>
-                                    <constraint firstItem="SiV-sg-huT" firstAttribute="centerX" secondItem="m1r-aA-TUl" secondAttribute="centerX" id="F1V-rg-caA"/>
-                                    <constraint firstItem="bof-Zp-HrX" firstAttribute="top" secondItem="dHz-sC-ZIQ" secondAttribute="bottom" constant="1" id="Glb-xE-Ble"/>
-                                    <constraint firstItem="dHz-sC-ZIQ" firstAttribute="centerX" secondItem="m1r-aA-TUl" secondAttribute="centerX" id="HvH-bD-ze0"/>
-                                    <constraint firstItem="ZBo-rI-WN2" firstAttribute="top" secondItem="bof-Zp-HrX" secondAttribute="bottom" constant="4" id="SeN-S2-4um"/>
-                                    <constraint firstItem="ZBo-rI-WN2" firstAttribute="centerX" secondItem="m1r-aA-TUl" secondAttribute="centerX" id="U0g-iX-uuL"/>
-                                    <constraint firstAttribute="width" constant="240" id="blt-CT-sd1"/>
-                                    <constraint firstItem="ZBo-rI-WN2" firstAttribute="width" secondItem="m1r-aA-TUl" secondAttribute="width" id="luA-Nv-mr8"/>
-                                    <constraint firstItem="dHz-sC-ZIQ" firstAttribute="width" secondItem="m1r-aA-TUl" secondAttribute="width" id="mZ6-cU-94j"/>
-                                    <constraint firstAttribute="height" constant="300" id="ul9-GB-FAV"/>
-                                    <constraint firstItem="bof-Zp-HrX" firstAttribute="centerX" secondItem="m1r-aA-TUl" secondAttribute="centerX" id="xBO-da-R5a"/>
+                                    <constraint firstAttribute="width" constant="160" id="gRh-u6-p8s"/>
                                 </constraints>
-                            </view>
+                                <fontDescription key="fontDescription" type="system" pointSize="70"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ваш номер" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SiV-sg-huT">
+                                <rect key="frame" x="138" y="185" width="99" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="99" id="YGH-X3-uH3"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Заказ карты" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bof-Zp-HrX">
+                                <rect key="frame" x="93" y="306" width="188" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="188" id="evn-FC-Gbi"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Перед вами 29 человек" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZBo-rI-WN2">
+                                <rect key="frame" x="77" y="335" width="221" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="221" id="fdo-BV-dzL"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="m1r-aA-TUl" firstAttribute="centerX" secondItem="ucu-7a-JKD" secondAttribute="centerX" id="XPa-pZ-Pen"/>
-                            <constraint firstItem="m1r-aA-TUl" firstAttribute="centerY" secondItem="ucu-7a-JKD" secondAttribute="centerY" id="ZbO-iu-dAq"/>
+                            <constraint firstItem="ZBo-rI-WN2" firstAttribute="centerX" secondItem="ucu-7a-JKD" secondAttribute="centerX" id="3Ag-X9-ucR"/>
+                            <constraint firstItem="ZBo-rI-WN2" firstAttribute="top" secondItem="bof-Zp-HrX" secondAttribute="bottom" constant="8" id="3lL-Tn-QjF"/>
+                            <constraint firstItem="bof-Zp-HrX" firstAttribute="centerX" secondItem="ucu-7a-JKD" secondAttribute="centerX" id="56w-SN-g6c"/>
+                            <constraint firstItem="SiV-sg-huT" firstAttribute="centerX" secondItem="ucu-7a-JKD" secondAttribute="centerX" id="7Ay-cm-lbZ"/>
+                            <constraint firstItem="MB6-pj-57J" firstAttribute="height" secondItem="ucu-7a-JKD" secondAttribute="height" id="9bl-GQ-NBc"/>
+                            <constraint firstItem="MB6-pj-57J" firstAttribute="centerY" secondItem="ucu-7a-JKD" secondAttribute="centerY" id="S70-Hn-Kx9"/>
+                            <constraint firstItem="bof-Zp-HrX" firstAttribute="top" secondItem="dHz-sC-ZIQ" secondAttribute="bottom" constant="8" id="SOV-rm-D7a"/>
+                            <constraint firstItem="MB6-pj-57J" firstAttribute="centerX" secondItem="ucu-7a-JKD" secondAttribute="centerX" id="X5F-yj-bhT"/>
+                            <constraint firstItem="SiV-sg-huT" firstAttribute="top" secondItem="UIz-q1-iHb" secondAttribute="bottom" constant="185" id="crG-9B-9bb"/>
+                            <constraint firstItem="dHz-sC-ZIQ" firstAttribute="centerX" secondItem="ucu-7a-JKD" secondAttribute="centerX" id="kvV-jy-xPy"/>
+                            <constraint firstItem="MB6-pj-57J" firstAttribute="width" secondItem="ucu-7a-JKD" secondAttribute="width" id="oDm-55-rMO"/>
+                            <constraint firstItem="dHz-sC-ZIQ" firstAttribute="top" secondItem="SiV-sg-huT" secondAttribute="bottom" constant="8" id="xYN-OC-0BH"/>
                         </constraints>
                     </view>
                     <connections>
@@ -318,4 +319,7 @@
             <point key="canvasLocation" x="2608.8000000000002" y="1029.5352323838081"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="chek" width="375" height="667"/>
+    </resources>
 </document>

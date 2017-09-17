@@ -14,5 +14,7 @@ target 'Codility' do
   pod 'EPContactsPicker'
   pod 'RNCryptor', '~> 5.0'
   pod 'QRCode'
+  pod 'Instructions', '~> 1.0.0'
+  pod 'AMPopTip'
   
 end

@@ -27,10 +27,10 @@ class OBQuest{
     static func getTestData()->[OBQuest]{
         var quests = [OBQuest]()
         
-        quests.append(OBQuest(nameP: "name1", howToAchiveP: "do name 1", rewardP: 5, stageP: 0, progressMaxP: 5, progressCurentP: 1))
-        quests.append(OBQuest(nameP: "name2", howToAchiveP: "do name 2", rewardP: 6, stageP: 1, progressMaxP: 10, progressCurentP: 1))
-        quests.append(OBQuest(nameP: "name1", howToAchiveP: "do name 1", rewardP: 100, stageP: 2, progressMaxP: 10, progressCurentP: 10))
-        quests.append(OBQuest(nameP: "name2", howToAchiveP: "do name 3", rewardP: 13, stageP: 3, progressMaxP: 10, progressCurentP: 10))
+        quests.append(OBQuest(nameP: "Вклады", howToAchiveP: "Открой вклад", rewardP: 200, stageP: 0, progressMaxP: 1, progressCurentP: 0))
+        quests.append(OBQuest(nameP: "Кредиты", howToAchiveP: "Возьми 2 кредита", rewardP: 500, stageP: 1, progressMaxP: 2, progressCurentP: 1))
+        quests.append(OBQuest(nameP: "Покупки", howToAchiveP: "Потрать 30 000 на покупки", rewardP: 100, stageP: 2, progressMaxP: 30000, progressCurentP: 10000))
+        quests.append(OBQuest(nameP: "Опрос", howToAchiveP: "Прими участие в опросе", rewardP: 13, stageP: 3, progressMaxP: 1, progressCurentP: 1))
         return quests
     }
 }
