@@ -140,6 +140,7 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" barStyle="black" translucent="NO" prompted="NO"/>
                     <connections>
                         <outlet property="backButton" destination="4BO-va-Xtb" id="l7f-Hg-AvV"/>
                         <outlet property="navigationItem" destination="EAb-bB-24O" id="Deu-cw-flU"/>

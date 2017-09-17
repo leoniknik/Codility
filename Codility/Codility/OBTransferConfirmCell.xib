@@ -60,7 +60,6 @@
                     <constraint firstItem="War-DT-X7M" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="15" id="t0y-02-0nv"/>
                 </constraints>
             </tableViewCellContentView>
-            <inset key="separatorInset" minX="228" minY="0.0" maxX="92" maxY="0.0"/>
             <connections>
                 <outlet property="confirmTransferButton" destination="qjv-RF-YkD" id="MoS-oj-cHE"/>
                 <outlet property="createLinkButton" destination="zc3-TS-O5y" id="lYD-zl-L60"/>

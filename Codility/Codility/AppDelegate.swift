@@ -51,7 +51,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let viewController = storyboard.instantiateViewController(withIdentifier: "OBTransferViewController") as! OBTransferViewController
         let array = url.absoluteString.components(separatedBy: "bank://")
         viewController.encodedData = array[1];
-        self.window?.rootViewController = viewController
+        viewController.navigationItem.leftBarButtonItem = nil
+        
+        var navController = UINavigationController()
+        navController.navigationBar.isTranslucent = false
+        navController.pushViewController(viewController, animated: true)
+        self.window?.rootViewController = navController
+        //self.window?.rootViewController = viewController
         
         getData()
         
