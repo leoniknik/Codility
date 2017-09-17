@@ -80,11 +80,40 @@
                         <outlet property="backButton" destination="4BO-va-Xtb" id="l7f-Hg-AvV"/>
                         <outlet property="navigationItem" destination="EAb-bB-24O" id="Deu-cw-flU"/>
                         <outlet property="tableView" destination="gGS-W7-Oen" id="Vuo-he-36l"/>
+                        <segue destination="gjT-o0-bdy" kind="show" identifier="toCardPicker" id="U2W-Rj-845"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vjq-38-Fd3" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2150" y="-1164"/>
+        </scene>
+        <!--Card Picker View Controller-->
+        <scene sceneID="hJ8-K0-ScL">
+            <objects>
+                <viewController id="gjT-o0-bdy" customClass="OBCardPickerViewController" customModule="Codility" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ddM-iT-h83"/>
+                        <viewControllerLayoutGuide type="bottom" id="vv7-em-Noz"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="SoT-4c-g55">
+                        <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="2IN-j6-qXS">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="tableView" destination="2IN-j6-qXS" id="coG-de-lI2"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="asR-yq-IfC" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3181.5999999999999" y="-1164.4677661169417"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="eay-xJ-9jU">
@@ -92,7 +121,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="1V4-UW-X0B" customClass="OBNavigationController" customModule="Codility" customModuleProvider="target" sceneMemberID="viewController">
                     <toolbarItems/>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" barStyle="black" translucent="NO" id="a4G-Lc-Z5Y">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" barStyle="black" translucent="NO" id="a4G-Lc-Z5Y">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>

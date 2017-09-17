@@ -9,5 +9,8 @@
 import Foundation
 
 struct OBSegueRouter {
+    
     static let toTransfer = "toTransfer"
+    static let toCardPicker = "toCardPicker"
+    
 }
