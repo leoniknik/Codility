@@ -13,7 +13,7 @@ import ContactsUI
 import EPContactsPicker
 import RNCryptor
 
-class OBTransferViewController: UIViewController, EPPickerDelegate {
+class OBTransferViewController: UIViewController, EPPickerDelegate, UITextFieldDelegate {
 
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var backButton: OBBackBarButtonItem!
@@ -46,12 +46,22 @@ class OBTransferViewController: UIViewController, EPPickerDelegate {
             decodeData()
         }
         
+        
 //        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillShow(sender:)), name: NSNotification.Name.UIKeyboardWillShow, object: nil)
 //        
 //        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillHide(sender:)), name: NSNotification.Name.UIKeyboardWillHide, object: nil)
         
     }
     
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        textField.resignFirstResponder()
+        self.tableView.contentOffset.y = 0
+        return true
+    }
+    func textFieldShouldBeginEditing(_ textField: UITextField) -> Bool {
+        self.tableView.contentOffset.y = 150
+        return true
+    }
     
 //    func keyboardWillShow(sender: NSNotification) {
 //        self.view.frame.origin.y = -80 // Move view 150 points upward
@@ -279,7 +289,8 @@ extension OBTransferViewController: UITableViewDataSource {
             else if indexPath.row == 1 {
                 let cell = tableView.dequeueReusableCell(withIdentifier: "OBAccountTransferCell", for: indexPath) as! OBAccountTransferCell
                 self.accountCell = cell
-                
+                cell.corpAccountTextFieled.delegate = self
+                cell.bankNameTextFieled.delegate = self
 //                NotificationCenter.default.addObserver(cell.corpAccountTextFieled, selector: #selector(keyboardWillShow(sender:)), name: NSNotification.Name.UIKeyboardWillShow, object: nil)
 //                NotificationCenter.default.addObserver(cell.corpAccountTextFieled, selector: #selector(keyboardWillHide(sender:)), name: NSNotification.Name.UIKeyboardWillHide, object: nil)
 //                
@@ -296,7 +307,7 @@ extension OBTransferViewController: UITableViewDataSource {
                 cell.createQRCodeButton.isHidden = false
                 cell.createLinkButton.addTarget(self, action: #selector(createLink), for: .touchUpInside)
                 cell.createQRCodeButton.addTarget(self, action: #selector(createQRCode), for: .touchUpInside)
-                
+                cell.sumTextField.delegate = self
 //                NotificationCenter.default.addObserver(cell.sumTextField, selector: #selector(keyboardWillShow(sender:)), name: NSNotification.Name.UIKeyboardWillShow, object: nil)
 //                NotificationCenter.default.addObserver(cell.sumTextField, selector: #selector(keyboardWillHide(sender:)), name: NSNotification.Name.UIKeyboardWillHide, object: nil)
                 
