@@ -22,9 +22,6 @@ class OBHomeViewController: UIViewController {
         super.viewDidLoad()
         setupTableView()
         
-//        OBAPIManager.myCardHistoryRequest(request: OBMyCardHistoryRequest(id: 44))
-        OBAPIManager.wiki()
-        
     }
     
     func setupTableView() {

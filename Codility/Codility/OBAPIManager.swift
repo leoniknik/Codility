@@ -139,7 +139,7 @@ class OBAPIManager {
     //history
     class func myCardHistoryRequest(request: OBMyCardHistoryRequest) -> Void {
         
-        let parameters: Parameters = [
+        let parameters = [
             "CardId": "44"
         ]
         
@@ -232,7 +232,12 @@ class OBAPIManager {
 
     
     private class func request(URL: String, method: HTTPMethod, parameters: Parameters, onSuccess: @escaping (JSON) -> Void , onError: @escaping (Any) -> Void) -> Void {
-        Alamofire.request(URL, method: method, parameters: parameters).validate().responseJSON { response in
+        
+        let headers: HTTPHeaders = [
+            "Content-Type": "application/json"
+        ]
+        
+        Alamofire.request(URL, method: method, parameters: parameters, encoding: JSONEncoding.default, headers: headers).responseJSON { response in
             switch response.result {
             case .success(let value):
                 let json = JSON(value)
