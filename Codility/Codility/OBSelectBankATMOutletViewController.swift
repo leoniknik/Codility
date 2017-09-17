@@ -101,9 +101,14 @@ class OBSelectBankATMOutletViewController: UIViewController,UITableViewDataSourc
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: true)
         if(indexPath.section==1){
             self.performSegue(withIdentifier: "toChooseService", sender: OutletDataSource[indexPath.row])
         }
+    }
+    
+    func tableView(_ tableView: UITableView, shouldHighlightRowAt indexPath: IndexPath) -> Bool {
+       return false 
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {

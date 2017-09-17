@@ -45,6 +45,7 @@ class OBChooseServiceViewController: UIViewController,UITableViewDelegate, UITab
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: true)
         self.performSegue(withIdentifier: "toOrderedService", sender: dataSource[indexPath.row])
     }
     
@@ -57,7 +58,7 @@ class OBChooseServiceViewController: UIViewController,UITableViewDelegate, UITab
             }
             else{
                 for service in fullDataSource{
-                    if service.service.contains(searchString){
+                    if service.service.lowercased().contains(searchString.lowercased()){
                     filteredDataSource.append(service)
                     }
                 }

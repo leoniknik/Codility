@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="Fcf-NF-N8X">
-    <device id="retina4_7" orientation="portrait">
+    <device id="retina4_0" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -19,18 +19,18 @@
                         <viewControllerLayoutGuide type="bottom" id="B3Q-zu-o0M"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="WYL-3j-8Mb">
-                        <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="74" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="68Y-zU-4ev">
-                                <rect key="frame" x="0.0" y="60" width="375" height="543"/>
+                                <rect key="frame" x="0.0" y="60" width="320" height="444"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ServiceCell" rowHeight="74" id="J7X-Ik-Van" customClass="ServiceCell" customModule="Codility" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="375" height="74"/>
+                                        <rect key="frame" x="0.0" y="28" width="320" height="74"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="J7X-Ik-Van" id="Qn7-zS-EnV">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="73.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="73.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Запрос выдачи новой карты" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VV3-98-kTS">
@@ -63,7 +63,7 @@
                                 </prototypes>
                             </tableView>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Поиск" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="SRQ-OD-JKz">
-                                <rect key="frame" x="24" y="20" width="327" height="30"/>
+                                <rect key="frame" x="24" y="20" width="272" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="Mt4-dZ-6RQ"/>
                                 </constraints>
@@ -102,18 +102,18 @@
                         <viewControllerLayoutGuide type="bottom" id="kt7-D8-046"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="1uH-AY-SzV">
-                        <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Ze9-9A-wfi">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="504"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ATMCell" rowHeight="98" id="8ou-gi-CvR" customClass="BankATMCell" customModule="Codility" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="375" height="98"/>
+                                        <rect key="frame" x="0.0" y="28" width="320" height="98"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="8ou-gi-CvR" id="9DV-vk-L7z">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="97.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="97.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Время работы: пн-пт" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uBG-Fg-StP">
@@ -154,10 +154,10 @@
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="OutletCell" rowHeight="138" id="P84-Km-lo2" customClass="BankOutletCell" customModule="Codility" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="126" width="375" height="138"/>
+                                        <rect key="frame" x="0.0" y="126" width="320" height="138"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="P84-Km-lo2" id="98r-Ah-tXN">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="137.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="137.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Адрес: тататататататтатат" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eSD-T4-YPl">
@@ -256,14 +256,18 @@
                         <viewControllerLayoutGuide type="bottom" id="yJI-7f-GsI"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="ucu-7a-JKD">
-                        <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="chek" translatesAutoresizingMaskIntoConstraints="NO" id="MB6-pj-57J">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
+                                <rect key="frame" x="-27.5" y="0.0" width="375" height="603"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="375" id="Kh0-bU-fpb"/>
+                                    <constraint firstAttribute="height" constant="603" id="lou-B1-b8w"/>
+                                </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="о29" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dHz-sC-ZIQ">
-                                <rect key="frame" x="107.5" y="214" width="160" height="84"/>
+                                <rect key="frame" x="80" y="214" width="160" height="84"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="160" id="gRh-u6-p8s"/>
                                 </constraints>
@@ -272,7 +276,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ваш номер" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SiV-sg-huT">
-                                <rect key="frame" x="138" y="185" width="99" height="21"/>
+                                <rect key="frame" x="110.5" y="185" width="99" height="21"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="99" id="YGH-X3-uH3"/>
                                 </constraints>
@@ -281,7 +285,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Заказ карты" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bof-Zp-HrX">
-                                <rect key="frame" x="93" y="306" width="188" height="21"/>
+                                <rect key="frame" x="66" y="306" width="188" height="21"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="188" id="evn-FC-Gbi"/>
                                 </constraints>
@@ -290,7 +294,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Перед вами 29 человек" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZBo-rI-WN2">
-                                <rect key="frame" x="77" y="335" width="221" height="21"/>
+                                <rect key="frame" x="49.5" y="335" width="221" height="21"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="221" id="fdo-BV-dzL"/>
                                 </constraints>
@@ -305,13 +309,11 @@
                             <constraint firstItem="ZBo-rI-WN2" firstAttribute="top" secondItem="bof-Zp-HrX" secondAttribute="bottom" constant="8" id="3lL-Tn-QjF"/>
                             <constraint firstItem="bof-Zp-HrX" firstAttribute="centerX" secondItem="ucu-7a-JKD" secondAttribute="centerX" id="56w-SN-g6c"/>
                             <constraint firstItem="SiV-sg-huT" firstAttribute="centerX" secondItem="ucu-7a-JKD" secondAttribute="centerX" id="7Ay-cm-lbZ"/>
-                            <constraint firstItem="MB6-pj-57J" firstAttribute="height" secondItem="ucu-7a-JKD" secondAttribute="height" id="9bl-GQ-NBc"/>
-                            <constraint firstItem="MB6-pj-57J" firstAttribute="centerY" secondItem="ucu-7a-JKD" secondAttribute="centerY" id="S70-Hn-Kx9"/>
                             <constraint firstItem="bof-Zp-HrX" firstAttribute="top" secondItem="dHz-sC-ZIQ" secondAttribute="bottom" constant="8" id="SOV-rm-D7a"/>
+                            <constraint firstItem="MB6-pj-57J" firstAttribute="top" secondItem="UIz-q1-iHb" secondAttribute="bottom" id="WgU-Nd-wok"/>
                             <constraint firstItem="MB6-pj-57J" firstAttribute="centerX" secondItem="ucu-7a-JKD" secondAttribute="centerX" id="X5F-yj-bhT"/>
                             <constraint firstItem="SiV-sg-huT" firstAttribute="top" secondItem="UIz-q1-iHb" secondAttribute="bottom" constant="185" id="crG-9B-9bb"/>
                             <constraint firstItem="dHz-sC-ZIQ" firstAttribute="centerX" secondItem="ucu-7a-JKD" secondAttribute="centerX" id="kvV-jy-xPy"/>
-                            <constraint firstItem="MB6-pj-57J" firstAttribute="width" secondItem="ucu-7a-JKD" secondAttribute="width" id="oDm-55-rMO"/>
                             <constraint firstItem="dHz-sC-ZIQ" firstAttribute="top" secondItem="SiV-sg-huT" secondAttribute="bottom" constant="8" id="xYN-OC-0BH"/>
                         </constraints>
                     </view>
