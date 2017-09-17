@@ -8,7 +8,7 @@ target 'Codility' do
   # Pods for Codility
   
   pod 'RealmSwift'
-  pod 'Alamofire'
+  pod 'Alamofire', '~> 4.2.0'
   pod 'SwiftyJSON'
   pod 'MFCard'
   pod 'EPContactsPicker'

@@ -9,7 +9,10 @@
 import Foundation
 
 struct OBSegueRouter {
+    
     static let toTransfer = "toTransfer"
     static let toQuests = "toQuests"
     static let toATMOutlets = "toATMOutlets"
+    static let toCardPicker = "toCardPicker"
+
 }

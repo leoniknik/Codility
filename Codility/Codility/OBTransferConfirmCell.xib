@@ -35,8 +35,8 @@
                         <state key="normal" backgroundImage="ic_qr"/>
                     </button>
                     <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zc3-TS-O5y">
-                        <rect key="frame" x="50.5" y="72" width="60" height="60"/>
-                        <state key="normal" backgroundImage="ic_link"/>
+                        <rect key="frame" x="54" y="79" width="47" height="49"/>
+                        <state key="normal" backgroundImage="share"/>
                     </button>
                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qjv-RF-YkD">
                         <rect key="frame" x="130.5" y="72" width="60" height="60"/>
@@ -44,18 +44,18 @@
                     </button>
                 </subviews>
                 <constraints>
-                    <constraint firstItem="qjv-RF-YkD" firstAttribute="leading" secondItem="zc3-TS-O5y" secondAttribute="trailing" constant="20" id="LCx-Rt-8aM"/>
-                    <constraint firstAttribute="bottomMargin" secondItem="zc3-TS-O5y" secondAttribute="bottom" constant="7.5" id="OnB-Fq-ey2"/>
+                    <constraint firstItem="qjv-RF-YkD" firstAttribute="leading" secondItem="zc3-TS-O5y" secondAttribute="trailing" constant="29.5" id="LCx-Rt-8aM"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="zc3-TS-O5y" secondAttribute="bottom" constant="11.5" id="OnB-Fq-ey2"/>
                     <constraint firstItem="War-DT-X7M" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="15" id="QOT-0u-Ipn"/>
                     <constraint firstAttribute="bottomMargin" secondItem="qjv-RF-YkD" secondAttribute="bottom" constant="7.5" id="TdS-lp-vvR"/>
                     <constraint firstItem="lFf-7p-bvQ" firstAttribute="height" secondItem="qjv-RF-YkD" secondAttribute="height" id="Wpj-sU-m4a"/>
                     <constraint firstItem="lFf-7p-bvQ" firstAttribute="width" secondItem="qjv-RF-YkD" secondAttribute="width" id="dkW-Gi-gXT"/>
-                    <constraint firstItem="zc3-TS-O5y" firstAttribute="top" secondItem="War-DT-X7M" secondAttribute="bottom" constant="19" id="hqw-bF-rhQ"/>
+                    <constraint firstItem="zc3-TS-O5y" firstAttribute="top" secondItem="War-DT-X7M" secondAttribute="bottom" constant="26" id="hqw-bF-rhQ"/>
                     <constraint firstItem="qjv-RF-YkD" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="iiJ-H1-A7l"/>
                     <constraint firstAttribute="trailingMargin" secondItem="War-DT-X7M" secondAttribute="trailing" constant="15" id="lW6-9n-5Wy"/>
                     <constraint firstItem="lFf-7p-bvQ" firstAttribute="leading" secondItem="qjv-RF-YkD" secondAttribute="trailing" constant="20" id="lae-8H-1t3"/>
-                    <constraint firstItem="lFf-7p-bvQ" firstAttribute="width" secondItem="zc3-TS-O5y" secondAttribute="width" id="pYN-Sd-JE1"/>
-                    <constraint firstItem="lFf-7p-bvQ" firstAttribute="height" secondItem="zc3-TS-O5y" secondAttribute="height" id="qGp-BK-nPZ"/>
+                    <constraint firstItem="lFf-7p-bvQ" firstAttribute="width" secondItem="zc3-TS-O5y" secondAttribute="width" constant="13" id="pYN-Sd-JE1"/>
+                    <constraint firstItem="lFf-7p-bvQ" firstAttribute="height" secondItem="zc3-TS-O5y" secondAttribute="height" constant="11" id="qGp-BK-nPZ"/>
                     <constraint firstAttribute="bottomMargin" secondItem="lFf-7p-bvQ" secondAttribute="bottom" constant="7.5" id="sHz-hP-lRN"/>
                     <constraint firstItem="War-DT-X7M" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="15" id="t0y-02-0nv"/>
                 </constraints>
@@ -72,7 +72,7 @@
     </objects>
     <resources>
         <image name="ic_done_green" width="30" height="30"/>
-        <image name="ic_link" width="30" height="30"/>
         <image name="ic_qr" width="30" height="30"/>
+        <image name="share" width="37" height="38"/>
     </resources>
 </document>
