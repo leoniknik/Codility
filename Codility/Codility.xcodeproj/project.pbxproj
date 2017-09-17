@@ -11,6 +11,8 @@
 		CA3DC8FB1F6E598200DDAD23 /* OBCardPickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA3DC8FA1F6E598200DDAD23 /* OBCardPickerViewController.swift */; };
 		CA3DC8FE1F6E75A400DDAD23 /* OBHomeATMQuestsViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA3DC8FC1F6E75A400DDAD23 /* OBHomeATMQuestsViewCell.swift */; };
 		CA3DC8FF1F6E75A400DDAD23 /* OBHomeATMQuestsViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CA3DC8FD1F6E75A400DDAD23 /* OBHomeATMQuestsViewCell.xib */; };
+		CA3DC9011F6E7CBB00DDAD23 /* OBQRCodeScannerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA3DC9001F6E7CBB00DDAD23 /* OBQRCodeScannerViewController.swift */; };
+		CA3DC9031F6E7D6800DDAD23 /* OBJKHCodeParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA3DC9021F6E7D6800DDAD23 /* OBJKHCodeParser.swift */; };
 		CA609B181F69C4720090E4CA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA609B171F69C4720090E4CA /* AppDelegate.swift */; };
 		CA609B1D1F69C4720090E4CA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CA609B1B1F69C4720090E4CA /* Main.storyboard */; };
 		CA609B1F1F69C4720090E4CA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CA609B1E1F69C4720090E4CA /* Assets.xcassets */; };
@@ -81,6 +83,8 @@
 		CA3DC8FA1F6E598200DDAD23 /* OBCardPickerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OBCardPickerViewController.swift; sourceTree = "<group>"; };
 		CA3DC8FC1F6E75A400DDAD23 /* OBHomeATMQuestsViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OBHomeATMQuestsViewCell.swift; sourceTree = "<group>"; };
 		CA3DC8FD1F6E75A400DDAD23 /* OBHomeATMQuestsViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OBHomeATMQuestsViewCell.xib; sourceTree = "<group>"; };
+		CA3DC9001F6E7CBB00DDAD23 /* OBQRCodeScannerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OBQRCodeScannerViewController.swift; sourceTree = "<group>"; };
+		CA3DC9021F6E7D6800DDAD23 /* OBJKHCodeParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OBJKHCodeParser.swift; sourceTree = "<group>"; };
 		CA609B141F69C4720090E4CA /* Codility.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Codility.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CA609B171F69C4720090E4CA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CA609B1C1F69C4720090E4CA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -222,6 +226,7 @@
 		CA916E471F6A75B6008F79F5 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				CA3DC9001F6E7CBB00DDAD23 /* OBQRCodeScannerViewController.swift */,
 				CADF0EE61F6E062E0080BD16 /* OBChooseServiceViewController.swift */,
 				CADF0EE71F6E062E0080BD16 /* OBOrderedServiceViewController.swift */,
 				CADF0EE81F6E062E0080BD16 /* OBQuestViewController.swift */,
@@ -274,6 +279,7 @@
 			isa = PBXGroup;
 			children = (
 				CAB5C96B1F6C71E200A93564 /* API */,
+				CA3DC9021F6E7D6800DDAD23 /* OBJKHCodeParser.swift */,
 				CAB5C9A21F6D64BE00A93564 /* OBSegueRouter.swift */,
 				CAB5C9A41F6D659300A93564 /* OBTransferType.swift */,
 				CAB5C9B71F6D8AF900A93564 /* OBDatabaseManager.swift */,
@@ -559,6 +565,8 @@
 				CADF0EF21F6E065C0080BD16 /* OBQuest.swift in Sources */,
 				CAB7CBCE1F6AA62900917348 /* OBBackBarButtonItem.swift in Sources */,
 				CAB5C97D1F6C9C7700A93564 /* OBDepositsInfoRequest.swift in Sources */,
+				CA3DC9031F6E7D6800DDAD23 /* OBJKHCodeParser.swift in Sources */,
+				CA3DC9011F6E7CBB00DDAD23 /* OBQRCodeScannerViewController.swift in Sources */,
 				CAB5C98E1F6D226F00A93564 /* OBMyCardBalanceResponse.swift in Sources */,
 				CAB5C9881F6D152E00A93564 /* OBMyCardInfoRequest.swift in Sources */,
 				CAB5C98C1F6D211700A93564 /* OBMyCardBalanceRequest.swift in Sources */,

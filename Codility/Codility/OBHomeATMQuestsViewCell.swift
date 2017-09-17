@@ -14,6 +14,7 @@ class OBHomeATMQuestsViewCell: UITableViewCell {
     
     @IBOutlet weak var ATMOutletButton: UIButton!
     
+    @IBOutlet weak var QRCodeButton: UIButton!
     
     override func awakeFromNib() {
         super.awakeFromNib()

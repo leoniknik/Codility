@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -40,6 +41,7 @@
                         <segue destination="CnV-GC-eNx" kind="show" identifier="toTransfer" id="LVk-P9-nZh"/>
                         <segue destination="c3J-de-Cr4" kind="show" identifier="toATMOutlets" id="r8n-vx-Zf3"/>
                         <segue destination="Hkn-dx-X4G" kind="show" identifier="toQuests" id="Fru-Lm-ybF"/>
+                        <segue destination="Nxc-9L-veq" kind="show" identifier="toQRSCan" id="ZZl-94-hhT"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DpA-KF-kYs" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -61,6 +63,50 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2Qr-kJ-Y18" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1502" y="-741"/>
+        </scene>
+        <!--Сканер QR кода-->
+        <scene sceneID="51f-Vj-0tx">
+            <objects>
+                <viewController id="Nxc-9L-veq" customClass="OBQRCodeScannerViewController" customModule="Codility" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="X4L-j7-QdL"/>
+                        <viewControllerLayoutGuide type="bottom" id="kN3-lZ-NbD"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="wRB-IN-s1d">
+                        <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WJM-NQ-wY0">
+                                <rect key="frame" x="16" y="562" width="343" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="zaq-Bb-pXh"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="kN3-lZ-NbD" firstAttribute="top" secondItem="WJM-NQ-wY0" secondAttribute="bottom" constant="20" id="2E7-8e-l41"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="WJM-NQ-wY0" secondAttribute="trailing" id="fus-jS-RK7"/>
+                            <constraint firstItem="WJM-NQ-wY0" firstAttribute="leading" secondItem="wRB-IN-s1d" secondAttribute="leadingMargin" id="kz4-u3-h4l"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Сканер QR кода" id="T4z-pU-4kh">
+                        <barButtonItem key="leftBarButtonItem" title="Item" id="jtg-Mw-qnJ" customClass="OBBackBarButtonItem" customModule="Codility" customModuleProvider="target">
+                            <connections>
+                                <action selector="goBack:" destination="Nxc-9L-veq" id="cLo-hI-mLd"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="QRCodeLabel" destination="WJM-NQ-wY0" id="I8J-eH-fQz"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JZB-Aj-qKN" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1192.8" y="-287.40629685157421"/>
         </scene>
         <!--Платежи и переводы-->
         <scene sceneID="TRL-cK-unQ">
@@ -88,7 +134,7 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Платежи и переводы" id="EAb-bB-24O">
-                        <barButtonItem key="leftBarButtonItem" title="Item" id="4BO-va-Xtb" customClass="OBBackBarButtonItem" customModule="Codility" customModuleProvider="target">
+                        <barButtonItem key="leftBarButtonItem" id="4BO-va-Xtb" customClass="OBBackBarButtonItem" customModule="Codility" customModuleProvider="target">
                             <connections>
                                 <action selector="goBack:" destination="CnV-GC-eNx" id="UdL-Ol-stH"/>
                             </connections>

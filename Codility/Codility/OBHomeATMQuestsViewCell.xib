@@ -16,7 +16,7 @@
             <rect key="frame" x="0.0" y="0.0" width="320" height="137"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
-                <rect key="frame" x="0.0" y="0.0" width="320" height="137"/>
+                <rect key="frame" x="0.0" y="0.0" width="320" height="136.5"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rir-2M-kAY">
@@ -70,7 +70,8 @@
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Сканер QR" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qia-7h-Z0o">
                         <rect key="frame" x="128" y="104" width="65" height="11"/>
                         <constraints>
-                            <constraint firstAttribute="width" constant="65" id="l7N-in-zgf"/>
+                            <constraint firstAttribute="width" constant="65" id="G0o-RE-85K"/>
+                            <constraint firstAttribute="height" constant="11" id="Yf0-FN-roJ"/>
                         </constraints>
                         <fontDescription key="fontDescription" type="system" pointSize="9"/>
                         <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
@@ -81,22 +82,23 @@
                     <constraint firstItem="99x-yv-7ua" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="44" id="0Wn-OI-WAK"/>
                     <constraint firstItem="0cP-6p-ZbL" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="6WF-t1-nAW"/>
                     <constraint firstItem="Rir-2M-kAY" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="39" id="6lc-ef-vO3"/>
-                    <constraint firstItem="fKR-6v-0cn" firstAttribute="leading" secondItem="qia-7h-Z0o" secondAttribute="trailing" constant="-5" id="8iD-2x-sik"/>
                     <constraint firstItem="ufW-FO-8cU" firstAttribute="top" secondItem="0cP-6p-ZbL" secondAttribute="bottom" constant="17" id="Aqy-jw-cha"/>
                     <constraint firstAttribute="trailingMargin" secondItem="ufW-FO-8cU" secondAttribute="trailing" constant="43" id="Gti-R0-EK3"/>
                     <constraint firstAttribute="topMargin" secondItem="0cP-6p-ZbL" secondAttribute="top" id="IWg-1e-aR6"/>
                     <constraint firstItem="99x-yv-7ua" firstAttribute="top" secondItem="Rir-2M-kAY" secondAttribute="bottom" constant="8" id="JBB-hy-QJo"/>
+                    <constraint firstItem="qia-7h-Z0o" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="Jse-dD-d7w"/>
                     <constraint firstItem="0cP-6p-ZbL" firstAttribute="width" secondItem="H2p-sc-9uM" secondAttribute="width" id="LIT-bG-c8c"/>
-                    <constraint firstItem="qia-7h-Z0o" firstAttribute="top" secondItem="7nf-ix-rUe" secondAttribute="bottom" constant="8" id="QWB-nS-5AN"/>
+                    <constraint firstItem="qia-7h-Z0o" firstAttribute="top" secondItem="7nf-ix-rUe" secondAttribute="bottom" constant="8" id="QJI-Il-v1B"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="qia-7h-Z0o" secondAttribute="bottom" constant="13.5" id="TUk-Pw-2nJ"/>
                     <constraint firstAttribute="trailingMargin" secondItem="fKR-6v-0cn" secondAttribute="trailing" constant="11" id="dE6-zC-VEo"/>
                     <constraint firstItem="7nf-ix-rUe" firstAttribute="centerX" secondItem="0cP-6p-ZbL" secondAttribute="centerX" id="m1v-EN-af5"/>
-                    <constraint firstItem="qia-7h-Z0o" firstAttribute="baseline" secondItem="99x-yv-7ua" secondAttribute="baseline" id="mhc-hc-2V7"/>
                     <constraint firstItem="Rir-2M-kAY" firstAttribute="top" secondItem="0cP-6p-ZbL" secondAttribute="bottom" constant="17" id="p2y-Hh-xkE"/>
                     <constraint firstItem="fKR-6v-0cn" firstAttribute="top" secondItem="ufW-FO-8cU" secondAttribute="bottom" constant="8" id="syC-eI-cQe"/>
                 </constraints>
             </tableViewCellContentView>
             <connections>
                 <outlet property="ATMOutletButton" destination="ufW-FO-8cU" id="1Gd-UK-d8v"/>
+                <outlet property="QRCodeButton" destination="7nf-ix-rUe" id="H8P-AT-RB1"/>
                 <outlet property="questsButton" destination="Rir-2M-kAY" id="zgf-2g-Fww"/>
             </connections>
             <point key="canvasLocation" x="34" y="76.5"/>

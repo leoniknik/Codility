@@ -20,6 +20,7 @@ class OBTransferViewController: UIViewController, EPPickerDelegate {
     
     var contact = ""
     var encodedData: String?
+    var JKHMArker : Bool = false
     var accountCell: OBAccountTransferCell?
     var confirmCell: OBTransferConfirmCell?
     var simpleCellFrom: OBSimpleTransferCell?
@@ -44,7 +45,21 @@ class OBTransferViewController: UIViewController, EPPickerDelegate {
         if((encodedData) != nil){
             decodeData()
         }
+        
+//        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillShow(sender:)), name: NSNotification.Name.UIKeyboardWillShow, object: nil)
+//        
+//        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillHide(sender:)), name: NSNotification.Name.UIKeyboardWillHide, object: nil)
+        
     }
+    
+    
+//    func keyboardWillShow(sender: NSNotification) {
+//        self.view.frame.origin.y = -80 // Move view 150 points upward
+//    }
+//    
+//    func keyboardWillHide(sender: NSNotification) {
+//        self.view.frame.origin.y = 0 // Move view to original position
+//    }
     
     func decodeData() {
         let data = Data(base64Encoded: self.encodedData!)
@@ -234,6 +249,7 @@ extension OBTransferViewController: UITableViewDataSource {
             else if indexPath.row == 1 {
                 let cell = tableView.dequeueReusableCell(withIdentifier: "OBSimpleTransferCell", for: indexPath) as! OBSimpleTransferCell
                 cell.button.setImage(UIImage.OBImage.phoneHome, for: .normal)
+                cell.button.addTarget(self, action: #selector(chooseContact), for: .touchUpInside)
                 cell.titleLabel.text = "Куда перевести"
                 cell.textField.text = contact
                 return cell
@@ -254,6 +270,15 @@ extension OBTransferViewController: UITableViewDataSource {
             else if indexPath.row == 1 {
                 let cell = tableView.dequeueReusableCell(withIdentifier: "OBAccountTransferCell", for: indexPath) as! OBAccountTransferCell
                 self.accountCell = cell
+                
+//                NotificationCenter.default.addObserver(cell.corpAccountTextFieled, selector: #selector(keyboardWillShow(sender:)), name: NSNotification.Name.UIKeyboardWillShow, object: nil)
+//                NotificationCenter.default.addObserver(cell.corpAccountTextFieled, selector: #selector(keyboardWillHide(sender:)), name: NSNotification.Name.UIKeyboardWillHide, object: nil)
+//                
+//                NotificationCenter.default.addObserver(cell.bankNameTextFieled, selector: #selector(keyboardWillShow(sender:)), name: NSNotification.Name.UIKeyboardWillShow, object: nil)
+//                NotificationCenter.default.addObserver(cell.bankNameTextFieled, selector: #selector(keyboardWillHide(sender:)), name: NSNotification.Name.UIKeyboardWillHide, object: nil)
+                
+                
+                
                 return cell
             } else {
                 let cell = tableView.dequeueReusableCell(withIdentifier: "OBTransferConfirmCell", for: indexPath) as! OBTransferConfirmCell
@@ -262,6 +287,10 @@ extension OBTransferViewController: UITableViewDataSource {
                 cell.createQRCodeButton.isHidden = false
                 cell.createLinkButton.addTarget(self, action: #selector(createLink), for: .touchUpInside)
                 cell.createQRCodeButton.addTarget(self, action: #selector(createQRCode), for: .touchUpInside)
+                
+//                NotificationCenter.default.addObserver(cell.sumTextField, selector: #selector(keyboardWillShow(sender:)), name: NSNotification.Name.UIKeyboardWillShow, object: nil)
+//                NotificationCenter.default.addObserver(cell.sumTextField, selector: #selector(keyboardWillHide(sender:)), name: NSNotification.Name.UIKeyboardWillHide, object: nil)
+                
                 return cell
             }
         case .emailTransfer:

@@ -107,9 +107,6 @@ class OBSelectBankATMOutletViewController: UIViewController,UITableViewDataSourc
         }
     }
     
-    func tableView(_ tableView: UITableView, shouldHighlightRowAt indexPath: IndexPath) -> Bool {
-       return false 
-    }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "toChooseService"{
