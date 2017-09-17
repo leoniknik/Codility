@@ -32,6 +32,7 @@ class OBHomeViewController: UIViewController {
         self.tableView.dataSource = self
         self.tableView.tableFooterView = UIView()
         self.tableView.register(UINib(nibName: "OBCardCell", bundle: nil), forCellReuseIdentifier: "OBCardCell")
+        self.tableView.register(UINib(nibName: "OBHomeATMQuestsViewCell", bundle: nil), forCellReuseIdentifier: "OBHomeATMQuestsViewCell")
         self.tableView.register(UINib(nibName: "OBSectionHeaderCell", bundle: nil), forCellReuseIdentifier: "OBSectionHeaderCell")
         self.tableView.register(UINib(nibName: "OBHomeTransferCell", bundle: nil), forCellReuseIdentifier: "OBHomeTransferCell")
     }
@@ -60,13 +61,21 @@ class OBHomeViewController: UIViewController {
         OBTransferType.transferType = .emailTransfer
     }
     
+    func questsTransferPressed() {
+        self.performSegue(withIdentifier: OBSegueRouter.toQuests, sender: nil)
+    }
+    
+    func ATMOutletTransferPressed() {
+        self.performSegue(withIdentifier: OBSegueRouter.toATMOutlets, sender: nil)
+    }
+    
 }
 
 
 extension OBHomeViewController: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return cards.count + 2
+        return cards.count + 3
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -84,7 +93,14 @@ extension OBHomeViewController: UITableViewDataSource {
             cell.emailTransferButton.addTarget(self, action:#selector(emailTransferPressed), for: .touchUpInside)
             return cell
         }
-        else {
+        else if indexPath.row == cards.count + 2 {
+            let cell = tableView.dequeueReusableCell(withIdentifier: "OBHomeATMQuestsViewCell", for: indexPath) as! OBHomeATMQuestsViewCell
+            
+            cell.questsButton.addTarget(self, action:#selector(questsTransferPressed), for: .touchUpInside)
+            cell.ATMOutletButton.addTarget(self, action:#selector(ATMOutletTransferPressed), for: .touchUpInside)
+            return cell
+        }
+        else{
             let cell = tableView.dequeueReusableCell(withIdentifier: "OBCardCell", for: indexPath) as! OBCardCell
             
             let paymentSystem = cards[indexPath.row - 1].paymentSystem
@@ -110,7 +126,6 @@ extension OBHomeViewController: UITableViewDataSource {
         }
         
     }
-    
 
 }
 
@@ -134,7 +149,7 @@ extension OBHomeViewController: UITableViewDelegate {
         if indexPath.row == 0 {
             return 40
         }
-        if indexPath.row == cards.count + 1 {
+        if indexPath.row >= cards.count + 1 {
             return 137
         }
         return 60
