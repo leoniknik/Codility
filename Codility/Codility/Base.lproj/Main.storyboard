@@ -38,11 +38,29 @@
                     <connections>
                         <outlet property="tableView" destination="mXs-BS-cNm" id="HEW-RL-3x8"/>
                         <segue destination="CnV-GC-eNx" kind="show" identifier="toTransfer" id="LVk-P9-nZh"/>
+                        <segue destination="c3J-de-Cr4" kind="show" identifier="toATMOutlets" id="r8n-vx-Zf3"/>
+                        <segue destination="Hkn-dx-X4G" kind="show" identifier="toQuests" id="Fru-Lm-ybF"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DpA-KF-kYs" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1193" y="-1163"/>
+        </scene>
+        <!--ATMandOutlet-->
+        <scene sceneID="Z5c-LU-nO3">
+            <objects>
+                <viewControllerPlaceholder storyboardName="ATMandOutlet" id="c3J-de-Cr4" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3JI-k1-bYi" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="801" y="-735"/>
+        </scene>
+        <!--Quests-->
+        <scene sceneID="HA7-y2-mdQ">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Quests" id="Hkn-dx-X4G" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2Qr-kJ-Y18" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1502" y="-741"/>
         </scene>
         <!--Платежи и переводы-->
         <scene sceneID="TRL-cK-unQ">

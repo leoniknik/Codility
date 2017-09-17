@@ -10,7 +10,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Quest View Controller-->
+        <!--Ваши квесты-->
         <scene sceneID="MC3-IG-aY2">
             <objects>
                 <viewController id="oE1-eo-VOB" customClass="OBQuestViewController" customModule="Codility" customModuleProvider="target" sceneMemberID="viewController">
@@ -124,12 +124,6 @@
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ваши квесты" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HQ2-jb-5om">
-                                <rect key="frame" x="135.5" y="8" width="104" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vxv-7A-TjF">
                                 <rect key="frame" x="337" y="4" width="30" height="30"/>
                                 <constraints>
@@ -145,25 +139,30 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="boL-nn-otr" firstAttribute="centerX" secondItem="lAW-94-Wxv" secondAttribute="centerX" id="3dD-NK-qe0"/>
-                            <constraint firstItem="HQ2-jb-5om" firstAttribute="centerX" secondItem="lAW-94-Wxv" secondAttribute="centerX" id="Ag9-N5-Amf"/>
-                            <constraint firstItem="HQ2-jb-5om" firstAttribute="top" secondItem="e4d-s8-Jfc" secondAttribute="bottom" constant="8" id="HLo-VG-m9H"/>
+                            <constraint firstItem="boL-nn-otr" firstAttribute="top" secondItem="Vxv-7A-TjF" secondAttribute="bottom" constant="3" id="6pP-vI-K0F"/>
                             <constraint firstItem="Vxv-7A-TjF" firstAttribute="trailing" secondItem="lAW-94-Wxv" secondAttribute="trailingMargin" constant="8" id="Hb3-Yy-hEq"/>
-                            <constraint firstItem="boL-nn-otr" firstAttribute="top" secondItem="HQ2-jb-5om" secondAttribute="bottom" constant="8" id="IEh-4b-lIX"/>
+                            <constraint firstItem="Vxv-7A-TjF" firstAttribute="top" secondItem="e4d-s8-Jfc" secondAttribute="bottom" constant="4" id="eqW-tl-5xP"/>
                             <constraint firstItem="boL-nn-otr" firstAttribute="width" secondItem="lAW-94-Wxv" secondAttribute="width" id="hfo-x0-VCh"/>
                             <constraint firstItem="Vxv-7A-TjF" firstAttribute="top" secondItem="e4d-s8-Jfc" secondAttribute="bottom" constant="4" id="iMg-cI-gXE"/>
                             <constraint firstItem="YGR-n0-9Px" firstAttribute="top" secondItem="boL-nn-otr" secondAttribute="bottom" id="wgA-uJ-TZo"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" title="Ваши квесты" id="KCC-Q9-u21">
+                        <barButtonItem key="leftBarButtonItem" id="hJN-I2-d6d" customClass="OBBackBarButtonItem" customModule="Codility" customModuleProvider="target">
+                            <connections>
+                                <action selector="goBack:" destination="oE1-eo-VOB" id="dbZ-XL-PHp"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
                     <connections>
-                        <outlet property="current" destination="HQ2-jb-5om" id="dEh-w9-my7"/>
                         <outlet property="helpButton" destination="Vxv-7A-TjF" id="hGS-kC-Ztz"/>
                         <outlet property="table" destination="boL-nn-otr" id="vnb-aB-vIP"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OCC-Nr-Zft" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2445.5999999999999" y="1107.7961019490256"/>
+            <point key="canvasLocation" x="2665" y="1047"/>
         </scene>
     </scenes>
     <resources>

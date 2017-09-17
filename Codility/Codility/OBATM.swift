@@ -22,8 +22,8 @@ class BankATM{
     
     static func getTestData()->[BankATM]{
         var testData = [BankATM]()
-        testData.append(BankATM(distanceP:1,timetableP:"1",adressP:"2"))
-        testData.append(BankATM(distanceP:1,timetableP:"3",adressP:"4"))
+        testData.append(BankATM(distanceP:100,timetableP:"пн-вс: 09:00-18:00",adressP:"ул. Уличная д.5 к.1"))
+        testData.append(BankATM(distanceP:50,timetableP:"пн-вс: 09:00-18:00",adressP:"ул. Городская стр.33"))
         return testData
     }
 }
@@ -40,10 +40,9 @@ class BankOutlet:BankATM{
     
     static func getTestData()->[BankOutlet]{
         var testData = [BankOutlet]()
-        testData.append(BankOutlet(distanceP:1,timetableP:"1",adressP:"2",workloadP:1))
-        testData.append(BankOutlet(distanceP:0,timetableP:"3",adressP:"4",workloadP:1))
+        testData.append(BankOutlet(distanceP:1000,timetableP:"пн-вс: 09:00-18:00",adressP:"ул. Космонавта Волкова д. 14",workloadP:1))
+        testData.append(BankOutlet(distanceP:800,timetableP:"пн-вс: 09:00-18:00",adressP:"ул. Бауманская д. 2",workloadP:1))
         
         return testData
     }
 }
-

@@ -11,7 +11,6 @@ import AMPopTip
 
 class OBQuestViewController: UIViewController,UITableViewDelegate,UITableViewDataSource{
     
-    @IBOutlet weak var current: UILabel!
     
     @IBOutlet weak var table: UITableView!
     
@@ -113,5 +112,8 @@ class OBQuestViewController: UIViewController,UITableViewDelegate,UITableViewDat
         popTip.show(text: "На этом экране показываются Ваши квесты", direction: .left, maxWidth: 200, in: view, from: helpButton.frame)
     }
     
+    @IBAction func goBack(_ sender: OBBackBarButtonItem) {
+        self.navigationController?.popViewController(animated: true)
+    }
     
 }

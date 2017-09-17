@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		99B7A4FBD50C49C764EAE430 /* Pods_Codility.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA7055BFBABD8E670693460E /* Pods_Codility.framework */; };
 		CA3DC8FB1F6E598200DDAD23 /* OBCardPickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA3DC8FA1F6E598200DDAD23 /* OBCardPickerViewController.swift */; };
+		CA3DC8FE1F6E75A400DDAD23 /* OBHomeATMQuestsViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA3DC8FC1F6E75A400DDAD23 /* OBHomeATMQuestsViewCell.swift */; };
+		CA3DC8FF1F6E75A400DDAD23 /* OBHomeATMQuestsViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CA3DC8FD1F6E75A400DDAD23 /* OBHomeATMQuestsViewCell.xib */; };
 		CA609B181F69C4720090E4CA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA609B171F69C4720090E4CA /* AppDelegate.swift */; };
 		CA609B1D1F69C4720090E4CA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CA609B1B1F69C4720090E4CA /* Main.storyboard */; };
 		CA609B1F1F69C4720090E4CA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CA609B1E1F69C4720090E4CA /* Assets.xcassets */; };
@@ -77,6 +79,8 @@
 		62B1564A6428AFA95E1FCE9D /* Pods-Codility.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Codility.release.xcconfig"; path = "Pods/Target Support Files/Pods-Codility/Pods-Codility.release.xcconfig"; sourceTree = "<group>"; };
 		BA7055BFBABD8E670693460E /* Pods_Codility.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Codility.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CA3DC8FA1F6E598200DDAD23 /* OBCardPickerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OBCardPickerViewController.swift; sourceTree = "<group>"; };
+		CA3DC8FC1F6E75A400DDAD23 /* OBHomeATMQuestsViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OBHomeATMQuestsViewCell.swift; sourceTree = "<group>"; };
+		CA3DC8FD1F6E75A400DDAD23 /* OBHomeATMQuestsViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OBHomeATMQuestsViewCell.xib; sourceTree = "<group>"; };
 		CA609B141F69C4720090E4CA /* Codility.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Codility.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CA609B171F69C4720090E4CA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CA609B1C1F69C4720090E4CA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -376,6 +380,8 @@
 		CADF0EDD1F6E05EA0080BD16 /* Other */ = {
 			isa = PBXGroup;
 			children = (
+				CA3DC8FC1F6E75A400DDAD23 /* OBHomeATMQuestsViewCell.swift */,
+				CA3DC8FD1F6E75A400DDAD23 /* OBHomeATMQuestsViewCell.xib */,
 				CADF0EDE1F6E060A0080BD16 /* BankATMCell.swift */,
 				CADF0EDF1F6E060A0080BD16 /* BankOutletCell.swift */,
 				CADF0EE01F6E060A0080BD16 /* OBQuestCell.swift */,
@@ -460,6 +466,7 @@
 				CAB5C9961F6D363A00A93564 /* OBSectionHeaderCell.xib in Resources */,
 				CAB5C9BA1F6DBF0100A93564 /* Login.storyboard in Resources */,
 				CAB5C9B61F6D713800A93564 /* OBTransferConfirmCell.xib in Resources */,
+				CA3DC8FF1F6E75A400DDAD23 /* OBHomeATMQuestsViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -546,6 +553,7 @@
 				CADF0EFD1F6E0E6F0080BD16 /* OBCreateInvoiceRequest.swift in Sources */,
 				CAB5C9831F6D114500A93564 /* OBMyCardsResponse.swift in Sources */,
 				CAB5C97B1F6C8C3100A93564 /* OBCredit.swift in Sources */,
+				CA3DC8FE1F6E75A400DDAD23 /* OBHomeATMQuestsViewCell.swift in Sources */,
 				CADF0EE51F6E060A0080BD16 /* ServiceCell.swift in Sources */,
 				CAB5C9951F6D363A00A93564 /* OBSectionHeaderCell.swift in Sources */,
 				CADF0EF21F6E065C0080BD16 /* OBQuest.swift in Sources */,

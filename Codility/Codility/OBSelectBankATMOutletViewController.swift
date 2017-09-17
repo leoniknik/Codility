@@ -112,4 +112,9 @@ class OBSelectBankATMOutletViewController: UIViewController,UITableViewDataSourc
             destViewController.fullDataSource = (sender as! BankOutlet).services!
         }
     }
+    
+    @IBAction func goBack(_ sender: OBBackBarButtonItem) {
+        self.navigationController?.popViewController(animated: true)
+    }
+    
 }

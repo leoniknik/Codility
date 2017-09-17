@@ -93,7 +93,7 @@
             </objects>
             <point key="canvasLocation" x="1672.8" y="1029.5352323838081"/>
         </scene>
-        <!--Select BankATM Outlet View Controller-->
+        <!--Список отделений и банкоматов-->
         <scene sceneID="gUS-ll-k7q">
             <objects>
                 <viewController id="Fcf-NF-N8X" customClass="OBSelectBankATMOutletViewController" customModule="Codility" customModuleProvider="target" sceneMemberID="viewController">
@@ -230,6 +230,13 @@
                             <constraint firstItem="Ze9-9A-wfi" firstAttribute="top" secondItem="dZt-2O-hzD" secondAttribute="bottom" id="rXe-v9-0EK"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" title="Список отделений и банкоматов" id="ju9-cD-QVY">
+                        <barButtonItem key="leftBarButtonItem" id="yiV-0b-9H0" customClass="OBBackBarButtonItem" customModule="Codility" customModuleProvider="target">
+                            <connections>
+                                <action selector="goBack:" destination="Fcf-NF-N8X" id="xZk-nx-kc8"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
                     <connections>
                         <outlet property="tableView" destination="Ze9-9A-wfi" id="ikb-P7-K4k"/>
