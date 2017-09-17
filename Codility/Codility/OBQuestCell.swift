@@ -21,6 +21,7 @@ class OBQuestCell: UITableViewCell {
     @IBOutlet weak var reward: UILabel!
     
     @IBOutlet weak var progressLabel: UILabel!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

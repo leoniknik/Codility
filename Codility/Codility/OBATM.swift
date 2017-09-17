@@ -8,6 +8,7 @@
 //
 
 import Foundation
+
 class BankATM{
     var distance:Int?
     var timetable:String?

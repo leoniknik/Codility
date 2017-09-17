@@ -55,6 +55,19 @@
 		CAB7CBCC1F6A9AE600917348 /* UIImage+OBImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAB7CBCB1F6A9AE600917348 /* UIImage+OBImage.swift */; };
 		CAB7CBCE1F6AA62900917348 /* OBBackBarButtonItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAB7CBCD1F6AA62900917348 /* OBBackBarButtonItem.swift */; };
 		CAB7CBD01F6AA9DD00917348 /* OBHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAB7CBCF1F6AA9DD00917348 /* OBHomeViewController.swift */; };
+		CADF0EE21F6E060A0080BD16 /* BankATMCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CADF0EDE1F6E060A0080BD16 /* BankATMCell.swift */; };
+		CADF0EE31F6E060A0080BD16 /* BankOutletCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CADF0EDF1F6E060A0080BD16 /* BankOutletCell.swift */; };
+		CADF0EE41F6E060A0080BD16 /* OBQuestCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CADF0EE01F6E060A0080BD16 /* OBQuestCell.swift */; };
+		CADF0EE51F6E060A0080BD16 /* ServiceCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CADF0EE11F6E060A0080BD16 /* ServiceCell.swift */; };
+		CADF0EEA1F6E062E0080BD16 /* OBChooseServiceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CADF0EE61F6E062E0080BD16 /* OBChooseServiceViewController.swift */; };
+		CADF0EEB1F6E062E0080BD16 /* OBOrderedServiceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CADF0EE71F6E062E0080BD16 /* OBOrderedServiceViewController.swift */; };
+		CADF0EEC1F6E062E0080BD16 /* OBQuestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CADF0EE81F6E062E0080BD16 /* OBQuestViewController.swift */; };
+		CADF0EED1F6E062E0080BD16 /* OBSelectBankATMOutletViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CADF0EE91F6E062E0080BD16 /* OBSelectBankATMOutletViewController.swift */; };
+		CADF0EF11F6E065C0080BD16 /* OBATM.swift in Sources */ = {isa = PBXBuildFile; fileRef = CADF0EEE1F6E065C0080BD16 /* OBATM.swift */; };
+		CADF0EF21F6E065C0080BD16 /* OBQuest.swift in Sources */ = {isa = PBXBuildFile; fileRef = CADF0EEF1F6E065C0080BD16 /* OBQuest.swift */; };
+		CADF0EF31F6E065C0080BD16 /* OBService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CADF0EF01F6E065C0080BD16 /* OBService.swift */; };
+		CADF0EF81F6E08810080BD16 /* ATMandOutlet.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CADF0EF41F6E08810080BD16 /* ATMandOutlet.storyboard */; };
+		CADF0EF91F6E08810080BD16 /* Quests.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CADF0EF61F6E08810080BD16 /* Quests.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -110,6 +123,19 @@
 		CAB7CBCB1F6A9AE600917348 /* UIImage+OBImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+OBImage.swift"; sourceTree = "<group>"; };
 		CAB7CBCD1F6AA62900917348 /* OBBackBarButtonItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OBBackBarButtonItem.swift; sourceTree = "<group>"; };
 		CAB7CBCF1F6AA9DD00917348 /* OBHomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OBHomeViewController.swift; sourceTree = "<group>"; };
+		CADF0EDE1F6E060A0080BD16 /* BankATMCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BankATMCell.swift; sourceTree = "<group>"; };
+		CADF0EDF1F6E060A0080BD16 /* BankOutletCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BankOutletCell.swift; sourceTree = "<group>"; };
+		CADF0EE01F6E060A0080BD16 /* OBQuestCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OBQuestCell.swift; sourceTree = "<group>"; };
+		CADF0EE11F6E060A0080BD16 /* ServiceCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServiceCell.swift; sourceTree = "<group>"; };
+		CADF0EE61F6E062E0080BD16 /* OBChooseServiceViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OBChooseServiceViewController.swift; sourceTree = "<group>"; };
+		CADF0EE71F6E062E0080BD16 /* OBOrderedServiceViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OBOrderedServiceViewController.swift; sourceTree = "<group>"; };
+		CADF0EE81F6E062E0080BD16 /* OBQuestViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OBQuestViewController.swift; sourceTree = "<group>"; };
+		CADF0EE91F6E062E0080BD16 /* OBSelectBankATMOutletViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OBSelectBankATMOutletViewController.swift; sourceTree = "<group>"; };
+		CADF0EEE1F6E065C0080BD16 /* OBATM.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OBATM.swift; sourceTree = "<group>"; };
+		CADF0EEF1F6E065C0080BD16 /* OBQuest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OBQuest.swift; sourceTree = "<group>"; };
+		CADF0EF01F6E065C0080BD16 /* OBService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OBService.swift; sourceTree = "<group>"; };
+		CADF0EF51F6E08810080BD16 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/ATMandOutlet.storyboard; sourceTree = "<group>"; };
+		CADF0EF71F6E08810080BD16 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Quests.storyboard; sourceTree = "<group>"; };
 		D996D0B3D7001B75191BAA45 /* Pods-Codility.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Codility.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Codility/Pods-Codility.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -186,6 +212,10 @@
 		CA916E471F6A75B6008F79F5 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				CADF0EE61F6E062E0080BD16 /* OBChooseServiceViewController.swift */,
+				CADF0EE71F6E062E0080BD16 /* OBOrderedServiceViewController.swift */,
+				CADF0EE81F6E062E0080BD16 /* OBQuestViewController.swift */,
+				CADF0EE91F6E062E0080BD16 /* OBSelectBankATMOutletViewController.swift */,
 				CAB5C9BB1F6DBF4400A93564 /* OBTouchIDViewController.swift */,
 				CA916E501F6A7BD1008F79F5 /* OBNavigationController.swift */,
 				CAB7CBCF1F6AA9DD00917348 /* OBHomeViewController.swift */,
@@ -197,6 +227,9 @@
 		CA916E481F6A75BC008F79F5 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				CADF0EEE1F6E065C0080BD16 /* OBATM.swift */,
+				CADF0EEF1F6E065C0080BD16 /* OBQuest.swift */,
+				CADF0EF01F6E065C0080BD16 /* OBService.swift */,
 				CAB5C9861F6D123C00A93564 /* RealmObject */,
 				CAB5C96F1F6C769900A93564 /* OBCard.swift */,
 				CAB5C97A1F6C8C3100A93564 /* OBCredit.swift */,
@@ -240,6 +273,7 @@
 		CA916E4C1F6A75FD008F79F5 /* Cells */ = {
 			isa = PBXGroup;
 			children = (
+				CADF0EDD1F6E05EA0080BD16 /* Other */,
 				CAB5C9A91F6D6CC100A93564 /* Transfer */,
 				CAB5C9A81F6D6CAF00A93564 /* Home */,
 			);
@@ -249,6 +283,8 @@
 		CA916E4D1F6A7602008F79F5 /* Storyboards */ = {
 			isa = PBXGroup;
 			children = (
+				CADF0EF41F6E08810080BD16 /* ATMandOutlet.storyboard */,
+				CADF0EF61F6E08810080BD16 /* Quests.storyboard */,
 				CAB5C9B91F6DBF0100A93564 /* Login.storyboard */,
 				CA609B201F69C4720090E4CA /* LaunchScreen.storyboard */,
 				CA609B1B1F69C4720090E4CA /* Main.storyboard */,
@@ -328,6 +364,17 @@
 			name = Transfer;
 			sourceTree = "<group>";
 		};
+		CADF0EDD1F6E05EA0080BD16 /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				CADF0EDE1F6E060A0080BD16 /* BankATMCell.swift */,
+				CADF0EDF1F6E060A0080BD16 /* BankOutletCell.swift */,
+				CADF0EE01F6E060A0080BD16 /* OBQuestCell.swift */,
+				CADF0EE11F6E060A0080BD16 /* ServiceCell.swift */,
+			);
+			name = Other;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -392,6 +439,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CADF0EF81F6E08810080BD16 /* ATMandOutlet.storyboard in Resources */,
+				CADF0EF91F6E08810080BD16 /* Quests.storyboard in Resources */,
 				CA609B221F69C4720090E4CA /* LaunchScreen.storyboard in Resources */,
 				CA609B1F1F69C4720090E4CA /* Assets.xcassets in Resources */,
 				CAB5C9AD1F6D6EA200A93564 /* OBSimpleTransferCell.xib in Resources */,
@@ -461,16 +510,20 @@
 			buildActionMask = 2147483647;
 			files = (
 				CA916E511F6A7BD1008F79F5 /* OBNavigationController.swift in Sources */,
+				CADF0EE31F6E060A0080BD16 /* BankOutletCell.swift in Sources */,
 				CAB5C9B11F6D710100A93564 /* OBAccountTransferCell.swift in Sources */,
 				CAB5C9901F6D2B3400A93564 /* OBMyCardHistoryRequest.swift in Sources */,
 				CAB5C9B81F6D8AF900A93564 /* OBDatabaseManager.swift in Sources */,
 				CAB5C9991F6D373800A93564 /* OBCardCell.swift in Sources */,
 				CAB5C96A1F6C6E3800A93564 /* OBURLRouter.swift in Sources */,
+				CADF0EE21F6E060A0080BD16 /* BankATMCell.swift in Sources */,
 				CAB7CBCC1F6A9AE600917348 /* UIImage+OBImage.swift in Sources */,
 				CAB5C9851F6D120600A93564 /* OBMyCard.swift in Sources */,
 				CAB5C9681F6C6AEB00A93564 /* OBAPIManager.swift in Sources */,
 				CAB5C9771F6C88BF00A93564 /* OBCreditsInfoRequest.swift in Sources */,
+				CADF0EF31F6E065C0080BD16 /* OBService.swift in Sources */,
 				CAB5C9A51F6D659300A93564 /* OBTransferType.swift in Sources */,
+				CADF0EF11F6E065C0080BD16 /* OBATM.swift in Sources */,
 				CAB7CBD01F6AA9DD00917348 /* OBHomeViewController.swift in Sources */,
 				CAB5C9A31F6D64BE00A93564 /* OBSegueRouter.swift in Sources */,
 				CAB5C96E1F6C721700A93564 /* OBCreditCardInfoResponse.swift in Sources */,
@@ -481,22 +534,29 @@
 				CAB5C9B51F6D713800A93564 /* OBTransferConfirmCell.swift in Sources */,
 				CAB5C9831F6D114500A93564 /* OBMyCardsResponse.swift in Sources */,
 				CAB5C97B1F6C8C3100A93564 /* OBCredit.swift in Sources */,
+				CADF0EE51F6E060A0080BD16 /* ServiceCell.swift in Sources */,
 				CAB5C9951F6D363A00A93564 /* OBSectionHeaderCell.swift in Sources */,
+				CADF0EF21F6E065C0080BD16 /* OBQuest.swift in Sources */,
 				CAB7CBCE1F6AA62900917348 /* OBBackBarButtonItem.swift in Sources */,
 				CAB5C97D1F6C9C7700A93564 /* OBDepositsInfoRequest.swift in Sources */,
 				CAB5C98E1F6D226F00A93564 /* OBMyCardBalanceResponse.swift in Sources */,
 				CAB5C9881F6D152E00A93564 /* OBMyCardInfoRequest.swift in Sources */,
 				CAB5C98C1F6D211700A93564 /* OBMyCardBalanceRequest.swift in Sources */,
 				CAB5C9AC1F6D6EA200A93564 /* OBSimpleTransferCell.swift in Sources */,
+				CADF0EED1F6E062E0080BD16 /* OBSelectBankATMOutletViewController.swift in Sources */,
 				CAB5C98A1F6D186000A93564 /* OBMyCardInfoResponse.swift in Sources */,
 				CAB5C9811F6C9D5B00A93564 /* OBDeposit.swift in Sources */,
 				CAB5C9791F6C88D500A93564 /* OBCreditsInfoResponse.swift in Sources */,
+				CADF0EEA1F6E062E0080BD16 /* OBChooseServiceViewController.swift in Sources */,
 				CAB5C97F1F6C9C8C00A93564 /* OBDepositsInfoResponse.swift in Sources */,
+				CADF0EEB1F6E062E0080BD16 /* OBOrderedServiceViewController.swift in Sources */,
 				CAB5C9921F6D2BAA00A93564 /* OBMyCardHistoryResponse.swift in Sources */,
 				CAB5C9721F6C800600A93564 /* Notification+OBNotificationName.swift in Sources */,
 				CA609B181F69C4720090E4CA /* AppDelegate.swift in Sources */,
+				CADF0EEC1F6E062E0080BD16 /* OBQuestViewController.swift in Sources */,
 				CAB5C9A01F6D4E9A00A93564 /* OBHomeTransferCell.swift in Sources */,
 				CAB5C9751F6C81AD00A93564 /* OBCreditCardInfoRequest.swift in Sources */,
+				CADF0EE41F6E060A0080BD16 /* OBQuestCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -517,6 +577,22 @@
 				CA609B211F69C4720090E4CA /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		CADF0EF41F6E08810080BD16 /* ATMandOutlet.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CADF0EF51F6E08810080BD16 /* Base */,
+			);
+			name = ATMandOutlet.storyboard;
+			sourceTree = "<group>";
+		};
+		CADF0EF61F6E08810080BD16 /* Quests.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CADF0EF71F6E08810080BD16 /* Base */,
+			);
+			name = Quests.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
