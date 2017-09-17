@@ -25,4 +25,7 @@ class OBURLRouter {
     static let getMyCardBalanceURL = "\(baseURL)/MyCards/1.0.0/MyCardsInfo/balance"
     static let getMyCardHistoryURL = "\(baseURL)/MyCards/1.0.0/MyCardsInfo/history"
     
+//    invoice/1.0.0
+    static let getCreateInvoiceURL = "\(baseURL)/invoice/1.0.0/Invoices/create"
+    
 }

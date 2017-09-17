@@ -68,6 +68,8 @@
 		CADF0EF31F6E065C0080BD16 /* OBService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CADF0EF01F6E065C0080BD16 /* OBService.swift */; };
 		CADF0EF81F6E08810080BD16 /* ATMandOutlet.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CADF0EF41F6E08810080BD16 /* ATMandOutlet.storyboard */; };
 		CADF0EF91F6E08810080BD16 /* Quests.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CADF0EF61F6E08810080BD16 /* Quests.storyboard */; };
+		CADF0EFB1F6E0CB70080BD16 /* OBCreateInvoiceResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = CADF0EFA1F6E0CB70080BD16 /* OBCreateInvoiceResponse.swift */; };
+		CADF0EFD1F6E0E6F0080BD16 /* OBCreateInvoiceRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = CADF0EFC1F6E0E6F0080BD16 /* OBCreateInvoiceRequest.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -136,6 +138,8 @@
 		CADF0EF01F6E065C0080BD16 /* OBService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OBService.swift; sourceTree = "<group>"; };
 		CADF0EF51F6E08810080BD16 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/ATMandOutlet.storyboard; sourceTree = "<group>"; };
 		CADF0EF71F6E08810080BD16 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Quests.storyboard; sourceTree = "<group>"; };
+		CADF0EFA1F6E0CB70080BD16 /* OBCreateInvoiceResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OBCreateInvoiceResponse.swift; sourceTree = "<group>"; };
+		CADF0EFC1F6E0E6F0080BD16 /* OBCreateInvoiceRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OBCreateInvoiceRequest.swift; sourceTree = "<group>"; };
 		D996D0B3D7001B75191BAA45 /* Pods-Codility.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Codility.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Codility/Pods-Codility.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -295,10 +299,10 @@
 		CAB5C96B1F6C71E200A93564 /* API */ = {
 			isa = PBXGroup;
 			children = (
-				CAB5C9671F6C6AEB00A93564 /* OBAPIManager.swift */,
-				CAB5C9691F6C6E3800A93564 /* OBURLRouter.swift */,
 				CAB5C9731F6C813500A93564 /* Requests */,
 				CAB5C96C1F6C71EF00A93564 /* Responses */,
+				CAB5C9671F6C6AEB00A93564 /* OBAPIManager.swift */,
+				CAB5C9691F6C6E3800A93564 /* OBURLRouter.swift */,
 			);
 			name = API;
 			sourceTree = "<group>";
@@ -313,6 +317,7 @@
 				CAB5C9891F6D186000A93564 /* OBMyCardInfoResponse.swift */,
 				CAB5C98D1F6D226F00A93564 /* OBMyCardBalanceResponse.swift */,
 				CAB5C9911F6D2BAA00A93564 /* OBMyCardHistoryResponse.swift */,
+				CADF0EFA1F6E0CB70080BD16 /* OBCreateInvoiceResponse.swift */,
 			);
 			name = Responses;
 			sourceTree = "<group>";
@@ -326,6 +331,7 @@
 				CAB5C9871F6D152E00A93564 /* OBMyCardInfoRequest.swift */,
 				CAB5C98B1F6D211700A93564 /* OBMyCardBalanceRequest.swift */,
 				CAB5C98F1F6D2B3400A93564 /* OBMyCardHistoryRequest.swift */,
+				CADF0EFC1F6E0E6F0080BD16 /* OBCreateInvoiceRequest.swift */,
 			);
 			name = Requests;
 			sourceTree = "<group>";
@@ -519,6 +525,7 @@
 				CADF0EE21F6E060A0080BD16 /* BankATMCell.swift in Sources */,
 				CAB7CBCC1F6A9AE600917348 /* UIImage+OBImage.swift in Sources */,
 				CAB5C9851F6D120600A93564 /* OBMyCard.swift in Sources */,
+				CADF0EFB1F6E0CB70080BD16 /* OBCreateInvoiceResponse.swift in Sources */,
 				CAB5C9681F6C6AEB00A93564 /* OBAPIManager.swift in Sources */,
 				CAB5C9771F6C88BF00A93564 /* OBCreditsInfoRequest.swift in Sources */,
 				CADF0EF31F6E065C0080BD16 /* OBService.swift in Sources */,
@@ -532,6 +539,7 @@
 				CAB5C9BC1F6DBF4400A93564 /* OBTouchIDViewController.swift in Sources */,
 				CAB5C9A71F6D683100A93564 /* OBTransferViewController.swift in Sources */,
 				CAB5C9B51F6D713800A93564 /* OBTransferConfirmCell.swift in Sources */,
+				CADF0EFD1F6E0E6F0080BD16 /* OBCreateInvoiceRequest.swift in Sources */,
 				CAB5C9831F6D114500A93564 /* OBMyCardsResponse.swift in Sources */,
 				CAB5C97B1F6C8C3100A93564 /* OBCredit.swift in Sources */,
 				CADF0EE51F6E060A0080BD16 /* ServiceCell.swift in Sources */,

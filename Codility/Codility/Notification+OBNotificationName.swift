@@ -20,5 +20,7 @@ extension Notification.Name {
     static let myCardInfoCallback = Notification.Name("myCardInfoCallback")
     static let myCardBalanceCallback = Notification.Name("myCardInfoCallback")
     static let myCardHistoryCallback = Notification.Name("myCardHistoryCallback")
+    
+    static let createInvoiceCallback = Notification.Name("createInvoiceCallback")
 
 }

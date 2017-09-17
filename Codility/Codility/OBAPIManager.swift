@@ -153,6 +153,41 @@ class OBAPIManager {
         NotificationCenter.default.post(name: .myCardHistoryCallback, object: nil, userInfo: ["data": response])
     }
     
+    //invoicing
+    
+    class func myCardHistoryRequest(request: OBCreateInvoiceRequest) -> Void {
+        
+        let parameters: Parameters = [
+            
+            "RqUID": request.rqUID,
+            
+            "InvoiceCreateNumber": request.invoiceCreateNumber,
+            "InvoiceCreateDate": request.invoiceCreateDate,
+            "InvoiceCreateSum": request.invoiceCreateSum,
+            
+            "InvoiceCreatePayerINN": request.invoiceCreatePayerINN,
+            "InvoiceCreatePayerAcc": request.invoiceCreatePayerAcc,
+            "InvoiceCreatePayerBIK": request.invoiceCreatePayerBIK,
+            "InvoiceCreatePayerCorrAcc": request.invoiceCreatePayerCorrAcc,
+            "InvoiceCreatePayerBankname": request.invoiceCreatePayerBankname,
+            
+            "InvoiceCreatePayeeINN": request.invoiceCreatePayeeINN,
+            "InvoiceCreatePayeeAcc": request.invoiceCreatePayeeAcc,
+            "InvoiceCreatePayeeBIK": request.invoiceCreatePayeeBIK,
+            "InvoiceCreatePayeeCorrAcc": request.invoiceCreatePayeeCorrAcc,
+            "InvoiceCreatePayeeBankname": request.invoiceCreatePayeeBankname
+            
+        ]
+        
+        self.request(URL: OBURLRouter.getCreateInvoiceURL, method: .post, parameters: parameters, onSuccess: createInvoiceOnSuccess, onError: defaultOnError)
+        
+    }
+    
+    private class func createInvoiceOnSuccess(json: JSON) -> Void {
+        print(json)
+        let response = OBCreateInvoiceResponse(json: json)
+        NotificationCenter.default.post(name: .createInvoiceCallback, object: nil, userInfo: ["data": response])
+    }
 
     private class func defaultOnSuccess(json: JSON) -> Void{
         print(json)

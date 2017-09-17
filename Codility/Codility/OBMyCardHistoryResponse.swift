@@ -38,6 +38,4 @@ class OBMyCardHistoryResponse {
         self.card = card
     }
     
-
-    
 }

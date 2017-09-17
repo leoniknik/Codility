@@ -64,13 +64,13 @@ class OBQuestViewController: UIViewController,UITableViewDelegate,UITableViewDat
         cell.howToAchive.text = quest.howToAchive
         cell.reward.text = "\(quest.reward)"
         
-        var progressFloat = Float(quest.progressCurent)/Float(quest.progressMax)
+        let progressFloat = Float(quest.progressCurent)/Float(quest.progressMax)
         
         cell.progress.setProgress(progressFloat, animated: true)
         cell.progressLabel.text = "\(quest.progressCurent)/\(quest.progressMax)"
         
         for _ in 0..<quest.stage{
-            var view = UIImageView.init(frame: CGRect.init(x: 0, y: 0, width: 20, height: 20))
+            let view = UIImageView.init(frame: CGRect.init(x: 0, y: 0, width: 20, height: 20))
             view.heightAnchor.constraint(equalToConstant: 20).isActive = true
             view.widthAnchor.constraint(equalToConstant: 20).isActive = true
             
@@ -79,7 +79,7 @@ class OBQuestViewController: UIViewController,UITableViewDelegate,UITableViewDat
         }
         
         for _ in quest.stage..<3{
-            var view = UIImageView.init(frame: CGRect.init(x: 0, y: 0, width: 20, height: 20))
+            let view = UIImageView.init(frame: CGRect.init(x: 0, y: 0, width: 20, height: 20))
             view.heightAnchor.constraint(equalToConstant: 20).isActive = true
             view.widthAnchor.constraint(equalToConstant: 20).isActive = true
             view.backgroundColor = UIColor.gray

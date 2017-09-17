@@ -69,7 +69,7 @@ class OBChooseServiceViewController: UIViewController,UITableViewDelegate, UITab
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "toOrderedService"{
-            var destViewController = segue.destination as! OBOrderedServiceViewController
+            let destViewController = segue.destination as! OBOrderedServiceViewController
             destViewController.service = sender as? Service
         }
     }

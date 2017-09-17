@@ -47,14 +47,14 @@ class OBSelectBankATMOutletViewController: UIViewController,UITableViewDataSourc
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         if(indexPath.section == 0){
-            var cell = tableView.dequeueReusableCell(withIdentifier: "ATMCell") as! BankATMCell
+            let cell = tableView.dequeueReusableCell(withIdentifier: "ATMCell") as! BankATMCell
             cell.adress.text = "Адрес: " + ATMDataSource[indexPath.row].adress!
             cell.timetable.text = "Время работы: " + ATMDataSource[indexPath.row].timetable!
             cell.distance.text = "Расстояние: " + "\(ATMDataSource[indexPath.row].distance!)"
             return cell
         }
         else{
-            var cell = tableView.dequeueReusableCell(withIdentifier: "OutletCell") as! BankOutletCell
+            let cell = tableView.dequeueReusableCell(withIdentifier: "OutletCell") as! BankOutletCell
             cell.adress.text = "Адрес: " + OutletDataSource[indexPath.row].adress!
             cell.timetable.text = "Время работы: " + OutletDataSource[indexPath.row].timetable!
             cell.distance.text = "Расстояние: " + "\(OutletDataSource[indexPath.row].distance!)"
@@ -108,7 +108,7 @@ class OBSelectBankATMOutletViewController: UIViewController,UITableViewDataSourc
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "toChooseService"{
-            var destViewController = segue.destination as! OBChooseServiceViewController
+            let destViewController = segue.destination as! OBChooseServiceViewController
             destViewController.fullDataSource = (sender as! BankOutlet).services!
         }
     }
