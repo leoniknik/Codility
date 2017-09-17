@@ -17,6 +17,7 @@
 		CA609B1D1F69C4720090E4CA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CA609B1B1F69C4720090E4CA /* Main.storyboard */; };
 		CA609B1F1F69C4720090E4CA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CA609B1E1F69C4720090E4CA /* Assets.xcassets */; };
 		CA609B221F69C4720090E4CA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CA609B201F69C4720090E4CA /* LaunchScreen.storyboard */; };
+		CA7F54E31F6E988500C0FE94 /* OBCreateQRViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA7F54E21F6E988500C0FE94 /* OBCreateQRViewController.swift */; };
 		CA916E4F1F6A79BD008F79F5 /* UIColor+OBColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA916E4E1F6A79BD008F79F5 /* UIColor+OBColor.swift */; };
 		CA916E511F6A7BD1008F79F5 /* OBNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA916E501F6A7BD1008F79F5 /* OBNavigationController.swift */; };
 		CAB5C9681F6C6AEB00A93564 /* OBAPIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAB5C9671F6C6AEB00A93564 /* OBAPIManager.swift */; };
@@ -91,6 +92,7 @@
 		CA609B1E1F69C4720090E4CA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CA609B211F69C4720090E4CA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CA609B231F69C4730090E4CA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CA7F54E21F6E988500C0FE94 /* OBCreateQRViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OBCreateQRViewController.swift; sourceTree = "<group>"; };
 		CA916E4E1F6A79BD008F79F5 /* UIColor+OBColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+OBColor.swift"; sourceTree = "<group>"; };
 		CA916E501F6A7BD1008F79F5 /* OBNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OBNavigationController.swift; sourceTree = "<group>"; };
 		CAB5C9671F6C6AEB00A93564 /* OBAPIManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OBAPIManager.swift; sourceTree = "<group>"; };
@@ -236,6 +238,7 @@
 				CAB7CBCF1F6AA9DD00917348 /* OBHomeViewController.swift */,
 				CAB5C9A61F6D683100A93564 /* OBTransferViewController.swift */,
 				CA3DC8FA1F6E598200DDAD23 /* OBCardPickerViewController.swift */,
+				CA7F54E21F6E988500C0FE94 /* OBCreateQRViewController.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -547,6 +550,7 @@
 				CADF0EF31F6E065C0080BD16 /* OBService.swift in Sources */,
 				CAB5C9A51F6D659300A93564 /* OBTransferType.swift in Sources */,
 				CADF0EF11F6E065C0080BD16 /* OBATM.swift in Sources */,
+				CA7F54E31F6E988500C0FE94 /* OBCreateQRViewController.swift in Sources */,
 				CAB7CBD01F6AA9DD00917348 /* OBHomeViewController.swift in Sources */,
 				CAB5C9A31F6D64BE00A93564 /* OBSegueRouter.swift in Sources */,
 				CAB5C96E1F6C721700A93564 /* OBCreditCardInfoResponse.swift in Sources */,

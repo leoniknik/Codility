@@ -166,7 +166,16 @@ class OBTransferViewController: UIViewController, EPPickerDelegate {
     
     
     func createQRCode() {
-        
+        if let data = encode() {
+            self.performSegue(withIdentifier: OBSegueRouter.toCreateQR, sender: data)
+        }
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == OBSegueRouter.toCreateQR {
+            let viewcontroller = segue.destination as! OBCreateQRViewController
+            viewcontroller.encodedData = sender as! String
+        }
     }
     
     func createLink() {

@@ -14,7 +14,7 @@ class OBHomeViewController: UIViewController, CoachMarksControllerDataSource {
     
     let coachMarksController = CoachMarksController()
     
-    var dataSource : Array<[Any]> = Array<[Any]>()
+    var dataSource = Array<[Any]>()
     
     @IBOutlet weak var tableView: UITableView!
     

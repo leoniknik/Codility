@@ -15,5 +15,6 @@ struct OBSegueRouter {
     static let toATMOutlets = "toATMOutlets"
     static let toCardPicker = "toCardPicker"
     static let toQRSCan = "toQRSCan"
+    static let toCreateQR = "toCreateQR"
 
 }
