@@ -85,11 +85,11 @@
                 </constraints>
             </tableViewCellContentView>
             <connections>
-                <outlet property="BIKtextFiled" destination="Xnp-bd-jUR" id="jAZ-fA-qof"/>
-                <outlet property="INNTextFiled" destination="fZc-JM-JzH" id="cnG-Wk-dh8"/>
-                <outlet property="accountTextFiled" destination="vSZ-dn-YNh" id="dYa-OF-vPD"/>
-                <outlet property="bankNameTextFiled" destination="fui-uT-2SD" id="ghI-Zm-aa5"/>
-                <outlet property="corpAccountTextFiled" destination="fLf-Kn-rdB" id="ma8-jn-D4r"/>
+                <outlet property="BIKtextFieled" destination="Xnp-bd-jUR" id="Uah-Xj-7ja"/>
+                <outlet property="INNTextFieled" destination="fZc-JM-JzH" id="yUk-R8-wDf"/>
+                <outlet property="accountTextFieled" destination="vSZ-dn-YNh" id="lGK-jQ-JjU"/>
+                <outlet property="bankNameTextFieled" destination="fui-uT-2SD" id="dSa-pd-btL"/>
+                <outlet property="corpAccountTextFieled" destination="fLf-Kn-rdB" id="mzg-od-Kqo"/>
             </connections>
             <point key="canvasLocation" x="34" y="-21"/>
         </tableViewCell>

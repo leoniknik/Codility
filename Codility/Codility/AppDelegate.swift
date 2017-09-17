@@ -16,8 +16,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
+        
         configRealmSchema()
-        //getData()
+        getData()
         return true
     }
 
@@ -41,6 +42,21 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func applicationWillTerminate(_ application: UIApplication) {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
+    }
+    
+    func application(_ application: UIApplication, handleOpen url: URL) -> Bool {
+        
+        OBTransferType.transferType = .linkTransfer
+        let storyboard = UIStoryboard.init(name: "Main", bundle: nil)
+        let viewController = storyboard.instantiateViewController(withIdentifier: "OBTransferViewController") as! OBTransferViewController
+        let array = url.absoluteString.components(separatedBy: "bank://")
+        viewController.encodedData = array[1];
+        self.window?.rootViewController = viewController
+        
+        getData()
+        
+        return true
+        
     }
 
     func getData() {

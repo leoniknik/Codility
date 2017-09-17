@@ -106,6 +106,7 @@
 		CAB5C9B71F6D8AF900A93564 /* OBDatabaseManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OBDatabaseManager.swift; sourceTree = "<group>"; };
 		CAB5C9B91F6DBF0100A93564 /* Login.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
 		CAB5C9BB1F6DBF4400A93564 /* OBTouchIDViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OBTouchIDViewController.swift; sourceTree = "<group>"; };
+		CAB5C9C11F6DE19C00A93564 /* Codility-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Codility-Bridging-Header.h"; sourceTree = "<group>"; };
 		CAB7CBCB1F6A9AE600917348 /* UIImage+OBImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+OBImage.swift"; sourceTree = "<group>"; };
 		CAB7CBCD1F6AA62900917348 /* OBBackBarButtonItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OBBackBarButtonItem.swift; sourceTree = "<group>"; };
 		CAB7CBCF1F6AA9DD00917348 /* OBHomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OBHomeViewController.swift; sourceTree = "<group>"; };
@@ -220,6 +221,7 @@
 				CA609B171F69C4720090E4CA /* AppDelegate.swift */,
 				CA609B1E1F69C4720090E4CA /* Assets.xcassets */,
 				CA609B231F69C4730090E4CA /* Info.plist */,
+				CAB5C9C11F6DE19C00A93564 /* Codility-Bridging-Header.h */,
 			);
 			name = "Supporting files";
 			sourceTree = "<group>";
@@ -362,6 +364,7 @@
 					CA609B131F69C4720090E4CA = {
 						CreatedOnToolsVersion = 8.3.3;
 						DevelopmentTeam = BZ5C8942NC;
+						LastSwiftMigration = 0830;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -617,11 +620,14 @@
 			baseConfigurationReference = D996D0B3D7001B75191BAA45 /* Pods-Codility.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = BZ5C8942NC;
 				INFOPLIST_FILE = Codility/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Volodin-Enterprise.Codility";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Codility/Codility-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -631,11 +637,13 @@
 			baseConfigurationReference = 62B1564A6428AFA95E1FCE9D /* Pods-Codility.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = BZ5C8942NC;
 				INFOPLIST_FILE = Codility/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Volodin-Enterprise.Codility";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Codility/Codility-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;

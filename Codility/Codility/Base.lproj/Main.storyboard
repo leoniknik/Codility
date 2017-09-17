@@ -47,7 +47,7 @@
         <!--Платежи и переводы-->
         <scene sceneID="TRL-cK-unQ">
             <objects>
-                <viewController id="CnV-GC-eNx" customClass="OBTransferViewController" customModule="Codility" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="OBTransferViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="CnV-GC-eNx" customClass="OBTransferViewController" customModule="Codility" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="OLI-AQ-DQo"/>
                         <viewControllerLayoutGuide type="bottom" id="qtp-YQ-FkV"/>
@@ -92,7 +92,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="1V4-UW-X0B" customClass="OBNavigationController" customModule="Codility" customModuleProvider="target" sceneMemberID="viewController">
                     <toolbarItems/>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" id="a4G-Lc-Z5Y">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" barStyle="black" translucent="NO" id="a4G-Lc-Z5Y">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>

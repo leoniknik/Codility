@@ -25,17 +25,18 @@
                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                         <textInputTraits key="textInputTraits"/>
                     </textField>
-                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lFf-7p-bvQ">
+                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lFf-7p-bvQ">
                         <rect key="frame" x="210.5" y="72" width="60" height="60"/>
                         <constraints>
                             <constraint firstAttribute="width" constant="60" id="Ci3-YZ-XZg"/>
                             <constraint firstAttribute="height" constant="60" id="LnL-8U-riU"/>
                         </constraints>
-                        <state key="normal" backgroundImage="ic_link"/>
-                    </button>
-                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zc3-TS-O5y">
-                        <rect key="frame" x="50.5" y="72" width="60" height="60"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
                         <state key="normal" backgroundImage="ic_qr"/>
+                    </button>
+                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zc3-TS-O5y">
+                        <rect key="frame" x="50.5" y="72" width="60" height="60"/>
+                        <state key="normal" backgroundImage="ic_link"/>
                     </button>
                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qjv-RF-YkD">
                         <rect key="frame" x="130.5" y="72" width="60" height="60"/>
@@ -59,6 +60,7 @@
                     <constraint firstItem="War-DT-X7M" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="15" id="t0y-02-0nv"/>
                 </constraints>
             </tableViewCellContentView>
+            <inset key="separatorInset" minX="228" minY="0.0" maxX="92" maxY="0.0"/>
             <connections>
                 <outlet property="confirmTransferButton" destination="qjv-RF-YkD" id="MoS-oj-cHE"/>
                 <outlet property="createLinkButton" destination="zc3-TS-O5y" id="lYD-zl-L60"/>

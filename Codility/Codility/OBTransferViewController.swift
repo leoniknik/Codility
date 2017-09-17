@@ -11,17 +11,76 @@
 import UIKit
 import ContactsUI
 import EPContactsPicker
+import RNCryptor
 
 class OBTransferViewController: UIViewController, EPPickerDelegate {
 
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var backButton: OBBackBarButtonItem!
+    
     var contact = ""
+    var encodedData: String?
+    var accountCell: OBAccountTransferCell?
+    var confirmCell: OBTransferConfirmCell?
+    
+    var accountDictionary: Dictionary<String, String> = [
+       "INNTextFieled" : "",
+       "accountTextFieled" : "",
+       "BIKtextFieled" : "",
+       "corpAccountTextFieled" : "",
+       "bankNameTextFieled" : "",
+       "sumTextFieled" : ""
+    ]
     
     override func viewDidLoad() {
         super.viewDidLoad()
         setupHeader()
         setupTableView()
+        
+        if((encodedData) != nil){
+            decodeData()
+        }
+    }
+    
+    func decodeData() {
+        let data = Data(base64Encoded: self.encodedData!)
+        do {
+            let password = "Secret password"
+            let originalData = try RNCryptor.decrypt(data: data!, withPassword: password)
+            let parameterDictionary: Dictionary? = NSKeyedUnarchiver.unarchiveObject(with: originalData) as? Dictionary<String,Any>
+            
+                accountDictionary["INNTextFieled"] = parameterDictionary?["INNTextFieled"] as? String
+                accountDictionary["accountTextFieled"] = parameterDictionary?["accountTextFieled"] as? String
+                accountDictionary["BIKtextFieled"] = parameterDictionary?["BIKtextFieled"] as? String
+                accountDictionary["corpAccountTextFieled"] = parameterDictionary?["corpAccountTextFieled"] as? String
+                accountDictionary["bankNameTextFieled"] = parameterDictionary?["bankNameTextFieled"] as? String
+                accountDictionary["sumTextFieled"] = parameterDictionary?["sumTextFieled"] as? String
+            
+        } catch {
+            print(error)
+        }
+    }
+    
+    
+    func encode() -> String? {
+    
+        var parameterDictionary = Dictionary<String, Any>()
+        if accountCell != nil && confirmCell != nil {
+            parameterDictionary["INNTextFieled"] = accountCell?.INNTextFieled.text
+            parameterDictionary["accountTextFieled"] = accountCell?.accountTextFieled.text
+            parameterDictionary["BIKtextFieled"] = accountCell?.BIKtextFieled.text
+            parameterDictionary["corpAccountTextFieled"] = accountCell?.corpAccountTextFieled.text
+            parameterDictionary["bankNameTextFieled"] = accountCell?.bankNameTextFieled.text
+            parameterDictionary["sumTextFieled"] = confirmCell?.sumTextField.text
+            let data = NSKeyedArchiver.archivedData(withRootObject: parameterDictionary)
+            
+            let password = "Secret password"
+            let ciphertext = RNCryptor.encrypt(data: data, withPassword: password)
+            return ciphertext.base64EncodedString()
+        }
+        
+        return nil
+        
     }
 
     func setupHeader() {
@@ -34,6 +93,8 @@ class OBTransferViewController: UIViewController, EPPickerDelegate {
             self.navigationItem.title = "Перевод на счет"
         case .emailTransfer:
             self.navigationItem.title = "Перевод по E-mail"
+        case .linkTransfer:
+            self.navigationItem.title = "Оплатите счет"
         }
     }
     
@@ -79,6 +140,21 @@ class OBTransferViewController: UIViewController, EPPickerDelegate {
         tableView.reloadData()
     }
     
+    func createQRCode() {
+        
+    }
+    
+    func createLink() {
+        if let encodedData = encode() {
+            let data = "bank://" + encodedData
+            
+            let objectsToShare = [data]
+            let activityVC = UIActivityViewController(activityItems: objectsToShare, applicationActivities: nil)
+            
+            self.present(activityVC, animated: true, completion: nil)
+        }
+    }
+    
 }
 
 
@@ -93,6 +169,8 @@ extension OBTransferViewController: UITableViewDataSource {
         case .organisationTransfer:
             return 2
         case .emailTransfer:
+            return 3
+        case .linkTransfer:
             return 3
         }
     }
@@ -138,9 +216,15 @@ extension OBTransferViewController: UITableViewDataSource {
         case .organisationTransfer:
             if indexPath.row == 0 {
                 let cell = tableView.dequeueReusableCell(withIdentifier: "OBAccountTransferCell", for: indexPath) as! OBAccountTransferCell
+                self.accountCell = cell
                 return cell
             } else {
                 let cell = tableView.dequeueReusableCell(withIdentifier: "OBTransferConfirmCell", for: indexPath) as! OBTransferConfirmCell
+                self.confirmCell = cell
+                cell.createLinkButton.isHidden = false
+                cell.createQRCodeButton.isHidden = false
+                cell.createLinkButton.addTarget(self, action: #selector(createLink), for: .touchUpInside)
+                cell.createQRCodeButton.addTarget(self, action: #selector(createQRCode), for: .touchUpInside)
                 return cell
             }
         case .emailTransfer:
@@ -160,6 +244,39 @@ extension OBTransferViewController: UITableViewDataSource {
                 return cell
             } else {
                 let cell = tableView.dequeueReusableCell(withIdentifier: "OBTransferConfirmCell", for: indexPath) as! OBTransferConfirmCell
+                return cell
+            }
+        case .linkTransfer:
+            if indexPath.row == 0 {
+                let cell = tableView.dequeueReusableCell(withIdentifier: "OBSimpleTransferCell", for: indexPath) as! OBSimpleTransferCell
+                cell.button.setImage(UIImage.OBImage.peopleHome, for: .normal)
+                cell.textField.placeholder = "Введите номер карты"
+                return cell
+            }
+            else if indexPath.row == 1 {
+                let cell = tableView.dequeueReusableCell(withIdentifier: "OBAccountTransferCell", for: indexPath) as! OBAccountTransferCell
+                
+                cell.INNTextFieled.text = accountDictionary["INNTextFieled"]
+                cell.accountTextFieled.text = accountDictionary["accountTextFieled"]
+                cell.bankNameTextFieled.text = accountDictionary["bankNameTextFieled"]
+                cell.BIKtextFieled.text = accountDictionary["BIKtextFieled"]
+                cell.corpAccountTextFieled.text = accountDictionary["corpAccountTextFieled"]
+                
+                cell.INNTextFieled.isEnabled = false
+                cell.accountTextFieled.isEnabled = false
+                cell.bankNameTextFieled.isEnabled = false
+                cell.BIKtextFieled.isEnabled = false
+                cell.corpAccountTextFieled.isEnabled = false
+                
+                return cell
+            } else {
+                let cell = tableView.dequeueReusableCell(withIdentifier: "OBTransferConfirmCell", for: indexPath) as! OBTransferConfirmCell
+                cell.createLinkButton.isHidden = true
+                cell.createQRCodeButton.isHidden = true
+                cell.sumTextField.text = accountDictionary["sumTextFieled"]
+                cell.sumTextField.isEnabled = false
+                cell.createLinkButton.addTarget(self, action: #selector(createLink), for: .touchUpInside)
+                cell.createQRCodeButton.addTarget(self, action: #selector(createQRCode), for: .touchUpInside)
                 return cell
             }
         }
@@ -214,6 +331,15 @@ extension OBTransferViewController: UITableViewDelegate {
             }
             else if indexPath.row == 1 {
                 return 77
+            } else {
+                return 148
+            }
+        case .linkTransfer:
+            if indexPath.row == 0 {
+                return 77
+            }
+            else if indexPath.row == 1 {
+                return 246
             } else {
                 return 148
             }
