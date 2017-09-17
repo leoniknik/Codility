@@ -162,41 +162,41 @@ class OBAPIManager {
         
         let parameters: Parameters = [
             
-//            "RqUID": "123e4567-e89b-12d3-a456-426655440000",
-//            
-//            "InvoiceCreateNumber": 123456789,
-//            "InvoiceCreateDate": "01.01.2017",
-//            "InvoiceCreateSum": request.invoiceCreateSum,
-//            
-//            "InvoiceCreatePayerINN": request.invoiceCreatePayerINN,
-//            "InvoiceCreatePayerAcc": request.invoiceCreatePayerAcc,
-//            "InvoiceCreatePayerBIK": request.invoiceCreatePayerBIK,
-//            "InvoiceCreatePayerCorrAcc": request.invoiceCreatePayerCorrAcc,
-//            "InvoiceCreatePayerBankname": request.invoiceCreatePayerBankname,
-//            
-//            "InvoiceCreatePayeeINN": request.invoiceCreatePayeeINN,
-//            "InvoiceCreatePayeeAcc": request.invoiceCreatePayeeAcc,
-//            "InvoiceCreatePayeeBIK": request.invoiceCreatePayeeBIK,
-//            "InvoiceCreatePayeeCorrAcc": request.invoiceCreatePayeeCorrAcc,
-//            "InvoiceCreatePayeeBankname": request.invoiceCreatePayeeBankname
+            "RqUID": "123e4567-e89b-12d3-a456-426655440000",
             
-                "RqUID": "123e4567-e89b-12d3-a456-426655440000",
-                "InvoiceCreateNumber": "123456789",
-                "InvoiceCreateDate": "01.01.2017",
-                "InvoiceCreateSum": "1000.00",
-                "InvoiceCreatePayerINN": "500100732259",
-                "InvoiceCreatePayerAcc": "40702810438290000000",
-                "InvoiceCreatePayerBIK": "044525985",
-                "InvoiceCreatePayerCorrAcc": "30101810300000000985",
-                "InvoiceCreatePayerBankname": "ПАО Банк «ФК Открытие»",
-                "InvoiceCreatePayeeINN": "500100732260",
-                "InvoiceCreatePayeeAcc": "40702810138170000000",
-                "InvoiceCreatePayeeBIK": "044525985",
-                "InvoiceCreatePayeeCorrAcc": "30101810300000000985",
-                "InvoiceCreatePayeeBankname": "ПАО Банк «ФК Открытие»"
+            "InvoiceCreateNumber": 123456789,
+            "InvoiceCreateDate": "01.01.2017",
+            "InvoiceCreateSum": request.invoiceCreateSum,
             
+            "InvoiceCreatePayerINN": request.invoiceCreatePayerINN,
+            "InvoiceCreatePayerAcc": request.invoiceCreatePayerAcc,
+            "InvoiceCreatePayerBIK": request.invoiceCreatePayerBIK,
+            "InvoiceCreatePayerCorrAcc": request.invoiceCreatePayerCorrAcc,
+            "InvoiceCreatePayerBankname": request.invoiceCreatePayerBankname,
             
-        ]
+            "InvoiceCreatePayeeINN": request.invoiceCreatePayeeINN,
+            "InvoiceCreatePayeeAcc": request.invoiceCreatePayeeAcc,
+            "InvoiceCreatePayeeBIK": request.invoiceCreatePayeeBIK,
+            "InvoiceCreatePayeeCorrAcc": request.invoiceCreatePayeeCorrAcc,
+            "InvoiceCreatePayeeBankname": request.invoiceCreatePayeeBankname
+            
+    ]
+    
+//                "RqUID": "123e4567-e89b-12d3-a456-426655440000",
+//                "InvoiceCreateNumber": "123456789",
+//                "InvoiceCreateDate": "01.01.2017",
+//                "InvoiceCreateSum": "1000.00",
+//                "InvoiceCreatePayerINN": "500100732259",
+//                "InvoiceCreatePayerAcc": "40702810438290000000",
+//                "InvoiceCreatePayerBIK": "044525985",
+//                "InvoiceCreatePayerCorrAcc": "30101810300000000985",
+//                "InvoiceCreatePayerBankname": "ПАО Банк «ФК Открытие»",
+//                "InvoiceCreatePayeeINN": "500100732260",
+//                "InvoiceCreatePayeeAcc": "40702810138170000000",
+//                "InvoiceCreatePayeeBIK": "044525985",
+//                "InvoiceCreatePayeeCorrAcc": "30101810300000000985",
+//                "InvoiceCreatePayeeBankname": "ПАО Банк «ФК Открытие»"
+            
         
         self.request(URL: OBURLRouter.getCreateInvoiceURL, method: .post, parameters: parameters, onSuccess: createInvoiceOnSuccess, onError: defaultOnError)
         

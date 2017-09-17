@@ -22,6 +22,10 @@ class OBTransferViewController: UIViewController, EPPickerDelegate {
     var encodedData: String?
     var accountCell: OBAccountTransferCell?
     var confirmCell: OBTransferConfirmCell?
+    var simpleCellFrom: OBSimpleTransferCell?
+    var simpleCellTo: OBSimpleTransferCell?
+    
+    var isForSecond: Bool = false
     
     var accountDictionary: Dictionary<String, String> = [
        "INNTextFieled" : "",
@@ -140,6 +144,12 @@ class OBTransferViewController: UIViewController, EPPickerDelegate {
         tableView.reloadData()
     }
     
+//    //сallback добавить
+//    func createQRCode() {
+//        
+//    }
+    
+    
     func createQRCode() {
         
     }
@@ -155,24 +165,35 @@ class OBTransferViewController: UIViewController, EPPickerDelegate {
         }
     }
     
+    func openCardPicker() {
+        isForSecond = false
+        self.performSegue(withIdentifier: OBSegueRouter.toCardPicker, sender: nil)
+    }
+    
+    func openSecondCardPicker() {
+        isForSecond = true
+        self.performSegue(withIdentifier: OBSegueRouter.toCardPicker, sender: nil)
+    }
+    
 }
 
 
 extension OBTransferViewController: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        switch OBTransferType.transferType {
-        case .selfTransfer:
-            return 3
-        case .phoneTransfer:
-            return 3
-        case .organisationTransfer:
-            return 2
-        case .emailTransfer:
-            return 3
-        case .linkTransfer:
-            return 3
-        }
+//        switch OBTransferType.transferType {
+//        case .selfTransfer:
+//            return 3
+//        case .phoneTransfer:
+//            return 3
+//        case .organisationTransfer:
+//            return 2
+//        case .emailTransfer:
+//            return 3
+//        case .linkTransfer:
+//            return 3
+//        }
+        return 3
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -182,6 +203,8 @@ extension OBTransferViewController: UITableViewDataSource {
             if indexPath.row == 0 {
                 let cell = tableView.dequeueReusableCell(withIdentifier: "OBSimpleTransferCell", for: indexPath) as! OBSimpleTransferCell
                 cell.button.setImage(UIImage.OBImage.peopleHome, for: .normal)
+                cell.button.addTarget(self, action: #selector(openCardPicker), for: .touchUpInside)
+                self.simpleCellFrom = cell
                 cell.textField.placeholder = "Введите номер карты"
                 return cell
             }
@@ -190,6 +213,9 @@ extension OBTransferViewController: UITableViewDataSource {
                 cell.button.setImage(UIImage.OBImage.peopleHome, for: .normal)
                 cell.titleLabel.text = "Куда перевести"
                 cell.textField.placeholder = "Введите номер карты"
+                cell.button.addTarget(self, action: #selector(openSecondCardPicker), for: .touchUpInside)
+                self.simpleCellTo = cell
+                
                 return cell
             } else {
                 let cell = tableView.dequeueReusableCell(withIdentifier: "OBTransferConfirmCell", for: indexPath) as! OBTransferConfirmCell
@@ -200,12 +226,14 @@ extension OBTransferViewController: UITableViewDataSource {
                 let cell = tableView.dequeueReusableCell(withIdentifier: "OBSimpleTransferCell", for: indexPath) as! OBSimpleTransferCell
                 cell.button.setImage(UIImage.OBImage.peopleHome, for: .normal)
                 cell.textField.placeholder = "Введите номер карты"
+                cell.button.addTarget(self, action: #selector(openCardPicker), for: .touchUpInside)
+                self.simpleCellFrom = cell
+                
                 return cell
             }
             else if indexPath.row == 1 {
                 let cell = tableView.dequeueReusableCell(withIdentifier: "OBSimpleTransferCell", for: indexPath) as! OBSimpleTransferCell
                 cell.button.setImage(UIImage.OBImage.phoneHome, for: .normal)
-                cell.button.addTarget(self, action: #selector(chooseContact), for: .touchUpInside)
                 cell.titleLabel.text = "Куда перевести"
                 cell.textField.text = contact
                 return cell
@@ -215,6 +243,15 @@ extension OBTransferViewController: UITableViewDataSource {
             }
         case .organisationTransfer:
             if indexPath.row == 0 {
+                let cell = tableView.dequeueReusableCell(withIdentifier: "OBSimpleTransferCell", for: indexPath) as! OBSimpleTransferCell
+                cell.button.setImage(UIImage.OBImage.peopleHome, for: .normal)
+                cell.textField.placeholder = "Введите номер карты"
+                cell.button.addTarget(self, action: #selector(openCardPicker), for: .touchUpInside)
+                self.simpleCellFrom = cell
+                
+                return cell
+            }
+            else if indexPath.row == 1 {
                 let cell = tableView.dequeueReusableCell(withIdentifier: "OBAccountTransferCell", for: indexPath) as! OBAccountTransferCell
                 self.accountCell = cell
                 return cell
@@ -232,6 +269,9 @@ extension OBTransferViewController: UITableViewDataSource {
                 let cell = tableView.dequeueReusableCell(withIdentifier: "OBSimpleTransferCell", for: indexPath) as! OBSimpleTransferCell
                 cell.button.setImage(UIImage.OBImage.peopleHome, for: .normal)
                 cell.textField.placeholder = "Введите номер карты"
+                cell.button.addTarget(self, action: #selector(openCardPicker), for: .touchUpInside)
+                self.simpleCellFrom = cell
+                
                 return cell
             }
             else if indexPath.row == 1 {
@@ -251,6 +291,9 @@ extension OBTransferViewController: UITableViewDataSource {
                 let cell = tableView.dequeueReusableCell(withIdentifier: "OBSimpleTransferCell", for: indexPath) as! OBSimpleTransferCell
                 cell.button.setImage(UIImage.OBImage.peopleHome, for: .normal)
                 cell.textField.placeholder = "Введите номер карты"
+                cell.button.addTarget(self, action: #selector(openCardPicker), for: .touchUpInside)
+                self.simpleCellFrom = cell
+                
                 return cell
             }
             else if indexPath.row == 1 {
@@ -324,6 +367,9 @@ extension OBTransferViewController: UITableViewDelegate {
             }
         case .organisationTransfer:
             if indexPath.row == 0 {
+                return 77
+            }
+            else if indexPath.row == 1 {
                 return 246
             } else {
                 return 148

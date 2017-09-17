@@ -87,7 +87,7 @@
             </objects>
             <point key="canvasLocation" x="2150" y="-1164"/>
         </scene>
-        <!--Card Picker View Controller-->
+        <!--Выбор карты-->
         <scene sceneID="hJ8-K0-ScL">
             <objects>
                 <viewController id="gjT-o0-bdy" customClass="OBCardPickerViewController" customModule="Codility" customModuleProvider="target" sceneMemberID="viewController">
@@ -99,14 +99,26 @@
                         <rect key="frame" x="0.0" y="64" width="375" height="603"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="2IN-j6-qXS">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="2IN-j6-qXS">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="2IN-j6-qXS" firstAttribute="leading" secondItem="SoT-4c-g55" secondAttribute="leading" id="5XW-bN-2uH"/>
+                            <constraint firstItem="vv7-em-Noz" firstAttribute="top" secondItem="2IN-j6-qXS" secondAttribute="bottom" id="Jaq-98-wO8"/>
+                            <constraint firstItem="2IN-j6-qXS" firstAttribute="top" secondItem="ddM-iT-h83" secondAttribute="bottom" id="Tzd-p1-dPA"/>
+                            <constraint firstAttribute="trailing" secondItem="2IN-j6-qXS" secondAttribute="trailing" id="gzR-PM-SdP"/>
+                        </constraints>
                     </view>
+                    <navigationItem key="navigationItem" title="Выбор карты" id="HG5-rX-wYe">
+                        <barButtonItem key="leftBarButtonItem" title="Item" id="SYE-f6-oA8" customClass="OBBackBarButtonItem" customModule="Codility" customModuleProvider="target">
+                            <connections>
+                                <action selector="goBack:" destination="gjT-o0-bdy" id="wAX-vm-rie"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="tableView" destination="2IN-j6-qXS" id="coG-de-lI2"/>
                     </connections>

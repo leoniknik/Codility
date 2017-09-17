@@ -21,7 +21,11 @@ class OBHomeViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setupTableView()
-        
+        NotificationCenter.default.addObserver(self, selector: #selector(myCardsCallback(_:)), name: .myCardsCallback, object: nil)
+    }
+    
+    func myCardsCallback(_ notification: NSNotification) {
+        tableView.reloadData()
     }
     
     func setupTableView() {

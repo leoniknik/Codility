@@ -27,15 +27,15 @@
                         </constraints>
                     </imageView>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="**** 1234" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aQd-sT-uHa">
-                        <rect key="frame" x="73" y="11" width="131" height="21"/>
+                        <rect key="frame" x="73" y="11" width="75.5" height="21"/>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Дебетовая" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7EH-xs-N7H">
-                        <rect key="frame" x="205" y="11" width="92" height="20.5"/>
+                        <rect key="frame" x="200" y="11" width="97" height="21"/>
                         <constraints>
-                            <constraint firstAttribute="width" constant="92" id="PXe-Wo-boT"/>
+                            <constraint firstAttribute="width" constant="97" id="838-zG-CjZ"/>
                         </constraints>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
@@ -43,13 +43,13 @@
                     </label>
                 </subviews>
                 <constraints>
-                    <constraint firstItem="7EH-xs-N7H" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="1uc-hp-PAX"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="7EH-xs-N7H" secondAttribute="trailing" constant="15" id="07I-hu-dVY"/>
                     <constraint firstItem="FW0-Eh-pRi" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="AYr-KW-na1"/>
-                    <constraint firstItem="7EH-xs-N7H" firstAttribute="leading" secondItem="aQd-sT-uHa" secondAttribute="trailing" constant="1" id="YIt-Er-SmJ"/>
+                    <constraint firstItem="7EH-xs-N7H" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="3" id="I5l-5o-uUd"/>
                     <constraint firstItem="aQd-sT-uHa" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="3" id="bsz-EJ-Tfz"/>
                     <constraint firstItem="aQd-sT-uHa" firstAttribute="leading" secondItem="FW0-Eh-pRi" secondAttribute="trailing" constant="8" id="gg6-Cb-2OV"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="7EH-xs-N7H" secondAttribute="bottom" constant="4" id="gmo-r9-KWh"/>
                     <constraint firstAttribute="bottomMargin" secondItem="aQd-sT-uHa" secondAttribute="bottom" constant="3.5" id="sao-7F-nd7"/>
-                    <constraint firstAttribute="trailingMargin" secondItem="7EH-xs-N7H" secondAttribute="trailing" constant="15" id="xJ8-H5-010"/>
                     <constraint firstItem="FW0-Eh-pRi" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="zro-yu-gvI"/>
                 </constraints>
             </tableViewCellContentView>

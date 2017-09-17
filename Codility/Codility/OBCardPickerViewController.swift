@@ -27,6 +27,10 @@ class OBCardPickerViewController: UIViewController {
         self.tableView.register(UINib(nibName: "OBCardCell", bundle: nil), forCellReuseIdentifier: "OBCardCell")
     }
     
+    @IBAction func goBack(_ sender: Any) {
+        self.navigationController?.popViewController(animated: true)
+    }
+    
 }
 
 extension OBCardPickerViewController: UITableViewDataSource {
@@ -68,6 +72,15 @@ extension OBCardPickerViewController: UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
+        let count = self.navigationController?.viewControllers.count
+        let viewController = self.navigationController?.viewControllers[count! - 2] as! OBTransferViewController
+        let cell = tableView.cellForRow(at: indexPath) as! OBCardCell
+        if viewController.isForSecond {
+            viewController.simpleCellTo?.textField.text = cell.cardNumber.text
+        } else {
+            viewController.simpleCellFrom?.textField.text = cell.cardNumber.text
+        }
+        self.navigationController?.popViewController(animated: true)
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
