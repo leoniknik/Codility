@@ -84,6 +84,7 @@ class OBQRCodeScannerViewController: UIViewController, AVCaptureMetadataOutputOb
         }
     }
     
+    var flag:Bool = false
     func captureOutput(_ captureOutput: AVCaptureOutput!, didOutputMetadataObjects metadataObjects: [Any]!, from connection: AVCaptureConnection!) {
         
         // Check if the metadataObjects array is not nil and it contains at least one object.
@@ -105,7 +106,7 @@ class OBQRCodeScannerViewController: UIViewController, AVCaptureMetadataOutputOb
                 QRCodeLabel.text = metadataObj.stringValue
                 var string = metadataObj.stringValue!
                 
-                string = OBJKHCodeParser.ex
+                //string = OBJKHCodeParser.ex
                 
                 if(string.contains("bank://")){
                     
@@ -123,18 +124,19 @@ class OBQRCodeScannerViewController: UIViewController, AVCaptureMetadataOutputOb
                         
                     }))
                     
-                    self.present(alert, animated: true, completion: nil)
+                   
                     
                     
                     
                 }
                 else if(OBJKHCodeParser.validateCode(code: string)){
                     
-                    let alert = UIAlertController(title: "Alert", message: "Успешно получен код", preferredStyle: UIAlertControllerStyle.alert)
-                    alert.addAction(UIAlertAction(title: "Ok", style: .default, handler: { (action: UIAlertAction!) in
-                        print("Handle Ok logic here")
-                        self.dismiss(animated: true, completion: nil)
-                        
+//                    let alert = UIAlertController(title: "Alert", message: "Успешно получен код", preferredStyle: UIAlertControllerStyle.alert)
+//                    alert.addAction(UIAlertAction(title: "Ok", style: .default, handler: { (action: UIAlertAction!) in
+//                        print("Handle Ok logic here")
+//                        sleep(5)
+//                        self.dismiss(animated: true, completion: nil)
+                    
                         
                         var dataDictionary = OBJKHCodeParser.getAccountDictionary(code: string)
                         // add segue
@@ -144,11 +146,14 @@ class OBQRCodeScannerViewController: UIViewController, AVCaptureMetadataOutputOb
                         viewController.accountDictionary = dataDictionary
                         OBTransferType.transferType = .linkTransfer
                         viewController.JKHMArker = true
-                        self.navigationController?.pushViewController(viewController, animated: true)
-                        
-                    }))
-                    self.present(alert, animated: true, completion: nil)
                     
+                    if(!flag){
+                        self.navigationController?.pushViewController(viewController, animated: true)
+                    }
+                    flag = true
+//                    }))
+//                    self.present(alert, animated: true, completion: nil)
+//                    
                     
                 }
             }

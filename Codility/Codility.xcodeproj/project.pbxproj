@@ -61,6 +61,7 @@
 		CAB7CBCC1F6A9AE600917348 /* UIImage+OBImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAB7CBCB1F6A9AE600917348 /* UIImage+OBImage.swift */; };
 		CAB7CBCE1F6AA62900917348 /* OBBackBarButtonItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAB7CBCD1F6AA62900917348 /* OBBackBarButtonItem.swift */; };
 		CAB7CBD01F6AA9DD00917348 /* OBHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAB7CBCF1F6AA9DD00917348 /* OBHomeViewController.swift */; };
+		CADBF9661F6EB59C001B99AE /* LocalAuthentication.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CADBF9651F6EB59C001B99AE /* LocalAuthentication.framework */; };
 		CADF0EE21F6E060A0080BD16 /* BankATMCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CADF0EDE1F6E060A0080BD16 /* BankATMCell.swift */; };
 		CADF0EE31F6E060A0080BD16 /* BankOutletCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CADF0EDF1F6E060A0080BD16 /* BankOutletCell.swift */; };
 		CADF0EE41F6E060A0080BD16 /* OBQuestCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CADF0EE01F6E060A0080BD16 /* OBQuestCell.swift */; };
@@ -137,6 +138,7 @@
 		CAB7CBCB1F6A9AE600917348 /* UIImage+OBImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+OBImage.swift"; sourceTree = "<group>"; };
 		CAB7CBCD1F6AA62900917348 /* OBBackBarButtonItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OBBackBarButtonItem.swift; sourceTree = "<group>"; };
 		CAB7CBCF1F6AA9DD00917348 /* OBHomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OBHomeViewController.swift; sourceTree = "<group>"; };
+		CADBF9651F6EB59C001B99AE /* LocalAuthentication.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = LocalAuthentication.framework; path = System/Library/Frameworks/LocalAuthentication.framework; sourceTree = SDKROOT; };
 		CADF0EDE1F6E060A0080BD16 /* BankATMCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BankATMCell.swift; sourceTree = "<group>"; };
 		CADF0EDF1F6E060A0080BD16 /* BankOutletCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BankOutletCell.swift; sourceTree = "<group>"; };
 		CADF0EE01F6E060A0080BD16 /* OBQuestCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OBQuestCell.swift; sourceTree = "<group>"; };
@@ -160,6 +162,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CADBF9661F6EB59C001B99AE /* LocalAuthentication.framework in Frameworks */,
 				99B7A4FBD50C49C764EAE430 /* Pods_Codility.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -170,6 +173,7 @@
 		00F1A7470F688B2900DDCE1C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				CADBF9651F6EB59C001B99AE /* LocalAuthentication.framework */,
 				BA7055BFBABD8E670693460E /* Pods_Codility.framework */,
 			);
 			name = Frameworks;
